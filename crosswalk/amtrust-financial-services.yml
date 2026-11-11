@@ -39,11 +39,3 @@ concepts:
     core_coverage: null
     evidence:
     - openapi/_original/amtrust-financial-services-experience-claims-medical-case-api-openapi.json#GET /api/v{version}/claims/{claimNumber}
-  policyholder:
-    path_segment:
-    - insureds
-    properties: {}
-    core_coverage: 0.0
-    evidence:
-    - openapi/_original/amtrust-financial-services-digital-wc-api-openapi.json#DELETE /api/v1/quotes/{quoteId}/additionalInformation/insureds/{insuerdId}
-    - openapi/_original/amtrust-financial-services-digital-wc-api-openapi.json#DELETE /api/v1/specialty-program/quotes/{quoteId}/additionalInformation/insureds/{insuerdId}

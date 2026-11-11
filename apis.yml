@@ -44,9 +44,6 @@ apis:
     name: claim
     url: https://raw.githubusercontent.com/api-commons/insurance/main/schema/claim.json
   - type: JSONSchema
-    name: policyholder
-    url: https://raw.githubusercontent.com/api-commons/insurance/main/schema/policyholder.json
-  - type: JSONSchema
     name: insurance_product
     url: https://raw.githubusercontent.com/api-commons/insurance/main/schema/insurance_product.json
 common:

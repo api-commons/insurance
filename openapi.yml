@@ -277,8 +277,6 @@ components:
       $ref: ./schema/quote.json
     Claim:
       $ref: ./schema/claim.json
-    Policyholder:
-      $ref: ./schema/policyholder.json
     InsuranceProduct:
       $ref: ./schema/insurance_product.json
   parameters:
@@ -296,12 +294,6 @@ components:
         type: string
     claim_id:
       name: claim_id
-      in: path
-      required: true
-      schema:
-        type: string
-    policyholder_id:
-      name: policyholder_id
       in: path
       required: true
       schema:

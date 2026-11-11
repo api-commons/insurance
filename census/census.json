@@ -2926,131 +2926,6 @@
     ]
    }
   },
-  "policyholder": {
-   "amtrust-financial-services": {
-    "segments": [
-     "insureds"
-    ],
-    "operations": [
-     "DELETE item"
-    ],
-    "properties": {
-     "StatusCode": "integer",
-     "Message": "string",
-     "AdditionalMessages": "array",
-     "Errors": "object"
-    },
-    "evidence": [
-     "openapi/_original/amtrust-financial-services-digital-wc-api-openapi.json#DELETE /api/v1/quotes/{quoteId}/additionalInformation/insureds/{insuerdId}",
-     "openapi/_original/amtrust-financial-services-digital-wc-api-openapi.json#DELETE /api/v1/specialty-program/quotes/{quoteId}/additionalInformation/insureds/{insuerdId}"
-    ]
-   },
-   "ascend": {
-    "segments": [
-     "insureds"
-    ],
-    "operations": [
-     "GET collection",
-     "GET item",
-     "PATCH item",
-     "POST collection"
-    ],
-    "properties": {
-     "id": "string",
-     "email": "string",
-     "first_name": "string",
-     "last_name": "string",
-     "business_name": "string",
-     "is_business": "boolean",
-     "formatted_address": "string",
-     "phone": "string",
-     "mailing_address_street_one": "string",
-     "mailing_address_street_two": "string",
-     "mailing_address_city": "string",
-     "mailing_address_state": "string",
-     "mailing_address_zip_code": "string",
-     "insured_contacts": "array"
-    },
-    "evidence": [
-     "openapi/_original/ascend-openapi-original.yml#GET /v1/insureds",
-     "openapi/_original/ascend-openapi-original.yml#GET /v1/insureds/{id}",
-     "openapi/_original/ascend-openapi-original.yml#PATCH /v1/insureds/{id}",
-     "openapi/_original/ascend-openapi-original.yml#POST /v1/insureds"
-    ]
-   },
-   "root": {
-    "segments": [
-     "policyholders"
-    ],
-    "operations": [
-     "GET collection",
-     "GET item",
-     "PATCH item",
-     "POST collection",
-     "PUT collection"
-    ],
-    "properties": {
-     "policyholder_id": "string",
-     "type": "string",
-     "id": "object",
-     "title": "string",
-     "date_of_birth": "string",
-     "gender": "string",
-     "initials": [
-      "string",
-      "null"
-     ],
-     "first_name": "string",
-     "middle_name": [
-      "string",
-      "null"
-     ],
-     "last_name": "string",
-     "company_name": "string",
-     "registration_number": "string",
-     "date_of_establishment": "string",
-     "company_website_url": "string",
-     "contact_position": "string",
-     "subsidiary_companies": "array",
-     "email": [
-      "string",
-      "null"
-     ],
-     "cellphone": [
-      "string",
-      "null"
-     ],
-     "phone_other": [
-      "string",
-      "null"
-     ],
-     "policy_ids": "array",
-     "policies": "array",
-     "created_at": "string",
-     "app_data": [
-      "object",
-      "null"
-     ],
-     "created_by": [
-      "object",
-      "null"
-     ],
-     "updated_at": "string",
-     "address": [
-      "object",
-      "null"
-     ],
-     "expiration_date": "string"
-    },
-    "evidence": [
-     "openapi/_original/root-platform-api-openapi.json#GET /policyholders",
-     "openapi/_original/root-platform-api-openapi.json#GET /policyholders/{policyholder_id}",
-     "openapi/_original/root-platform-api-openapi.json#PATCH /policyholders/{policyholder_id}",
-     "openapi/_original/root-platform-api-openapi.json#POST /policyholders",
-     "openapi/_original/root-platform-api-openapi.json#PUT /policyholders"
-    ]
-   }
-  },
   "insurance_product": {
    "american-financial-group": {
     "segments": [
@@ -4612,7 +4487,6 @@
     "agencyzoom",
     "amtrust-financial-services",
     "apollo-insurance",
-    "ascend",
     "assurant",
     "at-bay",
     "centene",
@@ -4685,7 +4559,6 @@
    ],
    "snake_case": [
     "1fort",
-    "ascend",
     "at-bay",
     "convelio",
     "healthsherpa",

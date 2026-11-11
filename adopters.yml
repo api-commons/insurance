@@ -33,7 +33,6 @@ adopters:
   concepts:
   - claim
   - policy
-  - policyholder
   - quote
 - provider: apollo-insurance
   apis_io: https://apis.io/providers/apollo-insurance/
@@ -205,7 +204,6 @@ adopters:
   concepts:
   - claim
   - policy
-  - policyholder
   - quote
 - provider: socotra
   apis_io: https://apis.io/providers/socotra/

@@ -15,7 +15,6 @@ generated. Every number below is a count of providers.
 | policy | 30 | 23 | effective_date 74%, status 70%, expiration_date 65%, id 65%, number 56% | policies 24, policy 9 |
 | quote | 34 | 31 | id 58%, premium 55%, status 52% | quotes 27, quote 11 |
 | claim | 16 | 11 | status 82%, policy_id 73%, id 64%, loss_date 64%, description 55%, number 55% | claims 15, claim 3, fnol 1 |
-| policyholder | 2 | 2 |  | insureds 1, policyholders 1 |
 | insurance_product | 5 | 3 |  | products 4, insurance-products 1 |
 
 Cohort: 143 providers with harvested OpenAPI, 47 crosswalks. Of the providers exposing a policy: 57% create, 60% list, 67% fetch, 30% update, 17% delete. Generated 2026-11-10 by build.py.
@@ -26,7 +25,7 @@ extended tier and the long tail of every concept are in [profile.yml](profile.ym
 
 ## What the measurement shows
 
-- A claim agrees on more than any other insurance resource: number, status, the policy, the loss date, when it was reported, its type and description are all core.
+- A claim agrees on more than any other insurance resource: number, status, the policy, the loss date and a description are all core.
 - A policy agrees on its number, status and effective and expiration dates; what it covers is modelled too differently to share.
 - A quote agrees only on id, premium and status -- embedded-insurance APIs quote by product and carriers quote by risk, and the request shapes diverge.
 - Coverages live on the policy and the quote, not as resources (2 providers).
@@ -50,7 +49,7 @@ extended tier and the long tail of every concept are in [profile.yml](profile.ym
 These are calls, not measurements, recorded so they can be revisited as the method matures.
 
 - Health insurance is the healthcare context's: payers, benefits plans and medical claims are a different domain from property, casualty and life.
-- A policyholder is `insureds` or `policyholders` only: `members` and `customers` brought in workspace members and agency CRM records.
+- Policyholders are not published as a concept: counting only `insureds` and `policyholders` (`members` and `customers` were workspace members and agency CRM records), 2 providers expose them.
 - `plans` is not an insurance product here: reviewed, it was health, retirement and benefits plans.
 - A claim needs no policy in the same API: claims and FNOL platforms expose claims alone.
 - Duplicates merged: Audatex into Solera, Oper, Orbii, Thatch.

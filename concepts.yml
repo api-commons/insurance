@@ -50,16 +50,7 @@ concepts:
       paid_amount: [amount_paid, settlement_amount, payout_amount]
       description: [loss_description, incident_description, notes]
       type: [claim_type, loss_type, peril, cause_of_loss]
-  policyholder:
-    requires: [policy]
-    segments: [policyholders, policyholder, policy_holders, insureds, insured]
-    aliases:
-      first_name: [firstname, given_name]
-      last_name: [lastname, surname, family_name]
-      email: [email_address, emails]
-      phone: [phone_number, mobile]
-      date_of_birth: [dob, birth_date]
-      address: [addresses, residential_address, mailing_address]
+  # policyholder was measured and dropped: 2 providers expose insureds as a resource.
   # coverage was measured and dropped: 2 providers expose coverages as a resource; the
   # rest carry them on the policy and the quote.
   insurance_product:
@@ -77,7 +68,7 @@ duplicates:
 
 findings:
   - "A claim agrees on more than any other insurance resource: number, status, the policy,
-    the loss date, when it was reported, its type and description are all core."
+    the loss date and a description are all core."
   - "A policy agrees on its number, status and effective and expiration dates; what it covers
     is modelled too differently to share."
   - "A quote agrees only on id, premium and status -- embedded-insurance APIs quote by product
@@ -86,8 +77,9 @@ findings:
 decisions:
   - "Health insurance is the healthcare context's: payers, benefits plans and medical claims
     are a different domain from property, casualty and life."
-  - "A policyholder is `insureds` or `policyholders` only: `members` and `customers` brought in
-    workspace members and agency CRM records."
+  - "Policyholders are not published as a concept: counting only `insureds` and
+    `policyholders` (`members` and `customers` were workspace members and agency CRM
+    records), 2 providers expose them."
   - "`plans` is not an insurance product here: reviewed, it was health, retirement and benefits
     plans."
   - "A claim needs no policy in the same API: claims and FNOL platforms expose claims alone."
