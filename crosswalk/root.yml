@@ -1,0 +1,74 @@
+provider: root
+apis_io: https://apis.io/providers/root/
+context: insurance
+generated: '2026-11-10'
+concepts:
+  policy:
+    path_segment:
+    - policies
+    - policy
+    properties:
+      effective_date: start_date
+      status:
+      - claim_status
+      - status
+      expiration_date: end_date
+      id:
+      - claim_id
+      - policy_id
+      number: policy_number
+      premium: monthly_premium
+      policyholder_id:
+      - policyholder_id
+      - policyholder
+      updated_at: updated_at
+      created_at: created_at
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/root-platform-api-openapi.json#GET /policies
+    - openapi/_original/root-platform-api-openapi.json#GET /policies/{policy_id}
+    - openapi/_original/root-platform-api-openapi.json#GET /policyholders/{policyholder_id}/policies
+    - openapi/_original/root-platform-api-openapi.json#PATCH /policies/{policy_id}
+    - openapi/_original/root-platform-api-openapi.json#PATCH /sandbox-only/policies/{policy_id}
+  quote:
+    path_segment:
+    - quotes
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/root-platform-api-openapi.json#POST /quotes
+  claim:
+    path_segment:
+    - claims
+    properties:
+      status: claim_status
+      policy_id:
+      - policy_id
+      - policy
+      id: claim_id
+      loss_date: incident_date
+      number: claim_number
+      claimant: claimant
+      created_at: created_at
+      policyholder_id:
+      - policyholder_id
+      - policyholder
+      updated_at: updated_at
+    core_coverage: 0.833
+    evidence:
+    - openapi/_original/root-platform-api-openapi.json#GET /claims
+    - openapi/_original/root-platform-api-openapi.json#GET /claims/{claim_id}
+    - openapi/_original/root-platform-api-openapi.json#GET /policies/{policy_id}/claims
+    - openapi/_original/root-platform-api-openapi.json#PATCH /claims/{claim_id}
+    - openapi/_original/root-platform-api-openapi.json#POST /claims
+  policyholder:
+    path_segment:
+    - policyholders
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/root-platform-api-openapi.json#GET /policyholders
+    - openapi/_original/root-platform-api-openapi.json#GET /policyholders/{policyholder_id}
+    - openapi/_original/root-platform-api-openapi.json#PATCH /policyholders/{policyholder_id}
+    - openapi/_original/root-platform-api-openapi.json#POST /policyholders
+    - openapi/_original/root-platform-api-openapi.json#PUT /policyholders

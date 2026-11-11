@@ -1,0 +1,17 @@
+provider: at-bay
+apis_io: https://apis.io/providers/at-bay/
+context: insurance
+generated: '2026-11-10'
+concepts:
+  quote:
+    path_segment:
+    - quotes
+    properties:
+      premium: premium
+      status: status
+      effective_date: effective_date
+      expires_at: expiration_date
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/at-bay-partner-api-openapi.yml#GET /quotes/{quote_identifier}
+    - openapi/_original/at-bay-partner-api-openapi.yml#POST /quotes

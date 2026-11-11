@@ -1,0 +1,19 @@
+provider: steadily
+apis_io: https://apis.io/providers/steadily/
+context: insurance
+generated: '2026-11-10'
+concepts:
+  policy:
+    path_segment:
+    - policy
+    properties:
+      effective_date: effective_date
+      status: status
+      id: policy_id
+      updated_at: updated_at
+    core_coverage: 0.6
+    evidence:
+    - openapi/_original/steadily-estimate-api-openapi-original.json#GET /v1/report/policy
+    - openapi/_original/steadily-partner-openapi-original.json#GET /v1/agency/policy/{policy_id}
+    - openapi/_original/steadily-partner-openapi-original.json#GET /v1/report/policy
+    - openapi/_original/steadily-rater-quotes-openapi-original.json#GET /v1/agency/policy/{policy_id}

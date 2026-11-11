@@ -1,0 +1,38 @@
+provider: assurant
+apis_io: https://apis.io/providers/assurant/
+context: insurance
+generated: '2026-11-10'
+concepts:
+  policy:
+    path_segment:
+    - policies
+    properties:
+      effective_date: effectiveDate
+      status: status
+      expiration_date: expirationDate
+      id: policyId
+      policyholder_id: customerId
+      product_id: productId
+    core_coverage: 0.8
+    evidence:
+    - openapi/_original/assurant-apex-insurance-api-openapi.yml#GET /policies
+  claim:
+    path_segment:
+    - claims
+    properties:
+      status: status
+      policy_id: policyId
+      id: claimId
+      loss_date: incidentDate
+      description: description
+    core_coverage: 0.833
+    evidence:
+    - openapi/_original/assurant-apex-insurance-api-openapi.yml#GET /claims/{claimId}
+    - openapi/_original/assurant-apex-insurance-api-openapi.yml#POST /claims
+  insurance_product:
+    path_segment:
+    - products
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/assurant-apex-insurance-api-openapi.yml#GET /products

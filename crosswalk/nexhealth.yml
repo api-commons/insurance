@@ -1,0 +1,16 @@
+provider: nexhealth
+apis_io: https://apis.io/providers/nexhealth/
+context: insurance
+generated: '2026-11-10'
+concepts:
+  claim:
+    path_segment:
+    - claims
+    properties:
+      status: status
+      id: id
+      updated_at: updated_at
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/nexhealth-openapi-original.json#GET /claims
+    - openapi/_original/nexhealth-openapi-original.json#GET /claims/{id}

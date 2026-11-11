@@ -1,0 +1,13 @@
+provider: qbe
+apis_io: https://apis.io/providers/qbe/
+context: insurance
+generated: '2026-11-10'
+concepts:
+  quote:
+    path_segment:
+    - quotes
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/qbe-anzo-digital-brokers-openapi.yml#POST /auth/quotes
+    - openapi/_original/qbe-anzo-digital-brokers-openapi.yml#PUT /auth/quotes/{quoteId}

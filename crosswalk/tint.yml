@@ -1,0 +1,41 @@
+provider: tint
+apis_io: https://apis.io/providers/tint/
+context: insurance
+generated: '2026-11-10'
+concepts:
+  policy:
+    path_segment:
+    - policy
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/tint-openapi.yml#GET /policy/{id}
+    - openapi/_original/tint-openapi.yml#POST /policy
+    - openapi/_original/tint-openapi.yml#PUT /policy/{id}
+  quote:
+    path_segment:
+    - quotes
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/tint-openapi.yml#GET /policy/{policyId}/endorsement/{id}/quotes
+    - openapi/_original/tint-openapi.yml#GET /policy/{policyId}/quotes
+  claim:
+    path_segment:
+    - claim
+    - claims
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/tint-openapi.yml#GET /claim/{id}
+    - openapi/_original/tint-openapi.yml#GET /claims
+    - openapi/_original/tint-openapi.yml#GET /policy/{policyId}/claims
+    - openapi/_original/tint-openapi.yml#POST /policy/{policyId}/claim
+    - openapi/_original/tint-openapi.yml#PUT /claim/{id}
+  insurance_product:
+    path_segment:
+    - insurance-products
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/tint-openapi.yml#GET /insurance-products

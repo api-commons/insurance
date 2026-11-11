@@ -1,0 +1,314 @@
+openapi: 3.1.0
+info:
+  title: Insurance (API Commons)
+  version: 0.1.0-draft.20261110
+  description: 'The common Insurance interface, distilled from the harvested OpenAPI of 143 providers in the APIs.io
+    catalog. Not a product: no one serves this API. It is the shape the market already shares, measured, so that
+    providers, agents and integrators can map to one vocabulary. See profile.yml.'
+  license:
+    name: CC BY-NC-SA 4.0
+    url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+paths:
+  /policies/{policy_id}:
+    parameters:
+    - $ref: '#/components/parameters/policy_id'
+    get:
+      operationId: getPolicy
+      summary: Get a policy
+      tags:
+      - Policies
+      x-commons-tier: core
+      x-commons-share: 0.667
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: &id001
+                $ref: '#/components/schemas/Policy'
+    patch:
+      operationId: updatePolicy
+      summary: Update a policy
+      tags:
+      - Policies
+      x-commons-tier: extended
+      x-commons-share: 0.3
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id001
+  /policies:
+    get:
+      operationId: listPolicies
+      summary: List policies
+      tags:
+      - Policies
+      x-commons-tier: core
+      x-commons-share: 0.6
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: *id001
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createPolicy
+      summary: Create a policy
+      tags:
+      - Policies
+      x-commons-tier: core
+      x-commons-share: 0.567
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id001
+  /quotes:
+    post:
+      operationId: createQuote
+      summary: Create a quote
+      tags:
+      - Quotes
+      x-commons-tier: core
+      x-commons-share: 0.882
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: &id002
+                $ref: '#/components/schemas/Quote'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id002
+    get:
+      operationId: listQuotes
+      summary: List quotes
+      tags:
+      - Quotes
+      x-commons-tier: extended
+      x-commons-share: 0.235
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: *id002
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+  /quotes/{quote_id}:
+    parameters:
+    - $ref: '#/components/parameters/quote_id'
+    get:
+      operationId: getQuote
+      summary: Get a quote
+      tags:
+      - Quotes
+      x-commons-tier: extended
+      x-commons-share: 0.471
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+    patch:
+      operationId: updateQuote
+      summary: Update a quote
+      tags:
+      - Quotes
+      x-commons-tier: extended
+      x-commons-share: 0.206
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id002
+  /claims:
+    post:
+      operationId: createClaim
+      summary: Create a claim
+      tags:
+      - Claims
+      x-commons-tier: core
+      x-commons-share: 0.75
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: &id003
+                $ref: '#/components/schemas/Claim'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id003
+    get:
+      operationId: listClaims
+      summary: List claims
+      tags:
+      - Claims
+      x-commons-tier: core
+      x-commons-share: 0.625
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: *id003
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+  /claims/{claim_id}:
+    parameters:
+    - $ref: '#/components/parameters/claim_id'
+    get:
+      operationId: getClaim
+      summary: Get a claim
+      tags:
+      - Claims
+      x-commons-tier: core
+      x-commons-share: 0.688
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id003
+    patch:
+      operationId: updateClaim
+      summary: Update a claim
+      tags:
+      - Claims
+      x-commons-tier: extended
+      x-commons-share: 0.25
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id003
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id003
+  /insurance-products:
+    get:
+      operationId: listInsuranceProducts
+      summary: List insurance products
+      tags:
+      - Insurance Products
+      x-commons-tier: core
+      x-commons-share: 0.8
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/InsuranceProduct'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+components:
+  schemas:
+    Policy:
+      $ref: ./schema/policy.json
+    Quote:
+      $ref: ./schema/quote.json
+    Claim:
+      $ref: ./schema/claim.json
+    Policyholder:
+      $ref: ./schema/policyholder.json
+    InsuranceProduct:
+      $ref: ./schema/insurance_product.json
+  parameters:
+    policy_id:
+      name: policy_id
+      in: path
+      required: true
+      schema:
+        type: string
+    quote_id:
+      name: quote_id
+      in: path
+      required: true
+      schema:
+        type: string
+    claim_id:
+      name: claim_id
+      in: path
+      required: true
+      schema:
+        type: string
+    policyholder_id:
+      name: policyholder_id
+      in: path
+      required: true
+      schema:
+        type: string
+    insurance_product_id:
+      name: insurance_product_id
+      in: path
+      required: true
+      schema:
+        type: string

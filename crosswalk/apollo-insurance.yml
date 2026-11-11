@@ -1,0 +1,13 @@
+provider: apollo-insurance
+apis_io: https://apis.io/providers/apollo-insurance/
+context: insurance
+generated: '2026-11-10'
+concepts:
+  quote:
+    path_segment:
+    - quote
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/apollo-insurance-affiliates-legacy.yml#POST /api/affiliates/{affiliateId}/tenant/quote
+    - openapi/_original/apollo-insurance-affiliates.yml#POST /api/affiliates/{affiliateId}/{insuranceType}/quote

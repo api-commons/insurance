@@ -1,0 +1,278 @@
+context: insurance
+generated: '2026-11-10'
+adopters:
+- provider: 1fort
+  apis_io: https://apis.io/providers/1fort/
+  crosswalk: crosswalk/1fort.yml
+  concepts:
+  - policy
+  - quote
+- provider: aclaimant
+  apis_io: https://apis.io/providers/aclaimant/
+  crosswalk: crosswalk/aclaimant.yml
+  concepts:
+  - claim
+  - policy
+- provider: agencyzoom
+  apis_io: https://apis.io/providers/agencyzoom/
+  crosswalk: crosswalk/agencyzoom.yml
+  concepts:
+  - policy
+  - quote
+- provider: american-financial-group
+  apis_io: https://apis.io/providers/american-financial-group/
+  crosswalk: crosswalk/american-financial-group.yml
+  concepts:
+  - claim
+  - insurance_product
+  - policy
+  - quote
+- provider: amtrust-financial-services
+  apis_io: https://apis.io/providers/amtrust-financial-services/
+  crosswalk: crosswalk/amtrust-financial-services.yml
+  concepts:
+  - claim
+  - policy
+  - policyholder
+  - quote
+- provider: apollo-insurance
+  apis_io: https://apis.io/providers/apollo-insurance/
+  crosswalk: crosswalk/apollo-insurance.yml
+  concepts:
+  - quote
+- provider: assurant
+  apis_io: https://apis.io/providers/assurant/
+  crosswalk: crosswalk/assurant.yml
+  concepts:
+  - claim
+  - insurance_product
+  - policy
+- provider: at-bay
+  apis_io: https://apis.io/providers/at-bay/
+  crosswalk: crosswalk/at-bay.yml
+  concepts:
+  - quote
+- provider: boost-insurance
+  apis_io: https://apis.io/providers/boost-insurance/
+  crosswalk: crosswalk/boost-insurance.yml
+  concepts:
+  - claim
+  - policy
+  - quote
+- provider: convelio
+  apis_io: https://apis.io/providers/convelio/
+  crosswalk: crosswalk/convelio.yml
+  concepts:
+  - quote
+- provider: coterie
+  apis_io: https://apis.io/providers/coterie/
+  crosswalk: crosswalk/coterie.yml
+  concepts:
+  - policy
+  - quote
+- provider: duck-creek
+  apis_io: https://apis.io/providers/duck-creek/
+  crosswalk: crosswalk/duck-creek.yml
+  concepts:
+  - claim
+  - insurance_product
+  - policy
+  - quote
+- provider: evari
+  apis_io: https://apis.io/providers/evari/
+  crosswalk: crosswalk/evari.yml
+  concepts:
+  - quote
+- provider: extend
+  apis_io: https://apis.io/providers/extend/
+  crosswalk: crosswalk/extend.yml
+  concepts:
+  - quote
+- provider: fintary
+  apis_io: https://apis.io/providers/fintary/
+  crosswalk: crosswalk/fintary.yml
+  concepts:
+  - policy
+- provider: guidewire
+  apis_io: https://apis.io/providers/guidewire/
+  crosswalk: crosswalk/guidewire.yml
+  concepts:
+  - claim
+  - policy
+  - quote
+- provider: healthsherpa
+  apis_io: https://apis.io/providers/healthsherpa/
+  crosswalk: crosswalk/healthsherpa.yml
+  concepts:
+  - quote
+- provider: herald
+  apis_io: https://apis.io/providers/herald/
+  crosswalk: crosswalk/herald.yml
+  concepts:
+  - quote
+- provider: heron
+  apis_io: https://apis.io/providers/heron/
+  crosswalk: crosswalk/heron.yml
+  concepts:
+  - policy
+- provider: hiveagentiq-com
+  apis_io: https://apis.io/providers/hiveagentiq-com/
+  crosswalk: crosswalk/hiveagentiq-com.yml
+  concepts:
+  - policy
+- provider: kota
+  apis_io: https://apis.io/providers/kota/
+  crosswalk: crosswalk/kota.yml
+  concepts:
+  - policy
+  - quote
+- provider: laka
+  apis_io: https://apis.io/providers/laka/
+  crosswalk: crosswalk/laka.yml
+  concepts:
+  - claim
+  - insurance_product
+  - policy
+  - quote
+- provider: liberty-mutual-insurance
+  apis_io: https://apis.io/providers/liberty-mutual-insurance/
+  crosswalk: crosswalk/liberty-mutual-insurance.yml
+  concepts:
+  - policy
+  - quote
+- provider: majesco
+  apis_io: https://apis.io/providers/majesco/
+  crosswalk: crosswalk/majesco.yml
+  concepts:
+  - claim
+  - policy
+  - quote
+- provider: medigo
+  apis_io: https://apis.io/providers/medigo/
+  crosswalk: crosswalk/medigo.yml
+  concepts:
+  - claim
+- provider: moodys-rms
+  apis_io: https://apis.io/providers/moodys-rms/
+  crosswalk: crosswalk/moodys-rms.yml
+  concepts:
+  - policy
+- provider: nexhealth
+  apis_io: https://apis.io/providers/nexhealth/
+  crosswalk: crosswalk/nexhealth.yml
+  concepts:
+  - claim
+- provider: nexus-mutual
+  apis_io: https://apis.io/providers/nexus-mutual/
+  crosswalk: crosswalk/nexus-mutual.yml
+  concepts:
+  - quote
+- provider: optum
+  apis_io: https://apis.io/providers/optum/
+  crosswalk: crosswalk/optum.yml
+  concepts:
+  - policy
+- provider: outdoorsy
+  apis_io: https://apis.io/providers/outdoorsy/
+  crosswalk: crosswalk/outdoorsy.yml
+  concepts:
+  - claim
+  - quote
+- provider: pie-insurance
+  apis_io: https://apis.io/providers/pie-insurance/
+  crosswalk: crosswalk/pie-insurance.yml
+  concepts:
+  - quote
+- provider: progressive
+  apis_io: https://apis.io/providers/progressive/
+  crosswalk: crosswalk/progressive.yml
+  concepts:
+  - policy
+  - quote
+- provider: qbe
+  apis_io: https://apis.io/providers/qbe/
+  crosswalk: crosswalk/qbe.yml
+  concepts:
+  - quote
+- provider: qoala
+  apis_io: https://apis.io/providers/qoala/
+  crosswalk: crosswalk/qoala.yml
+  concepts:
+  - quote
+- provider: root
+  apis_io: https://apis.io/providers/root/
+  crosswalk: crosswalk/root.yml
+  concepts:
+  - claim
+  - policy
+  - policyholder
+  - quote
+- provider: socotra
+  apis_io: https://apis.io/providers/socotra/
+  crosswalk: crosswalk/socotra.yml
+  concepts:
+  - policy
+  - quote
+- provider: state-farm
+  apis_io: https://apis.io/providers/state-farm/
+  crosswalk: crosswalk/state-farm.yml
+  concepts:
+  - policy
+  - quote
+- provider: state-farm-insurance-cos
+  apis_io: https://apis.io/providers/state-farm-insurance-cos/
+  crosswalk: crosswalk/state-farm-insurance-cos.yml
+  concepts:
+  - policy
+  - quote
+- provider: steadily
+  apis_io: https://apis.io/providers/steadily/
+  crosswalk: crosswalk/steadily.yml
+  concepts:
+  - policy
+- provider: super-seguros
+  apis_io: https://apis.io/providers/super-seguros/
+  crosswalk: crosswalk/super-seguros.yml
+  concepts:
+  - quote
+- provider: tint
+  apis_io: https://apis.io/providers/tint/
+  crosswalk: crosswalk/tint.yml
+  concepts:
+  - claim
+  - insurance_product
+  - policy
+  - quote
+- provider: travelers
+  apis_io: https://apis.io/providers/travelers/
+  crosswalk: crosswalk/travelers.yml
+  concepts:
+  - claim
+  - policy
+  - quote
+- provider: truepill
+  apis_io: https://apis.io/providers/truepill/
+  crosswalk: crosswalk/truepill.yml
+  concepts:
+  - claim
+- provider: trustlayer
+  apis_io: https://apis.io/providers/trustlayer/
+  crosswalk: crosswalk/trustlayer.yml
+  concepts:
+  - policy
+- provider: zego
+  apis_io: https://apis.io/providers/zego/
+  crosswalk: crosswalk/zego.yml
+  concepts:
+  - policy
+- provider: zinnia
+  apis_io: https://apis.io/providers/zinnia/
+  crosswalk: crosswalk/zinnia.yml
+  concepts:
+  - quote
+- provider: zywave
+  apis_io: https://apis.io/providers/zywave/
+  crosswalk: crosswalk/zywave.yml
+  concepts:
+  - policy
+  - quote

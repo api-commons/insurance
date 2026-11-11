@@ -1,0 +1,1337 @@
+[
+ {
+  "slug": "180-insurance",
+  "specs": [
+   "openapi/_original/180-insurance-sagas-api-readme-slices.json"
+  ]
+ },
+ {
+  "slug": "1fort",
+  "specs": [
+   "openapi/_original/1fort-openapi-original.yml",
+   "openapi/_original/1fort-openapi.json"
+  ]
+ },
+ {
+  "slug": "acko",
+  "specs": [
+   "openapi/_original/acko-apisetu-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "aclaimant",
+  "specs": [
+   "openapi/_original/aclaimant-platform-api-swagger.json"
+  ]
+ },
+ {
+  "slug": "affinda",
+  "specs": [
+   "openapi/_original/affinda-document-splitters-api-openapi.yml",
+   "openapi/_original/affinda-extractors-api-openapi.yml",
+   "openapi/_original/affinda-invitations-api-openapi.yml",
+   "openapi/_original/affinda-v3-openapi.yml"
+  ]
+ },
+ {
+  "slug": "agencyzoom",
+  "specs": [
+   "openapi/_original/agencyzoom-openapi.yml"
+  ]
+ },
+ {
+  "slug": "american-financial-group",
+  "specs": [
+   "openapi/_original/american-financial-group-billing-openapi.json",
+   "openapi/_original/american-financial-group-billing-openapi.yml",
+   "openapi/_original/american-financial-group-claims-openapi.json",
+   "openapi/_original/american-financial-group-claims-openapi.yml",
+   "openapi/_original/american-financial-group-contract-openapi.json",
+   "openapi/_original/american-financial-group-contract-openapi.yml",
+   "openapi/_original/american-financial-group-document-openapi.json",
+   "openapi/_original/american-financial-group-document-openapi.yml",
+   "openapi/_original/american-financial-group-forms-openapi.json",
+   "openapi/_original/american-financial-group-forms-openapi.yml",
+   "openapi/_original/american-financial-group-ingestion-openapi.json",
+   "openapi/_original/american-financial-group-ingestion-openapi.yml",
+   "openapi/_original/american-financial-group-issuance-openapi.json",
+   "openapi/_original/american-financial-group-issuance-openapi.yml",
+   "openapi/_original/american-financial-group-letters-openapi.json",
+   "openapi/_original/american-financial-group-letters-openapi.yml",
+   "openapi/_original/american-financial-group-notification-openapi.json",
+   "openapi/_original/american-financial-group-notification-openapi.yml",
+   "openapi/_original/american-financial-group-opportunity-openapi.json",
+   "openapi/_original/american-financial-group-opportunity-openapi.yml",
+   "openapi/_original/american-financial-group-policy-openapi.json",
+   "openapi/_original/american-financial-group-policy-openapi.yml",
+   "openapi/_original/american-financial-group-producer-openapi.json",
+   "openapi/_original/american-financial-group-producer-openapi.yml",
+   "openapi/_original/american-financial-group-product-openapi.json",
+   "openapi/_original/american-financial-group-product-openapi.yml",
+   "openapi/_original/american-financial-group-rating-openapi.json",
+   "openapi/_original/american-financial-group-rating-openapi.yml",
+   "openapi/_original/american-financial-group-risk-assessment-openapi.json",
+   "openapi/_original/american-financial-group-risk-assessment-openapi.yml",
+   "openapi/_original/american-financial-group-risk-selection-openapi.json",
+   "openapi/_original/american-financial-group-risk-selection-openapi.yml",
+   "openapi/_original/american-financial-group-shop-openapi.json",
+   "openapi/_original/american-financial-group-shop-openapi.yml",
+   "openapi/_original/american-financial-group-submission-openapi.json",
+   "openapi/_original/american-financial-group-submission-openapi.yml"
+  ]
+ },
+ {
+  "slug": "amtrust-financial-services",
+  "specs": [
+   "openapi/_original/amtrust-financial-services-conversa-engine-api-openapi.json",
+   "openapi/_original/amtrust-financial-services-digital-bop-api-openapi.json",
+   "openapi/_original/amtrust-financial-services-digital-cyber-api-openapi.json",
+   "openapi/_original/amtrust-financial-services-digital-es-api-openapi.json",
+   "openapi/_original/amtrust-financial-services-digital-pac-api-openapi.json",
+   "openapi/_original/amtrust-financial-services-digital-wc-api-openapi.json",
+   "openapi/_original/amtrust-financial-services-experience-claims-medical-case-api-openapi.json",
+   "openapi/_original/amtrust-financial-services-experience-next-gen-bond-pro-api-openapi.json",
+   "openapi/_original/amtrust-financial-services-reinsurance-contract-entry-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "apollo-insurance",
+  "specs": [
+   "openapi/_original/apollo-insurance-affiliates-legacy.yml",
+   "openapi/_original/apollo-insurance-affiliates.yml",
+   "openapi/_original/apollo-insurance-covertrack.yml"
+  ]
+ },
+ {
+  "slug": "arthur-j-gallagher",
+  "specs": [
+   "openapi/_original/gallagher-command-centre-api.yml"
+  ]
+ },
+ {
+  "slug": "ascend",
+  "specs": [
+   "openapi/_original/ascend-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "assurant",
+  "specs": [
+   "openapi/_original/assurant-apex-insurance-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "at-bay",
+  "specs": [
+   "openapi/_original/at-bay-partner-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "attomdata",
+  "specs": [
+   "openapi/_original/attom-area-api-openapi.yml",
+   "openapi/_original/attom-community-api-openapi.yml",
+   "openapi/_original/attom-parcel-tiles-api-openapi.yml",
+   "openapi/_original/attom-poi-api-openapi.yml",
+   "openapi/_original/attom-property-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "audatex",
+  "specs": [
+   "openapi/_original/audatex-api-gateway-openapi-original.json",
+   "openapi/_original/audatex-api-gateway-openapi.yml",
+   "openapi/_original/audatex-audaconnect-api-openapi-original.json",
+   "openapi/_original/audatex-audaconnect-bms-api-openapi-original.json",
+   "openapi/_original/audatex-dashboard-assignment-api-openapi-original.json",
+   "openapi/_original/audatex-gic-integration-api-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "availity",
+  "specs": [
+   "openapi/_original/availity-care-cost-estimator-institutional-openapi.json",
+   "openapi/_original/availity-care-cost-estimator-institutional-openapi.yml",
+   "openapi/_original/availity-care-cost-estimator-professional-openapi.json",
+   "openapi/_original/availity-care-cost-estimator-professional-openapi.yml",
+   "openapi/_original/availity-claim-attachments-openapi.yml",
+   "openapi/_original/availity-claim-status-openapi.yml",
+   "openapi/_original/availity-claim-statuses-openapi.json",
+   "openapi/_original/availity-configurations-openapi.json",
+   "openapi/_original/availity-configurations-openapi.yml",
+   "openapi/_original/availity-coverages-openapi.json",
+   "openapi/_original/availity-coverages-openapi.yml",
+   "openapi/_original/availity-dental-claims-openapi.json",
+   "openapi/_original/availity-dental-claims-openapi.yml",
+   "openapi/_original/availity-dfs-openapi.json",
+   "openapi/_original/availity-dfs-openapi.yml",
+   "openapi/_original/availity-eligibility-openapi.yml",
+   "openapi/_original/availity-openapi.json",
+   "openapi/_original/availity-patient-cost-estimator-professional-openapi.json",
+   "openapi/_original/availity-patient-cost-estimator-professional-openapi.yml",
+   "openapi/_original/availity-payer-list-openapi.json",
+   "openapi/_original/availity-payer-list-openapi.yml",
+   "openapi/_original/availity-service-reviews-openapi.json",
+   "openapi/_original/availity-service-reviews-openapi.yml"
+  ]
+ },
+ {
+  "slug": "baloise",
+  "specs": [
+   "openapi/_original/baloise-corellia-contracts-openapi.yml",
+   "openapi/_original/baloise-oim-openapi.yml",
+   "openapi/_original/corellia-openapi.json",
+   "openapi/_original/oim-api-v0.8.yaml"
+  ]
+ },
+ {
+  "slug": "beazley",
+  "specs": [
+   "openapi/_original/beazley-about-beazley-sandbox.yml",
+   "openapi/_original/beazley-about-beazley.yml",
+   "openapi/_original/beazley-broker-and-insured-marketing-data-v2-sandbox.yml",
+   "openapi/_original/beazley-broker-and-insured-marketing-data-v2.yml",
+   "openapi/_original/beazley-compliance-web-api.yml",
+   "openapi/_original/beazley-currency-exchange-sandbox.yml",
+   "openapi/_original/beazley-currency-exchange.yml",
+   "openapi/_original/beazley-data-capture-quote-and-risk-data-sandbox.yml",
+   "openapi/_original/beazley-data-capture-quote-and-risk-data-v2-sandbox.yml",
+   "openapi/_original/beazley-data-capture-quote-and-risk-data-v2.yml",
+   "openapi/_original/beazley-data-capture-quote-and-risk-data-v3-pre-release.yml",
+   "openapi/_original/beazley-data-capture-quote-and-risk-data.yml",
+   "openapi/_original/beazley-fast-reader.yml",
+   "openapi/_original/beazley-simple-raters.yml"
+  ]
+ },
+ {
+  "slug": "boost-insurance",
+  "specs": [
+   "openapi/_original/boost-insurance-openapi.yml"
+  ]
+ },
+ {
+  "slug": "cachet",
+  "specs": [
+   "openapi/_original/cachet-parking-openapi.yml",
+   "openapi/_original/cachet-partners-openapi.yml",
+   "openapi/_original/cachet-verify-openapi.yml"
+  ]
+ },
+ {
+  "slug": "candid-health",
+  "specs": [
+   "openapi/_original/candid-health-openapi.yml"
+  ]
+ },
+ {
+  "slug": "canopy",
+  "specs": [
+   "openapi/_original/canopy-documentation.json",
+   "openapi/_original/canopy-openapi.json"
+  ]
+ },
+ {
+  "slug": "capchase",
+  "specs": [
+   "openapi/_original/capchase-pay-openapi.yml"
+  ]
+ },
+ {
+  "slug": "centene",
+  "specs": [
+   "openapi/_original/centene-ccm-communication-openapi.json",
+   "openapi/_original/centene-ccm-sms-userresponse-openapi.json",
+   "openapi/_original/centene-edi-core-realtime-openapi.json",
+   "openapi/_original/centene-fhir-patient-access-openapi.json",
+   "openapi/_original/centene-fhir-provider-directory-openapi.json",
+   "openapi/_original/centene-healow-health-openapi.yaml",
+   "openapi/_original/centene-pces-extract-openapi.yaml",
+   "openapi/_original/centene-pces-openapi.yaml",
+   "openapi/_original/centene-product-mapping-v2-openapi.yaml",
+   "openapi/_original/centene-provider-rtr-demographics-openapi.json",
+   "openapi/_original/centene-provider-rtr-fhir-pdex-openapi.json",
+   "openapi/_original/centene-provider-search-suggest-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "clearspeed",
+  "specs": [
+   "openapi/_original/clearspeed-integration-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "cms-gov",
+  "specs": [
+   "openapi/_original/cms-1-export-api-openapi.yml",
+   "openapi/_original/cms-2-status-api-openapi.yml",
+   "openapi/_original/cms-3-download-api-openapi.yml",
+   "openapi/_original/cms-4-capabilities-api-openapi.yml",
+   "openapi/_original/cms-admin-api-api-openapi.yml",
+   "openapi/_original/cms-api-reference-api-openapi.yml",
+   "openapi/_original/cms-attribution-api-openapi.yml",
+   "openapi/_original/cms-auth-api-openapi.yml",
+   "openapi/_original/cms-bulk-data-api-openapi.yml",
+   "openapi/_original/cms-capabilities-api-openapi.yml",
+   "openapi/_original/cms-capability-api-openapi.yml",
+   "openapi/_original/cms-code-search-api-openapi.yml",
+   "openapi/_original/cms-cost-search-api-openapi.yml",
+   "openapi/_original/cms-coverage-api-openapi.yml",
+   "openapi/_original/cms-data-api-openapi.yml",
+   "openapi/_original/cms-download-api-openapi.yml",
+   "openapi/_original/cms-enrollments-api-openapi.yml",
+   "openapi/_original/cms-explanationofbenefit-api-openapi.yml",
+   "openapi/_original/cms-export-api-openapi.yml",
+   "openapi/_original/cms-geography-api-openapi.yml",
+   "openapi/_original/cms-gov-ab2d-openapi.yml",
+   "openapi/_original/cms-gov-bcda-openapi.yml",
+   "openapi/_original/cms-gov-bfd-openapi.yml",
+   "openapi/_original/cms-gov-blue-button-2-openapi.yml",
+   "openapi/_original/cms-gov-dpc-openapi.yml",
+   "openapi/_original/cms-gov-marketplace-openapi.yml",
+   "openapi/_original/cms-gov-mcd-openapi.yml",
+   "openapi/_original/cms-gov-open-data-openapi.yml",
+   "openapi/_original/cms-gov-provider-data-openapi.yml",
+   "openapi/_original/cms-gov-qpp-openapi.yml",
+   "openapi/_original/cms-group-api-openapi.yml",
+   "openapi/_original/cms-health-api-api-openapi.yml",
+   "openapi/_original/cms-households-eligibility-api-openapi.yml",
+   "openapi/_original/cms-insurance-issuers-api-openapi.yml",
+   "openapi/_original/cms-insurance-plans-api-openapi.yml",
+   "openapi/_original/cms-job-api-openapi.yml",
+   "openapi/_original/cms-maintenance-mode-api-api-openapi.yml",
+   "openapi/_original/cms-metadata-api-openapi.yml",
+   "openapi/_original/cms-patient-api-openapi.yml",
+   "openapi/_original/cms-plans-api-openapi.yml",
+   "openapi/_original/cms-provider-drug-coverage-api-openapi.yml",
+   "openapi/_original/cms-status-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "coalition-inc",
+  "specs": [
+   "openapi/_original/coalition-ess-openapi.yml"
+  ]
+ },
+ {
+  "slug": "convelio",
+  "specs": [
+   "openapi/_original/convelio-shipping-openapi.yml"
+  ]
+ },
+ {
+  "slug": "corebridge-financial",
+  "specs": [
+   "openapi/_original/corebridgefinancial.yml"
+  ]
+ },
+ {
+  "slug": "coterie",
+  "specs": [
+   "openapi/_original/coterie-openapi.yml"
+  ]
+ },
+ {
+  "slug": "cover-genius",
+  "specs": [
+   "openapi/_original/cover-genius-openapi.yml"
+  ]
+ },
+ {
+  "slug": "develop-health",
+  "specs": [
+   "openapi/_original/develop-health-openapi.yml"
+  ]
+ },
+ {
+  "slug": "duck-creek",
+  "specs": [
+   "openapi/_original/duck-creek-policy-openapi.yml"
+  ]
+ },
+ {
+  "slug": "eagleview",
+  "specs": [
+   "openapi/_original/measurement-orders-v1-openapi.json"
+  ]
+ },
+ {
+  "slug": "easypost",
+  "specs": [
+   "openapi/_original/easypost-openapi.yml"
+  ]
+ },
+ {
+  "slug": "evari",
+  "specs": [
+   "openapi/_original/evari-quotes-api-swagger.json"
+  ]
+ },
+ {
+  "slug": "extend",
+  "specs": [
+   "openapi/_original/extend-claims-management-api-readme-slices.json",
+   "openapi/_original/extend-contracts-api-readme-slices.json",
+   "openapi/_original/extend-entitlements-api-readme-slices.json",
+   "openapi/_original/extend-leads-api-readme-slices.json",
+   "openapi/_original/extend-offers-api-readme-slices.json",
+   "openapi/_original/extend-orders-api-readme-slices.json",
+   "openapi/_original/extend-products-api-readme-slices.json",
+   "openapi/_original/extend-refunds-api-readme-slices.json",
+   "openapi/_original/extend-service-orders-api-readme-slices.json",
+   "openapi/_original/extend-shipping-offers-openapi.yml",
+   "openapi/_original/extend-shipping-offers-readme-slices.json"
+  ]
+ },
+ {
+  "slug": "fdx",
+  "specs": [
+   "openapi/_original/fdx-corex-6.0.0.yaml",
+   "openapi/_original/fdx-corex-6.2.0.yaml",
+   "openapi/_original/fdx-corex-6.3.1.yaml"
+  ]
+ },
+ {
+  "slug": "feathery",
+  "specs": [
+   "openapi/_original/feathery-rest-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "federal-deposit-insurance-corporation",
+  "specs": [
+   "openapi/_original/bankfind.yml"
+  ]
+ },
+ {
+  "slug": "fincura",
+  "specs": [
+   "openapi/_original/fincura-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "findigs",
+  "specs": [
+   "openapi/_original/findigs-client-api-openapi.json",
+   "openapi/_original/findigs-client-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "fintary",
+  "specs": [
+   "openapi/_original/fintary-ams-api-openapi.json",
+   "openapi/_original/fintary-ams-api-openapi.yml",
+   "openapi/_original/fintary-open-api-openapi.json",
+   "openapi/_original/fintary-open-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "first-street",
+  "specs": [
+   "openapi/_original/first-street-openapi.yml"
+  ]
+ },
+ {
+  "slug": "flume-health",
+  "specs": [
+   "openapi/_original/flume-health-openapi.json"
+  ]
+ },
+ {
+  "slug": "goodlord",
+  "specs": [
+   "openapi/_original/goodlord-insurance-app-api-openapi.json",
+   "openapi/_original/goodlord-referencing-api-openapi.json",
+   "openapi/_original/goodlord-referencing-api-sandbox-openapi.json"
+  ]
+ },
+ {
+  "slug": "groupe-bpce",
+  "specs": [
+   "openapi/_original/accounts-oas3-public-v1.4.2.20-b_2.json",
+   "openapi/_original/accounts-oas3-public-v1.6.2.0-a_2.json",
+   "openapi/_original/accounts-oas3-public-v1.6.2.0-a_4.json",
+   "openapi/_original/accounts-oas3-public-v1.6.2.0-b.json",
+   "openapi/_original/funds-availability-oas3-public-v1.4.2.20-b.json",
+   "openapi/_original/funds-availability-oas3-public-v1.6.2.0-b.json",
+   "openapi/_original/groupe-bpce-natixis-psd2-accounts-openapi.yml",
+   "openapi/_original/groupe-bpce-natixis-wealth-management-psd2-accounts-openapi.yml",
+   "openapi/_original/groupe-bpce-open-finance-transfer-openapi.yml",
+   "openapi/_original/groupe-bpce-psd2-accounts-openapi.yml",
+   "openapi/_original/groupe-bpce-psd2-funds-availability-openapi.yml",
+   "openapi/_original/groupe-bpce-psd2-payments-openapi.yml",
+   "openapi/_original/groupe-bpce-psd2-registration-openapi.yml",
+   "openapi/_original/moneytransfer-oas3-public-v1.1.1.json",
+   "openapi/_original/payments-oas3-public-v1.4.2.20-b_0.json",
+   "openapi/_original/payments-oas3-public-v1.6.2.0-b_0.json",
+   "openapi/_original/registration-oas3-public-v1.0.6-b.json"
+  ]
+ },
+ {
+  "slug": "guidewire",
+  "specs": [
+   "openapi/_original/guidewire-claimcenter-openapi.yml",
+   "openapi/_original/guidewire-policycenter-openapi.yml"
+  ]
+ },
+ {
+  "slug": "healthsherpa",
+  "specs": [
+   "openapi/_original/healthsherpa-openapi.json"
+  ]
+ },
+ {
+  "slug": "herald",
+  "specs": [
+   "openapi/_original/herald-openapi.yml"
+  ]
+ },
+ {
+  "slug": "heron",
+  "specs": [
+   "openapi/_original/heron-openapi.json"
+  ]
+ },
+ {
+  "slug": "hihealth",
+  "specs": [
+   "openapi/_original/hihealth-pliant-customer-api-readme-slices.json",
+   "openapi/_original/hihealth-pliant-partner-api-readme-slices.json"
+  ]
+ },
+ {
+  "slug": "hiveagentiq-com",
+  "specs": [
+   "openapi/_original/hiveagentiq-com-hivebank-openapi.json",
+   "openapi/_original/hiveagentiq-com-hivegate-openapi.json",
+   "openapi/_original/hiveagentiq-com-hivelaw-openapi.json",
+   "openapi/_original/hiveagentiq-com-hivetrust-openapi.json"
+  ]
+ },
+ {
+  "slug": "hover",
+  "specs": [
+   "openapi/_original/hover-api-v3-openapi.yml",
+   "openapi/_original/hover-api-v3-readme-slices.json",
+   "openapi/_original/hover-ehi-readme-slices.json",
+   "openapi/_original/hover-rest-api-readme-slices.json"
+  ]
+ },
+ {
+  "slug": "human-api",
+  "specs": [
+   "openapi/_original/human-api-admin-consumer-link-openapi.json",
+   "openapi/_original/human-api-admin-order-types-openapi.json",
+   "openapi/_original/human-api-admin-report-by-id-openapi.json",
+   "openapi/_original/human-api-admin-subscription-create-openapi.json",
+   "openapi/_original/human-api-admin-subscription-delete-openapi.json",
+   "openapi/_original/human-api-admin-subscription-details-openapi.json",
+   "openapi/_original/human-api-admin-subscriptions-list-openapi.json",
+   "openapi/_original/human-api-admin-user-actions-openapi.json",
+   "openapi/_original/human-api-admin-user-create-openapi.json",
+   "openapi/_original/human-api-admin-user-details-openapi.json",
+   "openapi/_original/human-api-admin-user-providers-openapi.json",
+   "openapi/_original/human-api-admin-user-reports-openapi.json",
+   "openapi/_original/human-api-admin-users-list-openapi.json",
+   "openapi/_original/human-api-auth-admin-token-openapi.json",
+   "openapi/_original/human-api-auth-connect-token-openapi.json"
+  ]
+ },
+ {
+  "slug": "humanapi",
+  "specs": [
+   "openapi/_original/humanapi-admin-openapi.yml",
+   "openapi/_original/humanapi-auth-openapi.yml"
+  ]
+ },
+ {
+  "slug": "instabase",
+  "specs": [
+   "openapi/_original/instabase-aihub-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "ivans",
+  "specs": [
+   "openapi/_original/ivans-authorization-openapi.json",
+   "openapi/_original/ivans-distribution-platform-openapi.json",
+   "openapi/_original/ivans-exchange-v1-openapi.json",
+   "openapi/_original/ivans-exchange-v2-openapi.json",
+   "openapi/_original/ivans-exchange-v3-openapi.json",
+   "openapi/_original/ivans-identification-network-openapi.json",
+   "openapi/_original/ivans-insights-openapi.json",
+   "openapi/_original/ivans-passport-openapi.json",
+   "openapi/_original/ivans-translation-openapi.json"
+  ]
+ },
+ {
+  "slug": "kita",
+  "specs": [
+   "openapi/_original/kita-capture-openapi.yml",
+   "openapi/_original/kita-underwriter-openapi.yml"
+  ]
+ },
+ {
+  "slug": "kota",
+  "specs": [
+   "openapi/_original/kota-api-reference-openapi.json",
+   "openapi/_original/kota-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "laka",
+  "specs": [
+   "openapi/_original/laka-platform-openapi.json",
+   "openapi/_original/laka-quote-openapi.json"
+  ]
+ },
+ {
+  "slug": "ledger-investing",
+  "specs": [
+   "openapi/_original/ledger-investing-analytics-openapi.yml"
+  ]
+ },
+ {
+  "slug": "lendapi",
+  "specs": [
+   "openapi/_original/lendapi-openapi.json"
+  ]
+ },
+ {
+  "slug": "leo",
+  "specs": [
+   "openapi/_original/leo-openapi.json"
+  ]
+ },
+ {
+  "slug": "levitate",
+  "specs": [
+   "openapi/_original/levitate-public-v1-openapi.json"
+  ]
+ },
+ {
+  "slug": "liberty-mutual-insurance",
+  "specs": [
+   "openapi/_original/liberty-mutual-insurance-renters-insurance-api-openapi.yml",
+   "openapi/_original/liberty-mutual-insurance-solaria-labs-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "lincoln-national",
+  "specs": [
+   "openapi/_original/lincoln-national-openapi.yml"
+  ]
+ },
+ {
+  "slug": "luthersystems-com",
+  "specs": [
+   "openapi/_original/luthersystems-com-agentsearch-openapi.json",
+   "openapi/_original/luthersystems-com-agentsearch-openapi.yml"
+  ]
+ },
+ {
+  "slug": "lynx",
+  "specs": [
+   "openapi/_original/lynx-account-api-readme-slices.json",
+   "openapi/_original/lynx-card-management-api-readme-slices.json",
+   "openapi/_original/lynx-claims-service-api-readme-slices.json",
+   "openapi/_original/lynx-client-org-management-api-readme-slices.json",
+   "openapi/_original/lynx-commerce-order-api-readme-slices.json",
+   "openapi/_original/lynx-commodity-api-readme-slices.json",
+   "openapi/_original/lynx-copay-management-service-api-readme-slices.json",
+   "openapi/_original/lynx-enrollment-api-readme-slices.json",
+   "openapi/_original/lynx-external-account-api-readme-slices.json",
+   "openapi/_original/lynx-external-notification-api-readme-slices.json",
+   "openapi/_original/lynx-investments-api-readme-slices.json",
+   "openapi/_original/lynx-member-management-api-readme-slices.json",
+   "openapi/_original/lynx-payment-api-readme-slices.json",
+   "openapi/_original/lynx-related-person-api-readme-slices.json",
+   "openapi/_original/lynx-substantiation-service-api-readme-slices.json",
+   "openapi/_original/lynx-tags-api-readme-slices.json",
+   "openapi/_original/lynx-transaction-api-readme-slices.json",
+   "openapi/_original/lynx-upload-api-readme-slices.json"
+  ]
+ },
+ {
+  "slug": "majesco",
+  "specs": [
+   "openapi/_original/majesco-policy-openapi.yml"
+  ]
+ },
+ {
+  "slug": "medigo",
+  "specs": [
+   "openapi/_original/medigo-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "mireye",
+  "specs": [
+   "openapi/_original/mireye-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "moodys",
+  "specs": [
+   "openapi/_original/moodys-autocycle-api-swagger.json",
+   "openapi/_original/moodys-data-buffet-api-openapi.yml",
+   "openapi/_original/moodys-data-buffet-api-swagger.json",
+   "openapi/_original/moodys-municipal-api-swagger.json",
+   "openapi/_original/moodys-scenario-studio-api-swagger.json"
+  ]
+ },
+ {
+  "slug": "moodys-rms",
+  "specs": [
+   "openapi/_original/moodys-rms-data-bridge-openapi.json",
+   "openapi/_original/moodys-rms-location-intelligence-openapi.yaml",
+   "openapi/_original/moodys-rms-risk-modeler-openapi.yml"
+  ]
+ },
+ {
+  "slug": "moxe-health",
+  "specs": [
+   "openapi/_original/moxe-health-chart-retrieval-initiate-openapi.json",
+   "openapi/_original/moxe-health-chart-retrieval-status-openapi.json",
+   "openapi/_original/moxe-health-claim-management-initiate-openapi.json",
+   "openapi/_original/moxe-health-claim-management-status-openapi.json"
+  ]
+ },
+ {
+  "slug": "nayya",
+  "specs": [
+   "openapi/_original/nayya-accounts-openapi.json",
+   "openapi/_original/nayya-benefits-openapi.json",
+   "openapi/_original/nayya-choose-openapi.json"
+  ]
+ },
+ {
+  "slug": "near-space-labs",
+  "specs": [
+   "openapi/_original/near-space-labs-oauth-service.json",
+   "openapi/_original/near-space-labs-oauth-service_2.json",
+   "openapi/_original/near-space-labs-tile-service.json",
+   "openapi/_original/near-space-labs-tile-service_2.json"
+  ]
+ },
+ {
+  "slug": "nexhealth",
+  "specs": [
+   "openapi/_original/nexhealth-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "nexus-mutual",
+  "specs": [
+   "openapi/_original/openapi.json"
+  ]
+ },
+ {
+  "slug": "nirvana",
+  "specs": [
+   "openapi/_original/nirvana-openapi.yml"
+  ]
+ },
+ {
+  "slug": "noyo",
+  "specs": [
+   "openapi/_original/noyo-carrier-openapi.json",
+   "openapi/_original/noyo-fulfillment-openapi.json",
+   "openapi/_original/noyo-tracking-openapi.json"
+  ]
+ },
+ {
+  "slug": "ntropy",
+  "specs": [
+   "openapi/_original/ntropy-api-v3-openapi-original.json",
+   "openapi/_original/ntropy-transaction-api-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "ocrolus",
+  "specs": [
+   "openapi/_original/ocrolus-account-level-webhooks-openapi.json",
+   "openapi/_original/ocrolus-analyze-openapi.json",
+   "openapi/_original/ocrolus-authentication-openapi.json",
+   "openapi/_original/ocrolus-book-commands-openapi.json",
+   "openapi/_original/ocrolus-book-queries-openapi.json",
+   "openapi/_original/ocrolus-business-history-openapi.json",
+   "openapi/_original/ocrolus-capture-openapi.json",
+   "openapi/_original/ocrolus-detect-openapi.json",
+   "openapi/_original/ocrolus-encore-openapi.json",
+   "openapi/_original/ocrolus-file-uploads-openapi.json",
+   "openapi/_original/ocrolus-income-openapi.json",
+   "openapi/_original/ocrolus-org-level-webhooks-openapi.json",
+   "openapi/_original/ocrolus-tag-management-openapi.json",
+   "openapi/_original/ocrolus-user-management-openapi.json"
+  ]
+ },
+ {
+  "slug": "one-concern",
+  "specs": [
+   "openapi/_original/one-concern-domino-ai-openapi.json"
+  ]
+ },
+ {
+  "slug": "onsi",
+  "specs": [
+   "openapi/_original/onsi-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "open-insurance",
+  "specs": [
+   "openapi/_original/open-insurance-certificate-of-currency-openapi.json"
+  ]
+ },
+ {
+  "slug": "oper",
+  "specs": [
+   "openapi/_original/oper-api.json",
+   "openapi/_original/oper-loan-request-webhook.json",
+   "openapi/_original/oper-metrics.json",
+   "openapi/_original/oper-resources.json"
+  ]
+ },
+ {
+  "slug": "oper-credits",
+  "specs": [
+   "openapi/_original/oper-credits-api-openapi.json",
+   "openapi/_original/oper-credits-loan-request-webhook-openapi.json",
+   "openapi/_original/oper-credits-metrics-openapi.json",
+   "openapi/_original/oper-credits-resources-openapi.json"
+  ]
+ },
+ {
+  "slug": "optum",
+  "specs": [
+   "openapi/_original/optum-abm-care-decision-support-api-openapi.yml",
+   "openapi/_original/optum-abm-care-decision-support-api.json",
+   "openapi/_original/optum-abm-pre-pay-lab-api-1-0-0-openapi.yml",
+   "openapi/_original/optum-abm-pre-pay-lab-api-1-0-0.json",
+   "openapi/_original/optum-abm-prepay-dme-claim-api-1-0-0-openapi.yml",
+   "openapi/_original/optum-abm-prepay-dme-claim-api-1-0-0.json",
+   "openapi/_original/optum-abm-priorauth-api-1-0-0-openapi.yml",
+   "openapi/_original/optum-abm-priorauth-api-1-0-0.json",
+   "openapi/_original/optum-attachment-openapi.yml",
+   "openapi/_original/optum-attachment.json",
+   "openapi/_original/optum-auth-referral-submission-api.json",
+   "openapi/_original/optum-auth-referral-submission-health-check-openapi.yml",
+   "openapi/_original/optum-auth-referral-submission-health-check.json",
+   "openapi/_original/optum-authorization-auth-only-openapi.yml",
+   "openapi/_original/optum-authorization-auth-only.json",
+   "openapi/_original/optum-benefit-check-api.json",
+   "openapi/_original/optum-claim-actions-api.json",
+   "openapi/_original/optum-claim-actions-health-check-openapi.yml",
+   "openapi/_original/optum-claim-actions-health-check.json",
+   "openapi/_original/optum-claim-inquiry-api.json",
+   "openapi/_original/optum-claim-inquiry-health-check-openapi.yml",
+   "openapi/_original/optum-claim-inquiry-health-check.json",
+   "openapi/_original/optum-claim-pre-check-api-openapi.yml",
+   "openapi/_original/optum-claim-pre-check-api.json",
+   "openapi/_original/optum-cms-common-facility-openapi.yml",
+   "openapi/_original/optum-cms-common-facility.json",
+   "openapi/_original/optum-cms-common-physician-openapi.yml",
+   "openapi/_original/optum-cms-common-physician.json",
+   "openapi/_original/optum-core-service-openapi.yml",
+   "openapi/_original/optum-core-service.json",
+   "openapi/_original/optum-cross-community-rest-apis-xc-rest-openapi.yml",
+   "openapi/_original/optum-cross-community-rest-apis-xc-rest.json",
+   "openapi/_original/optum-dental-attachment-api-openapi.yml",
+   "openapi/_original/optum-dental-attachment-api.json",
+   "openapi/_original/optum-dental-pre-care-estimate-api-openapi.yml",
+   "openapi/_original/optum-dental-pre-care-estimate-api.json",
+   "openapi/_original/optum-document-search-api.json",
+   "openapi/_original/optum-document-search-health-check-openapi.yml",
+   "openapi/_original/optum-document-search-health-check.json",
+   "openapi/_original/optum-edi-enrollment-v1-openapi.yml",
+   "openapi/_original/optum-edi-enrollment-v1.json",
+   "openapi/_original/optum-eligibility-pre-service-health-check-openapi.yml",
+   "openapi/_original/optum-eligibility-pre-service-health-check.json",
+   "openapi/_original/optum-enhanced-eligibility-api-openapi.yml",
+   "openapi/_original/optum-enhanced-eligibility-api.json",
+   "openapi/_original/optum-file-and-document-tracking-api-v1-openapi.yml",
+   "openapi/_original/optum-file-and-document-tracking-api-v1.json",
+   "openapi/_original/optum-formatting-rule-api-openapi.yml",
+   "openapi/_original/optum-formatting-rule-api.json",
+   "openapi/_original/optum-medical-network-attachment-retrieval-v1-openapi.yml",
+   "openapi/_original/optum-medical-network-attachment-retrieval-v1.json",
+   "openapi/_original/optum-medical-network-attachment-status-v1-openapi.yml",
+   "openapi/_original/optum-medical-network-attachment-status-v1.json",
+   "openapi/_original/optum-medical-network-attachments-submission-v1-openapi.yml",
+   "openapi/_original/optum-medical-network-attachments-submission-v1.json",
+   "openapi/_original/optum-medical-network-claim-status-v2-openapi.yml",
+   "openapi/_original/optum-medical-network-claim-status-v2.json",
+   "openapi/_original/optum-medical-network-claims-responses-and-reports-v2-openapi.yml",
+   "openapi/_original/optum-medical-network-claims-responses-and-reports-v2.json",
+   "openapi/_original/optum-medical-network-eligibility-v3-openapi.yml",
+   "openapi/_original/optum-medical-network-eligibility-v3.json",
+   "openapi/_original/optum-medical-network-institutional-claims-v1-openapi.yml",
+   "openapi/_original/optum-medical-network-institutional-claims-v1.json",
+   "openapi/_original/optum-medical-network-professional-claims-v3-openapi.yml",
+   "openapi/_original/optum-medical-network-professional-claims-v3.json",
+   "openapi/_original/optum-ncc-data-acquisition-api-openapi.yml",
+   "openapi/_original/optum-ncc-data-acquisition-api.json",
+   "openapi/_original/optum-odx-v3-xdr-ingestion-service-api-openapi.yml",
+   "openapi/_original/optum-odx-v3-xdr-ingestion-service-api.json",
+   "openapi/_original/optum-optum-common-facility-openapi.yml",
+   "openapi/_original/optum-optum-common-facility.json",
+   "openapi/_original/optum-optum-common-physician-openapi.yml",
+   "openapi/_original/optum-optum-common-physician.json",
+   "openapi/_original/optum-optum-real-health-check-api-openapi.yml",
+   "openapi/_original/optum-optum-real-health-check-api.json",
+   "openapi/_original/optum-optum-real-pre-service-eligibility-api-openapi.yml",
+   "openapi/_original/optum-optum-real-pre-service-eligibility-api.json",
+   "openapi/_original/optum-optum-real-time-econtent-web-services-openapi.yml",
+   "openapi/_original/optum-optum-real-time-econtent-web-services.json",
+   "openapi/_original/optum-patient-benefit-check-health-check-openapi.yml",
+   "openapi/_original/optum-patient-benefit-check-health-check.json",
+   "openapi/_original/optum-payer-list-api-v1-openapi.yml",
+   "openapi/_original/optum-payer-list-api-v1.json",
+   "openapi/_original/optum-pes-payer-enrollments-v1-openapi.yml",
+   "openapi/_original/optum-pes-payer-enrollments-v1.json",
+   "openapi/_original/optum-prior-authorization-v1-openapi.yml",
+   "openapi/_original/optum-prior-authorization-v1.json",
+   "openapi/_original/optum-prometheus-analytics-api-job-submission-openapi.yml",
+   "openapi/_original/optum-prometheus-analytics-api-job-submission.json",
+   "openapi/_original/optum-prometheus-analytics-checkjob-openapi.yml",
+   "openapi/_original/optum-prometheus-analytics-checkjob.json",
+   "openapi/_original/optum-real-dental-attachments-api-openapi.yml",
+   "openapi/_original/optum-real-dental-attachments-api.json",
+   "openapi/_original/optum-real-dental-claim-status-api-openapi.yml",
+   "openapi/_original/optum-real-dental-claim-status-api.json",
+   "openapi/_original/optum-real-dental-claim-submission-api-openapi.yml",
+   "openapi/_original/optum-real-dental-claim-submission-api.json",
+   "openapi/_original/optum-real-dental-pre-care-eligibility-api-openapi.yml",
+   "openapi/_original/optum-real-dental-pre-care-eligibility-api.json",
+   "openapi/_original/optum-real-dental-pre-care-eligibility-intelligence-api-openapi.yml",
+   "openapi/_original/optum-real-dental-pre-care-eligibility-intelligence-api.json",
+   "openapi/_original/optum-real-prior-authorization-api-openapi.yml",
+   "openapi/_original/optum-real-prior-authorization-api.json",
+   "openapi/_original/optum-real-provider-access-api-openapi.yml",
+   "openapi/_original/optum-real-provider-access-api.json",
+   "openapi/_original/optum-security-and-authorization-v2-openapi.yml",
+   "openapi/_original/optum-security-and-authorization-v2.json",
+   "openapi/_original/optum-security-and-authorization-v3-openapi.yml",
+   "openapi/_original/optum-security-and-authorization-v3.json",
+   "openapi/_original/optum-submitter-api-openapi.yml",
+   "openapi/_original/optum-submitter-api.json",
+   "openapi/_original/optum-telecom-formatter-api-openapi.yml",
+   "openapi/_original/optum-telecom-formatter-api.json"
+  ]
+ },
+ {
+  "slug": "orbii",
+  "specs": [
+   "openapi/_original/orbii-ksa-openapi-original.json",
+   "openapi/_original/orbii-omn-openapi-original.json",
+   "openapi/_original/orbii-uae-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "orbii-tech-ltd",
+  "specs": [
+   "openapi/_original/orbii-tech-ltd-foodics-openapi.json",
+   "openapi/_original/orbii-tech-ltd-ksa-openapi.json",
+   "openapi/_original/orbii-tech-ltd-main-openapi.json",
+   "openapi/_original/orbii-tech-ltd-omn-openapi.json",
+   "openapi/_original/orbii-tech-ltd-rewaa-openapi.json"
+  ]
+ },
+ {
+  "slug": "origami-risk",
+  "specs": [
+   "openapi/_original/origami-risk-authentication-openapi.json",
+   "openapi/_original/origami-risk-public-api-openapi.json",
+   "openapi/_original/origami-risk-rating-api-openapi.json",
+   "openapi/_original/origami-risk-standard-rating-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "outdoorsy",
+  "specs": [
+   "openapi/_original/outdoorsy-openapi-original.json",
+   "openapi/_original/outdoorsy-search-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "pie-insurance",
+  "specs": [
+   "openapi/_original/pie-insurance-partner-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "plansource",
+  "specs": [
+   "openapi/_original/plansource-admin-api-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "ppl-london-market",
+  "specs": [
+   "openapi/_original/ppl-london-market-documents.json",
+   "openapi/_original/ppl-london-market-events.json",
+   "openapi/_original/ppl-london-market-organisations.json",
+   "openapi/_original/ppl-london-market-placements.json",
+   "openapi/_original/ppl-london-market-submissions.json"
+  ]
+ },
+ {
+  "slug": "progressive",
+  "specs": [
+   "openapi/_original/progressive-auto-quote-api-openapi.yml",
+   "openapi/_original/progressive-certificate-of-insurance-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "prudential-financial",
+  "specs": [
+   "openapi/_original/prudential-financial-developer-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "qbe",
+  "specs": [
+   "openapi/_original/qbe-anzo-digital-brokers-openapi.yml",
+   "openapi/_original/qbe-ctp-switch-service-openapi.yml"
+  ]
+ },
+ {
+  "slug": "qoala",
+  "specs": [
+   "openapi/_original/qoala-bus-insurance-openapi.yml",
+   "openapi/_original/qoala-claim-api-alt-openapi.yml",
+   "openapi/_original/qoala-claim-api-openapi.yml",
+   "openapi/_original/qoala-credit-insurance-openapi.yml",
+   "openapi/_original/qoala-credit-life-insurance-openapi.yml",
+   "openapi/_original/qoala-experience-event-insurance-openapi.yml",
+   "openapi/_original/qoala-flight-insurance-openapi.yml",
+   "openapi/_original/qoala-gadget-insurance-openapi.yml",
+   "openapi/_original/qoala-goods-insurance-openapi.yml",
+   "openapi/_original/qoala-hotel-insurance-openapi.yml",
+   "openapi/_original/qoala-logistic-insurance-openapi.yml",
+   "openapi/_original/qoala-micro-health-insurance-openapi.yml",
+   "openapi/_original/qoala-train-insurance-openapi.yml",
+   "openapi/_original/qoala-vehicle-insurance-openapi.yml"
+  ]
+ },
+ {
+  "slug": "quantemplate",
+  "specs": [
+   "openapi/_original/quantemplate-fabric-openapi.yml"
+  ]
+ },
+ {
+  "slug": "re",
+  "specs": [
+   "openapi/_original/re-openapi.yml"
+  ]
+ },
+ {
+  "slug": "rhino",
+  "specs": [
+   "openapi/_original/rhino-partner-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "ribbon-health",
+  "specs": [
+   "openapi/_original/ribbon-health-h1-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "ripe-insurance",
+  "specs": [
+   "openapi/_original/ripe-insurance-cycleplan-content-delivery-openapi.json",
+   "openapi/_original/ripe-insurance-umbraco-content-delivery-openapi.json"
+  ]
+ },
+ {
+  "slug": "rollee",
+  "specs": [
+   "openapi/_original/rollee-company-api-readme-slices.json",
+   "openapi/_original/rollee-user-api-readme-slices.json"
+  ]
+ },
+ {
+  "slug": "root",
+  "specs": [
+   "openapi/_original/root-platform-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "santevet",
+  "specs": [
+   "openapi/_original/santevet-reimbursement-openapi-original.json",
+   "openapi/_original/santevet-reimbursement-openapi.yml",
+   "openapi/_original/santevet-toolkit-openapi-original.json",
+   "openapi/_original/santevet-toolkit-openapi.yml"
+  ]
+ },
+ {
+  "slug": "semsee",
+  "specs": [
+   "openapi/_original/semsee-openapi.yml"
+  ]
+ },
+ {
+  "slug": "silna",
+  "specs": [
+   "openapi/_original/silna-openapi.json"
+  ]
+ },
+ {
+  "slug": "slope-software",
+  "specs": [
+   "openapi/_original/slope-software-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "socotra",
+  "specs": [
+   "openapi/_original/socotra-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "solera",
+  "specs": [
+   "openapi/_original/solera-claim-images-openapi.json",
+   "openapi/_original/solera-claim-images-prod-swagger.json",
+   "openapi/_original/solera-dashboard-assignment-openapi.json",
+   "openapi/_original/solera-eapi-getdocument-openapi.json",
+   "openapi/_original/solera-enterprise-assignment-prod-swagger.json",
+   "openapi/_original/solera-getdocuments-v1-openapi.json",
+   "openapi/_original/solera-getdocuments-v2-openapi.json",
+   "openapi/_original/solera-getimage-v1-openapi.json",
+   "openapi/_original/solera-getimage-v2-openapi.json",
+   "openapi/_original/solera-gic-integration-openapi.json"
+  ]
+ },
+ {
+  "slug": "state-farm",
+  "specs": [
+   "openapi/_original/state-farm-renters-insurance-openapi.yml"
+  ]
+ },
+ {
+  "slug": "state-farm-insurance-cos",
+  "specs": [
+   "openapi/_original/state-farm-insurance-cos-renters-openapi.yml"
+  ]
+ },
+ {
+  "slug": "steadily",
+  "specs": [
+   "openapi/_original/steadily-estimate-api-openapi-original.json",
+   "openapi/_original/steadily-partner-openapi-original.json",
+   "openapi/_original/steadily-rater-quotes-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "stedi",
+  "specs": [
+   "openapi/_original/stedi-claims-openapi.yml",
+   "openapi/_original/stedi-core-openapi.yml",
+   "openapi/_original/stedi-enrollment-openapi.yml",
+   "openapi/_original/stedi-event-destinations-openapi.yml",
+   "openapi/_original/stedi-healthcare-openapi.yml",
+   "openapi/_original/stedi-manager-openapi.yml",
+   "openapi/_original/stedi-payers-openapi.yml"
+  ]
+ },
+ {
+  "slug": "sun-life",
+  "specs": [
+   "openapi/_original/sun-life-dentaquest-fhir-metadata-openapi.json",
+   "openapi/_original/sun-life-dentaquest-fhir-patient-access-openapi.json",
+   "openapi/_original/sun-life-dentaquest-fhir-provider-directory-openapi.json"
+  ]
+ },
+ {
+  "slug": "super-seguros",
+  "specs": [
+   "openapi/_original/super-seguros-openapi.json"
+  ]
+ },
+ {
+  "slug": "superdial",
+  "specs": [
+   "openapi/_original/superdial-openapi.json"
+  ]
+ },
+ {
+  "slug": "thatch",
+  "specs": [
+   "openapi/_original/thatch-partners-openapi.yml"
+  ]
+ },
+ {
+  "slug": "thatch-health",
+  "specs": [
+   "openapi/_original/thatch-health-partners-openapi.yml",
+   "openapi/_original/thatch-health-platforms-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "tiaa",
+  "specs": [
+   "openapi/_original/tiaa-fdx-openapi.yml",
+   "openapi/_original/tiaa-sia-openapi.yml"
+  ]
+ },
+ {
+  "slug": "tint",
+  "specs": [
+   "openapi/_original/tint-openapi.yml"
+  ]
+ },
+ {
+  "slug": "travelers",
+  "specs": [
+   "openapi/_original/travelers-openapi.yml"
+  ]
+ },
+ {
+  "slug": "truebiz",
+  "specs": [
+   "openapi/_original/truebiz-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "truepill",
+  "specs": [
+   "openapi/_original/truepill-fuzerx-swagger.json"
+  ]
+ },
+ {
+  "slug": "trustlayer",
+  "specs": [
+   "openapi/_original/trustlayer-platform-v1-openapi.yaml",
+   "openapi/_original/trustlayer-platform-v2-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "tuva-health",
+  "specs": [
+   "openapi/_original/tuva-health-empi-openapi-original.yml",
+   "openapi/_original/tuva-health-empi-openapi.yml"
+  ]
+ },
+ {
+  "slug": "unitedhealth",
+  "specs": [
+   "openapi/_original/unitedhealth-optum-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "unitedhealthcare",
+  "specs": [
+   "openapi/_original/unitedhealthcare-interoperability-api-openapi.yml",
+   "openapi/_original/unitedhealthcare-provider-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "unqork",
+  "specs": [
+   "openapi/_original/unqork-customer-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "unum",
+  "specs": [
+   "openapi/_original/unum-hr-connect-openapi.yml"
+  ]
+ },
+ {
+  "slug": "valgo",
+  "specs": [
+   "openapi/_original/valgo-humanbaselines-openapi.json"
+  ]
+ },
+ {
+  "slug": "verisk",
+  "specs": [
+   "openapi/_original/verisk-insurance-analytics-openapi.yml"
+  ]
+ },
+ {
+  "slug": "vynedental",
+  "specs": [
+   "openapi/_original/vynedental-onederful-swagger.json"
+  ]
+ },
+ {
+  "slug": "wefitter",
+  "specs": [
+   "openapi/_original/wefitter-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "whitespace-london",
+  "specs": [
+   "openapi/_original/whitespace-london-platform-openapi.yml"
+  ]
+ },
+ {
+  "slug": "yuzu-health",
+  "specs": [
+   "openapi/_original/yuzu-health-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "zego",
+  "specs": [
+   "openapi/_original/zego-partner-openapi.yml"
+  ]
+ },
+ {
+  "slug": "zinnia",
+  "specs": [
+   "openapi/_original/zinnia-case-management-openapi.json",
+   "openapi/_original/zinnia-case-management-openapi.yml",
+   "openapi/_original/zinnia-documents-openapi.json",
+   "openapi/_original/zinnia-documents-openapi.yml",
+   "openapi/_original/zinnia-illustration-client-cases-openapi.json",
+   "openapi/_original/zinnia-illustration-client-cases-openapi.yml",
+   "openapi/_original/zinnia-illustration-openapi.json",
+   "openapi/_original/zinnia-illustration-openapi.yml",
+   "openapi/_original/zinnia-market-connect-order-entry-openapi.json",
+   "openapi/_original/zinnia-market-connect-order-entry-openapi.yml",
+   "openapi/_original/zinnia-new-business-annuity-openapi.json",
+   "openapi/_original/zinnia-new-business-annuity-openapi.yml",
+   "openapi/_original/zinnia-new-business-openapi.json",
+   "openapi/_original/zinnia-new-business-openapi.yml",
+   "openapi/_original/zinnia-policy-service-openapi.json",
+   "openapi/_original/zinnia-policy-service-openapi.yml",
+   "openapi/_original/zinnia-policy-transactions-openapi.json",
+   "openapi/_original/zinnia-policy-transactions-openapi.yml",
+   "openapi/_original/zinnia-product-service-openapi.json",
+   "openapi/_original/zinnia-product-service-openapi.yml"
+  ]
+ },
+ {
+  "slug": "zocdoc",
+  "specs": [
+   "openapi/_original/zocdoc-zocdoc-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "zywave",
+  "specs": [
+   "openapi/_original/zywave-accounts-v2-openapi.json",
+   "openapi/_original/zywave-accounts-v3-openapi.json",
+   "openapi/_original/zywave-agencies-v2-openapi.json",
+   "openapi/_original/zywave-bkb-v2-openapi.json",
+   "openapi/_original/zywave-carriers-v2-openapi.json",
+   "openapi/_original/zywave-client-engagement-v3-openapi.json",
+   "openapi/_original/zywave-commercial-policy-benchmark-v2-openapi.json",
+   "openapi/_original/zywave-content-v2-openapi.json",
+   "openapi/_original/zywave-industries-v3-openapi.json",
+   "openapi/_original/zywave-lead-insights-v3-openapi.json",
+   "openapi/_original/zywave-licenses-v2-openapi.json",
+   "openapi/_original/zywave-organizations-v3-openapi.json",
+   "openapi/_original/zywave-plans-v2-openapi.json",
+   "openapi/_original/zywave-policies-v2-openapi.json",
+   "openapi/_original/zywave-profiles-v2-1-openapi.json"
+  ]
+ }
+]

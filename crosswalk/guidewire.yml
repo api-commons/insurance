@@ -1,0 +1,58 @@
+provider: guidewire
+apis_io: https://apis.io/providers/guidewire/
+context: insurance
+generated: '2026-11-10'
+concepts:
+  policy:
+    path_segment:
+    - policies
+    properties:
+      effective_date: effectiveDate
+      status: status
+      expiration_date: expirationDate
+      id: id
+      number: policyNumber
+      premium: totalPremium
+      policyholder_id: insured
+      updated_at: updatedDate
+      coverages: coverages
+      created_at: createdDate
+      product_id: product
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/guidewire-policycenter-openapi.yml#GET /policies
+    - openapi/_original/guidewire-policycenter-openapi.yml#GET /policies/{policyId}
+  quote:
+    path_segment:
+    - quote
+    properties:
+      premium:
+      - totalPremium
+      - annualPremium
+      status: status
+      expires_at: validUntil
+      coverages: coverages
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/guidewire-policycenter-openapi.yml#POST /submissions/{submissionId}/quote
+  claim:
+    path_segment:
+    - claims
+    - fnol
+    properties:
+      status: status
+      policy_id: policyNumber
+      id: id
+      loss_date: lossDate
+      description: lossDescription
+      number: claimNumber
+      type: lossType
+      created_at: createdDate
+      reported_at: reportedDate
+      policyholder_id: insured
+      total_incurred: totalIncurred
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/guidewire-claimcenter-openapi.yml#GET /claims
+    - openapi/_original/guidewire-claimcenter-openapi.yml#GET /claims/{claimId}
+    - openapi/_original/guidewire-claimcenter-openapi.yml#POST /fnol

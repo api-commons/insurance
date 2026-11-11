@@ -1,0 +1,21 @@
+provider: progressive
+apis_io: https://apis.io/providers/progressive/
+context: insurance
+generated: '2026-11-10'
+concepts:
+  policy:
+    path_segment:
+    - policies
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/progressive-certificate-of-insurance-api-openapi.yml#GET /policies
+  quote:
+    path_segment:
+    - quotes
+    properties:
+      coverages: coverageOptions
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/progressive-auto-quote-api-openapi.yml#GET /quotes
+    - openapi/_original/progressive-auto-quote-api-openapi.yml#POST /quotes

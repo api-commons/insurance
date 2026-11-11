@@ -1,0 +1,17 @@
+provider: medigo
+apis_io: https://apis.io/providers/medigo/
+context: insurance
+generated: '2026-11-10'
+concepts:
+  claim:
+    path_segment:
+    - claims
+    properties:
+      status: status
+      policy_id: policy_number
+      id: id
+      description: notes
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/medigo-openapi-original.yml#GET /tpa/claims/{id}
+    - openapi/_original/medigo-openapi-original.yml#POST /tpa/claims

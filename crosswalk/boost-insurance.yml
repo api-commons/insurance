@@ -1,0 +1,26 @@
+provider: boost-insurance
+apis_io: https://apis.io/providers/boost-insurance/
+context: insurance
+generated: '2026-11-10'
+concepts:
+  policy:
+    path_segment:
+    - policies
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/boost-insurance-openapi.yml#POST /policies
+  quote:
+    path_segment:
+    - quotes
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/boost-insurance-openapi.yml#POST /quotes
+  claim:
+    path_segment:
+    - claims
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/boost-insurance-openapi.yml#POST /claims

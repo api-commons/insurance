@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/insurance/main/schema/insurance_product.json",
+  "title": "Insurance Product",
+  "description": "The common insurance_product in Insurance, distilled from 3 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {},
+  "required": [],
+  "x-commons": {
+    "context": "insurance",
+    "concept": "insurance_product",
+    "providers": 3,
+    "generated": "2026-11-10",
+    "version": "0.1.0-draft.20261110",
+    "status": "draft"
+  }
+}

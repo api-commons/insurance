@@ -1,0 +1,16 @@
+provider: pie-insurance
+apis_io: https://apis.io/providers/pie-insurance/
+context: insurance
+generated: '2026-11-10'
+concepts:
+  quote:
+    path_segment:
+    - quotes
+    properties:
+      effective_date: effectiveDate
+      expires_at: expirationDate
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/pie-insurance-partner-api-openapi.yml#GET /Quotes/{id}
+    - openapi/_original/pie-insurance-partner-api-openapi.yml#POST /Quotes
+    - openapi/_original/pie-insurance-partner-api-openapi.yml#PUT /Quotes/{id}

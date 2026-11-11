@@ -1,0 +1,40 @@
+provider: state-farm-insurance-cos
+apis_io: https://apis.io/providers/state-farm-insurance-cos/
+context: insurance
+generated: '2026-11-10'
+concepts:
+  policy:
+    path_segment:
+    - policies
+    properties:
+      effective_date: effectiveDate
+      status: status
+      expiration_date: expirationDate
+      id: quoteId
+      number: policyNumber
+      premium:
+      - annualPremium
+      - monthlyPremium
+      insured_name: insuredName
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/state-farm-insurance-cos-renters-openapi.yml#GET /renters/policies/{policyNumber}
+    - openapi/_original/state-farm-insurance-cos-renters-openapi.yml#POST /renters/policies
+  quote:
+    path_segment:
+    - quotes
+    properties:
+      id: quoteId
+      premium:
+      - annualPremium
+      - monthlyPremium
+      status: status
+      effective_date: effectiveDate
+      expires_at: validUntil
+      coverages:
+      - coverageSummary
+      - coverageOptions
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/state-farm-insurance-cos-renters-openapi.yml#GET /renters/quotes/{quoteId}
+    - openapi/_original/state-farm-insurance-cos-renters-openapi.yml#POST /renters/quotes

@@ -1,0 +1,44 @@
+provider: american-financial-group
+apis_io: https://apis.io/providers/american-financial-group/
+context: insurance
+generated: '2026-11-10'
+concepts:
+  policy:
+    path_segment:
+    - policy
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/american-financial-group-policy-openapi.json#POST /api/policy
+    - openapi/_original/american-financial-group-policy-openapi.yml#POST /api/policy
+  quote:
+    path_segment:
+    - quote
+    - quotes
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/american-financial-group-letters-openapi.json#POST /api/quote
+    - openapi/_original/american-financial-group-letters-openapi.yml#POST /api/quote
+    - openapi/_original/american-financial-group-policy-openapi.json#POST /api/quote
+    - openapi/_original/american-financial-group-policy-openapi.yml#POST /api/quote
+    - openapi/_original/american-financial-group-rating-openapi.json#POST /api/quote
+  claim:
+    path_segment:
+    - claims
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/american-financial-group-producer-openapi.json#POST /api/claims
+    - openapi/_original/american-financial-group-producer-openapi.yml#POST /api/claims
+  insurance_product:
+    path_segment:
+    - products
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/american-financial-group-product-openapi.json#POST /api/products
+    - openapi/_original/american-financial-group-product-openapi.yml#POST /api/products
+    - openapi/_original/american-financial-group-rating-openapi.json#POST /api/products
+    - openapi/_original/american-financial-group-rating-openapi.yml#POST /api/products
+    - openapi/_original/american-financial-group-submission-openapi.json#GET /api/products

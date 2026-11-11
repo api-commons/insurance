@@ -1,0 +1,32 @@
+provider: coterie
+apis_io: https://apis.io/providers/coterie/
+context: insurance
+generated: '2026-11-10'
+concepts:
+  policy:
+    path_segment:
+    - policies
+    properties:
+      effective_date: effectiveDate
+      status: status
+      expiration_date: expirationDate
+      id:
+      - policyId
+      - quoteId
+      number: policyNumber
+      premium: premium
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/coterie-openapi.yml#GET /commercial/policies/{policyId}
+    - openapi/_original/coterie-openapi.yml#POST /commercial/policies
+  quote:
+    path_segment:
+    - quotes
+    properties:
+      id: quoteId
+      premium: premium
+      status: status
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/coterie-openapi.yml#GET /commercial/quotes/{quoteId}
+    - openapi/_original/coterie-openapi.yml#POST /commercial/quotes

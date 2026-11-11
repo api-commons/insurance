@@ -1,0 +1,55 @@
+provider: majesco
+apis_io: https://apis.io/providers/majesco/
+context: insurance
+generated: '2026-11-10'
+concepts:
+  policy:
+    path_segment:
+    - policies
+    properties:
+      effective_date: effectiveDate
+      status: status
+      expiration_date: expirationDate
+      number: policyNumber
+      premium: premium
+      policyholder_id: policyholder
+      updated_at: updatedAt
+      coverages: coverages
+      created_at: createdAt
+    core_coverage: 0.8
+    evidence:
+    - openapi/_original/majesco-policy-openapi.yml#GET /policies
+    - openapi/_original/majesco-policy-openapi.yml#GET /policies/{policyNumber}
+    - openapi/_original/majesco-policy-openapi.yml#PATCH /policies/{policyNumber}
+    - openapi/_original/majesco-policy-openapi.yml#POST /policies
+  quote:
+    path_segment:
+    - quotes
+    properties:
+      id: quoteId
+      premium: totalPremium
+      status: status
+      effective_date: effectiveDate
+      expires_at: expiresAt
+      coverages: coverages
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/majesco-policy-openapi.yml#POST /quotes
+  claim:
+    path_segment:
+    - claims
+    properties:
+      status: status
+      policy_id: policyNumber
+      loss_date: lossDate
+      description: lossDescription
+      number: claimNumber
+      type: lossType
+      claimant: claimant
+      created_at: createdAt
+      reported_at: reportedDate
+    core_coverage: 0.833
+    evidence:
+    - openapi/_original/majesco-policy-openapi.yml#GET /claims
+    - openapi/_original/majesco-policy-openapi.yml#GET /claims/{claimNumber}
+    - openapi/_original/majesco-policy-openapi.yml#POST /claims

@@ -1,0 +1,4717 @@
+{
+ "cohort_size": 143,
+ "unreadable": [],
+ "concepts": {
+  "policy": {
+   "1fort": {
+    "segments": [
+     "policies"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/1fort-openapi-original.yml#GET /v2/broker/agent/profiles/{profile_pk}/policies",
+     "openapi/_original/1fort-openapi-original.yml#GET /v2/broker/agent/profiles/{profile_pk}/policies/{id}",
+     "openapi/_original/1fort-openapi-original.yml#PATCH /v2/broker/agent/profiles/{profile_pk}/policies/{id}",
+     "openapi/_original/1fort-openapi-original.yml#POST /v2/broker/agent/profiles/{profile_pk}/policies",
+     "openapi/_original/1fort-openapi.json#GET /v2/broker/agent/profiles/{profile_pk}/policies",
+     "openapi/_original/1fort-openapi.json#GET /v2/broker/agent/profiles/{profile_pk}/policies/{id}",
+     "openapi/_original/1fort-openapi.json#PATCH /v2/broker/agent/profiles/{profile_pk}/policies/{id}",
+     "openapi/_original/1fort-openapi.json#POST /v2/broker/agent/profiles/{profile_pk}/policies"
+    ]
+   },
+   "aclaimant": {
+    "segments": [
+     "policies",
+     "policy"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "company-ident": "string",
+     "policy": "object"
+    },
+    "evidence": [
+     "openapi/_original/aclaimant-platform-api-swagger.json#POST /v2/bulk/policies",
+     "openapi/_original/aclaimant-platform-api-swagger.json#POST /v2/policy"
+    ]
+   },
+   "agencyzoom": {
+    "segments": [
+     "policies"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "PUT item"
+    ],
+    "properties": {
+     "message": "string",
+     "id": "integer",
+     "result": "boolean",
+     "leadSourceId": "integer",
+     "policyTypeName": "string",
+     "carrierId": "integer",
+     "standardCarrierCode": "string",
+     "policyTypeId": "string",
+     "standardProductLineCode": "string",
+     "policyNumber": "string",
+     "premium": "integer",
+     "items": "integer",
+     "soldDate": "string",
+     "agentId": "integer",
+     "agentName": "string",
+     "csrId": "integer",
+     "csrName": "string",
+     "effectiveDate": "string",
+     "expiryDate": "string",
+     "tagNames": "string",
+     "externalSystem": "string",
+     "externalId": "string",
+     "status": "integer",
+     "insuredName": "string",
+     "policyType": "integer",
+     "brokerFee": "integer",
+     "agencyNumber": "string",
+     "priorCarrierName": "string",
+     "priorPolicyNumber": "string",
+     "priorExpiryDate": "string",
+     "departmentCode": "string",
+     "groupCode": "string"
+    },
+    "evidence": [
+     "openapi/_original/agencyzoom-openapi.yml#DELETE /v1/api/customers/{customerId}/policies/{policyId}",
+     "openapi/_original/agencyzoom-openapi.yml#GET /v1/api/customers/{customerId}/policies",
+     "openapi/_original/agencyzoom-openapi.yml#GET /v1/api/serviceTicket/service-tickets/{id}/policies",
+     "openapi/_original/agencyzoom-openapi.yml#PUT /v1/api/policies/{policyId}"
+    ]
+   },
+   "american-financial-group": {
+    "segments": [
+     "policy"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/american-financial-group-policy-openapi.json#POST /api/policy",
+     "openapi/_original/american-financial-group-policy-openapi.yml#POST /api/policy"
+    ]
+   },
+   "amtrust-financial-services": {
+    "segments": [
+     "policies"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "StatusCode": "integer",
+     "Message": "string",
+     "AdditionalMessages": "array",
+     "Errors": "object",
+     "Data": "object"
+    },
+    "evidence": [
+     "openapi/_original/amtrust-financial-services-digital-wc-api-openapi.json#GET /api/v1/policies",
+     "openapi/_original/amtrust-financial-services-digital-wc-api-openapi.json#GET /api/v1/policies/{policy}",
+     "openapi/_original/amtrust-financial-services-digital-wc-api-openapi.json#GET /api/v1/specialty-program/policies",
+     "openapi/_original/amtrust-financial-services-digital-wc-api-openapi.json#GET /api/v1/specialty-program/policies/{policy}"
+    ]
+   },
+   "assurant": {
+    "segments": [
+     "policies"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "policyId": "string",
+     "productId": "string",
+     "customerId": "string",
+     "status": "string",
+     "effectiveDate": "string",
+     "expirationDate": "string"
+    },
+    "evidence": [
+     "openapi/_original/assurant-apex-insurance-api-openapi.yml#GET /policies"
+    ]
+   },
+   "boost-insurance": {
+    "segments": [
+     "policies"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/boost-insurance-openapi.yml#POST /policies"
+    ]
+   },
+   "coterie": {
+    "segments": [
+     "policies"
+    ],
+    "operations": [
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "policyId": "string",
+     "policyNumber": "string",
+     "quoteId": "string",
+     "status": "string",
+     "premium": "number",
+     "effectiveDate": "string",
+     "expirationDate": "string",
+     "agencyId": "string",
+     "stripePaymentToken": "string"
+    },
+    "evidence": [
+     "openapi/_original/coterie-openapi.yml#GET /commercial/policies/{policyId}",
+     "openapi/_original/coterie-openapi.yml#POST /commercial/policies"
+    ]
+   },
+   "duck-creek": {
+    "segments": [
+     "policies"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "total": "integer",
+     "offset": "integer",
+     "policies": "array",
+     "policyId": "string",
+     "policyNumber": "string",
+     "status": "string",
+     "productCode": "string",
+     "lineOfBusiness": "string",
+     "effectiveDate": "string",
+     "expirationDate": "string",
+     "insuredName": "string",
+     "totalPremium": "number",
+     "insured": "object",
+     "coverages": "array",
+     "endorsements": "array",
+     "underwritingMessages": "array",
+     "writingCompany": "string",
+     "agentCode": "string",
+     "createdAt": "string",
+     "updatedAt": "string",
+     "quoteId": "string",
+     "endorsementEffectiveDate": "string",
+     "reason": "string"
+    },
+    "evidence": [
+     "openapi/_original/duck-creek-policy-openapi.yml#GET /policies",
+     "openapi/_original/duck-creek-policy-openapi.yml#GET /policies/{policyId}",
+     "openapi/_original/duck-creek-policy-openapi.yml#POST /policies",
+     "openapi/_original/duck-creek-policy-openapi.yml#PUT /policies/{policyId}"
+    ]
+   },
+   "fintary": {
+    "segments": [
+     "policies"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "strId": "string",
+     "policyId": "string",
+     "policyStatus": "string",
+     "caseStatus": "string",
+     "customerName": "string",
+     "customerType": "string",
+     "productName": "string",
+     "productType": "string",
+     "productSubType": "string",
+     "productOptionName": "string",
+     "writingCarrierName": "string",
+     "effectiveDate": "string",
+     "expirationDate": "string",
+     "signedDate": "string",
+     "policyDate": "string",
+     "cancellationDate": "string",
+     "reinstatementDate": "string",
+     "firstPaymentDate": "string",
+     "firstProcessedDate": "string",
+     "premiumAmount": "string",
+     "commissionableAmount": "string",
+     "excessAmount": "string",
+     "commissionsExpected": "string",
+     "customerPaidPremiumAmount": "string",
+     "splitPercentage": "string",
+     "paymentMode": "string",
+     "policyTermMonths": "integer",
+     "geoState": "string",
+     "notes": "string",
+     "dba": "string",
+     "internalId": "string",
+     "transactionType": "string",
+     "accountType": "string",
+     "groupId": "string",
+     "groupName": "string",
+     "aggregationId": "string",
+     "aggregationPrimary": "boolean",
+     "type": "string",
+     "tags": "array",
+     "documentId": "string",
+     "processingStatus": "string",
+     "commissionProfileId": "string",
+     "syncId": "string",
+     "applicationDate": "string",
+     "issueDate": "string",
+     "issueAge": "integer",
+     "agentName": "string",
+     "createdAt": "string",
+     "updatedAt": "string",
+     "customFields": "array",
+     "receivables": "array",
+     "customerStrId": "string",
+     "team": "array",
+     "documents": "array",
+     "tasks": "array",
+     "commissions": "object",
+     "customer": "object",
+     "customerId": "integer",
+     "commissionablePremiumAmount": "number",
+     "data": "boolean",
+     "success": "boolean",
+     "message": "string",
+     "statusCode": "number",
+     "rows": "array",
+     "pageRowCount": "integer",
+     "rowCount": "integer",
+     "startDate": "string",
+     "endDate": "string",
+     "page": "integer"
+    },
+    "evidence": [
+     "openapi/_original/fintary-ams-api-openapi.json#DELETE /api/ams/policies/{strId}",
+     "openapi/_original/fintary-ams-api-openapi.json#GET /api/ams/customers/{strId}/policies",
+     "openapi/_original/fintary-ams-api-openapi.json#GET /api/ams/policies/{strId}",
+     "openapi/_original/fintary-ams-api-openapi.json#PATCH /api/ams/policies/{strId}",
+     "openapi/_original/fintary-ams-api-openapi.json#POST /api/ams/policies",
+     "openapi/_original/fintary-ams-api-openapi.yml#DELETE /api/ams/policies/{strId}",
+     "openapi/_original/fintary-ams-api-openapi.yml#GET /api/ams/customers/{strId}/policies",
+     "openapi/_original/fintary-ams-api-openapi.yml#GET /api/ams/policies/{strId}",
+     "openapi/_original/fintary-ams-api-openapi.yml#PATCH /api/ams/policies/{strId}",
+     "openapi/_original/fintary-ams-api-openapi.yml#POST /api/ams/policies",
+     "openapi/_original/fintary-open-api-openapi.json#GET /openapi/agents/{id}/policies",
+     "openapi/_original/fintary-open-api-openapi.yml#GET /openapi/agents/{id}/policies"
+    ]
+   },
+   "guidewire": {
+    "segments": [
+     "policies"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "policyNumber": "string",
+     "status": "string",
+     "product": "string",
+     "effectiveDate": "string",
+     "expirationDate": "string",
+     "issuedDate": "string",
+     "totalPremium": "number",
+     "currency": "string",
+     "account": "object",
+     "insured": "object",
+     "coverages": "array",
+     "createdDate": "string",
+     "updatedDate": "string"
+    },
+    "evidence": [
+     "openapi/_original/guidewire-policycenter-openapi.yml#GET /policies",
+     "openapi/_original/guidewire-policycenter-openapi.yml#GET /policies/{policyId}"
+    ]
+   },
+   "heron": {
+    "segments": [
+     "policies"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "checks": "array",
+     "display_order": "integer",
+     "heron_id": "string",
+     "name": "string",
+     "use_case": null
+    },
+    "evidence": [
+     "openapi/_original/heron-openapi.json#GET /api/policies"
+    ]
+   },
+   "hiveagentiq-com": {
+    "segments": [
+     "policy"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/hiveagentiq-com-hivebank-openapi.json#POST /v1/bank/custody/policy"
+    ]
+   },
+   "kota": {
+    "segments": [
+     "policies"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "object": "string",
+     "id": "string",
+     "employer_id": "string",
+     "start_date": "string",
+     "end_date": "string",
+     "cancellation_date": [
+      "string",
+      "null"
+     ],
+     "group_policy_number": [
+      "string",
+      "null"
+     ],
+     "status": "string",
+     "enrolment_type": "string",
+     "renewal": "object",
+     "employer_cancellation_period_length": "integer",
+     "coverage_levels": "array",
+     "employee_id": "string",
+     "external_customer_id": [
+      "string",
+      "null"
+     ],
+     "policy_number": [
+      "string",
+      "null"
+     ],
+     "opt_out_deadline_date": "string",
+     "coverage_level": "object",
+     "enrolled_dependants_count": "integer",
+     "estimated_gross_premium": "object",
+     "group_policy_id": "string",
+     "bundling_type": "string",
+     "group_id": "string",
+     "provider": "object",
+     "plan": "object",
+     "type": "string",
+     "health_insurance": "object",
+     "disclosures": "array"
+    },
+    "evidence": [
+     "openapi/_original/kota-api-reference-openapi.json#GET /employees/{employee_id}/health_insurance/policies",
+     "openapi/_original/kota-api-reference-openapi.json#GET /employees/{employee_id}/health_insurance/policies/{employee_policy_id}",
+     "openapi/_original/kota-api-reference-openapi.json#GET /employers/{employer_id}/health_insurance/policies",
+     "openapi/_original/kota-api-reference-openapi.json#GET /employers/{employer_id}/health_insurance/policies/{employer_policy_id}",
+     "openapi/_original/kota-api-reference-openapi.json#GET /policies",
+     "openapi/_original/kota-api-reference-openapi.json#GET /policies/{policy_id}",
+     "openapi/_original/kota-openapi-original.json#GET /employees/{employee_id}/health_insurance/policies",
+     "openapi/_original/kota-openapi-original.json#GET /employees/{employee_id}/health_insurance/policies/{employee_policy_id}",
+     "openapi/_original/kota-openapi-original.json#GET /employers/{employer_id}/health_insurance/policies",
+     "openapi/_original/kota-openapi-original.json#GET /employers/{employer_id}/health_insurance/policies/{employer_policy_id}",
+     "openapi/_original/kota-openapi-original.json#GET /policies",
+     "openapi/_original/kota-openapi-original.json#GET /policies/{policy_id}"
+    ]
+   },
+   "laka": {
+    "segments": [
+     "policies"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "rows": "array",
+     "count": "number",
+     "policyId": "string",
+     "success": "boolean",
+     "cancelledReason": "string",
+     "cancelledOn": "string"
+    },
+    "evidence": [
+     "openapi/_original/laka-platform-openapi.json#DELETE /v3/policies/{policyId}",
+     "openapi/_original/laka-platform-openapi.json#GET /v3/policies",
+     "openapi/_original/laka-platform-openapi.json#GET /v3/policies/{policyId}",
+     "openapi/_original/laka-platform-openapi.json#GET /v3/reporting/policies"
+    ]
+   },
+   "liberty-mutual-insurance": {
+    "segments": [
+     "policies"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "policyId": "string",
+     "quoteId": "string",
+     "status": "string",
+     "effectiveDate": "string",
+     "premium": "number",
+     "paymentMethod": "object"
+    },
+    "evidence": [
+     "openapi/_original/liberty-mutual-insurance-renters-insurance-api-openapi.yml#POST /policies"
+    ]
+   },
+   "majesco": {
+    "segments": [
+     "policies"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "policies": "array",
+     "totalCount": "integer",
+     "nextPageToken": "string",
+     "policyNumber": "string",
+     "status": "string",
+     "productType": "string",
+     "effectiveDate": "string",
+     "expirationDate": "string",
+     "cancellationDate": "string",
+     "policyholder": "object",
+     "coverages": "array",
+     "premium": "object",
+     "endorsements": "array",
+     "createdAt": "string",
+     "updatedAt": "string",
+     "agentCode": "string",
+     "channelCode": "string",
+     "endorsementType": "string",
+     "changes": "object"
+    },
+    "evidence": [
+     "openapi/_original/majesco-policy-openapi.yml#GET /policies",
+     "openapi/_original/majesco-policy-openapi.yml#GET /policies/{policyNumber}",
+     "openapi/_original/majesco-policy-openapi.yml#PATCH /policies/{policyNumber}",
+     "openapi/_original/majesco-policy-openapi.yml#POST /policies"
+    ]
+   },
+   "moodys-rms": {
+    "segments": [
+     "policies"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "matchCount": "integer",
+     "policies": "array",
+     "id": "integer",
+     "number": "string",
+     "accountId": "integer",
+     "lob": "object",
+     "peril": "object",
+     "status": "object",
+     "inceptionDate": "string",
+     "expirationDate": "string",
+     "currency": "object",
+     "partOf": "number",
+     "attachmentPoint": "number",
+     "minDeductible": "number",
+     "maxDeductible": "number",
+     "blanketLimit": "number",
+     "blanketDeductible": "number",
+     "blanketPremium": "number",
+     "biLifeLine": "integer",
+     "deductType": "integer",
+     "structure": "object",
+     "coverageBase": "object",
+     "limitGU": "object",
+     "userText1": "string",
+     "userText2": "string",
+     "userText3": "string",
+     "userText4": "string",
+     "isValid": "boolean",
+     "coverages": "array",
+     "reinsuranceCessions": "array",
+     "policyConditions": "array",
+     "CustomData": "object",
+     "newCauseOfLoss": "object",
+     "percentOfLossDeductible": "number",
+     "isFranchiseDeductible": "object",
+     "aggregateMinDeductible": "number",
+     "aggregateLimit": "number"
+    },
+    "evidence": [
+     "openapi/_original/moodys-rms-risk-modeler-openapi.yml#DELETE /v1/policies/{id}",
+     "openapi/_original/moodys-rms-risk-modeler-openapi.yml#GET /v1/policies",
+     "openapi/_original/moodys-rms-risk-modeler-openapi.yml#GET /v1/policies/{id}",
+     "openapi/_original/moodys-rms-risk-modeler-openapi.yml#POST /v1/policies",
+     "openapi/_original/moodys-rms-risk-modeler-openapi.yml#PUT /v1/policies/{id}"
+    ]
+   },
+   "optum": {
+    "segments": [
+     "policies",
+     "policy"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "status": "string",
+     "effectiveDate": "string",
+     "endDate": "string",
+     "title": "string",
+     "url": "string",
+     "code": "string",
+     "cmsId": "string",
+     "policyInfo": "object",
+     "ncdCodingInformation": "object",
+     "lcdCodingInformation": "object"
+    },
+    "evidence": [
+     "openapi/_original/optum-optum-real-time-econtent-web-services-openapi.yml#GET /contractors/{contractorNum}/policies",
+     "openapi/_original/optum-optum-real-time-econtent-web-services-openapi.yml#GET /contractors/{contractorNum}/policy/{cmspolicyid}",
+     "openapi/_original/optum-optum-real-time-econtent-web-services.json#GET /contractors/{contractorNum}/policies",
+     "openapi/_original/optum-optum-real-time-econtent-web-services.json#GET /contractors/{contractorNum}/policy/{cmspolicyid}"
+    ]
+   },
+   "progressive": {
+    "segments": [
+     "policies"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/progressive-certificate-of-insurance-api-openapi.yml#GET /policies"
+    ]
+   },
+   "root": {
+    "segments": [
+     "policies",
+     "policy"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection",
+     "PUT collection"
+    ],
+    "properties": {
+     "claim_id": "string",
+     "claim_number": "string",
+     "created_at": "string",
+     "updated_at": "string",
+     "policy_id": [
+      "string",
+      "null"
+     ],
+     "policyholder_id": [
+      "string",
+      "null"
+     ],
+     "member_id": [
+      "string",
+      "null"
+     ],
+     "covered_item_id": [
+      "string",
+      "null"
+     ],
+     "claim_status": "string",
+     "approval_status": "string",
+     "claimant": [
+      "object",
+      "null"
+     ],
+     "incident_type": [
+      "string",
+      "null"
+     ],
+     "incident_cause": [
+      "string",
+      "null"
+     ],
+     "incident_date": [
+      "string",
+      "null"
+     ],
+     "assigned_to": [
+      "string",
+      "null"
+     ],
+     "app_data": [
+      "object",
+      "null"
+     ],
+     "module_data": [
+      "object",
+      "null"
+     ],
+     "requested_amount": [
+      "integer",
+      "null"
+     ],
+     "granted_amount": [
+      "integer",
+      "null"
+     ],
+     "rejection_reason": [
+      "string",
+      "null"
+     ],
+     "currency": "string",
+     "created_by": [
+      "object",
+      "null"
+     ],
+     "policyholder": [
+      "object",
+      "null"
+     ],
+     "policy": [
+      "object",
+      "null"
+     ],
+     "member": [
+      "object",
+      "null"
+     ],
+     "user_group": [
+      "object",
+      "null"
+     ],
+     "block_states": [
+      "object",
+      "null"
+     ],
+     "complaint_id": "string",
+     "complaint_number": "string",
+     "complaint_status": "string",
+     "complainant": [
+      "object",
+      "null"
+     ],
+     "policy_number": "string",
+     "status": "string",
+     "package_name": "string",
+     "sum_assured": "integer",
+     "monthly_premium": "integer",
+     "billing_amount": "integer",
+     "balance": "integer",
+     "billing_day": [
+      "integer",
+      "null"
+     ],
+     "billing_frequency": "string",
+     "next_billing_date": "string",
+     "beneficiaries": null,
+     "covered_people": [
+      "array",
+      "null"
+     ],
+     "base_premium": "integer",
+     "claim_ids": "array",
+     "complaint_ids": "array",
+     "start_date": "string",
+     "end_date": "string",
+     "current_version": [
+      "integer",
+      "null"
+     ],
+     "schedule_file_id": [
+      "string",
+      "null"
+     ],
+     "policy_schedule_uri": [
+      "string",
+      "null"
+     ],
+     "terms_file_id": [
+      "string",
+      "null"
+     ],
+     "terms_uri": [
+      "string",
+      "null"
+     ],
+     "supplementary_terms_files": "array",
+     "policy_welcome_letter_file_id": [
+      "string",
+      "null"
+     ],
+     "policy_welcome_letter_uri": [
+      "string",
+      "null"
+     ],
+     "policy_certificate_file_id": [
+      "string",
+      "null"
+     ],
+     "policy_certificate_uri": [
+      "string",
+      "null"
+     ],
+     "policy_anniversary_file_id": [
+      "string",
+      "null"
+     ],
+     "schedule_versions": "array",
+     "module": "object",
+     "restricted_data": "object",
+     "scheme_type": "string",
+     "payment_method_id": "string",
+     "status_updated_at": "string",
+     "charges": "array",
+     "application_id": "string",
+     "user_group_id": [
+      "string",
+      "null"
+     ],
+     "policy_ids": "array"
+    },
+    "evidence": [
+     "openapi/_original/root-platform-api-openapi.json#GET /policies",
+     "openapi/_original/root-platform-api-openapi.json#GET /policies/{policy_id}",
+     "openapi/_original/root-platform-api-openapi.json#GET /policyholders/{policyholder_id}/policies",
+     "openapi/_original/root-platform-api-openapi.json#PATCH /policies/{policy_id}",
+     "openapi/_original/root-platform-api-openapi.json#PATCH /sandbox-only/policies/{policy_id}",
+     "openapi/_original/root-platform-api-openapi.json#POST /claims/{claim_id}/policy",
+     "openapi/_original/root-platform-api-openapi.json#POST /complaints/{complaint_id}/policy",
+     "openapi/_original/root-platform-api-openapi.json#POST /policies",
+     "openapi/_original/root-platform-api-openapi.json#PUT /user-groups/{user_group_id}/policies"
+    ]
+   },
+   "socotra": {
+    "segments": [
+     "policy"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {
+     "policyLocator": "string",
+     "transactionLocator": "string",
+     "customEventId": "string",
+     "nextEventTime": "string",
+     "triggerState": "string"
+    },
+    "evidence": [
+     "openapi/_original/socotra-openapi-original.json#GET /event/{tenantLocator}/events/schedules/policy/{policyLocator}"
+    ]
+   },
+   "state-farm": {
+    "segments": [
+     "policies"
+    ],
+    "operations": [
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "policyNumber": "string",
+     "status": "string",
+     "effectiveDate": "string",
+     "expirationDate": "string",
+     "annualPremium": "number",
+     "monthlyPremium": "number",
+     "coverageSummary": "object",
+     "insuredName": "string",
+     "propertyAddress": "object",
+     "quoteId": "string",
+     "paymentMethod": "string",
+     "paymentFrequency": "string",
+     "additionalInterests": "array"
+    },
+    "evidence": [
+     "openapi/_original/state-farm-renters-insurance-openapi.yml#GET /renters/policies/{policyNumber}",
+     "openapi/_original/state-farm-renters-insurance-openapi.yml#POST /renters/policies"
+    ]
+   },
+   "state-farm-insurance-cos": {
+    "segments": [
+     "policies"
+    ],
+    "operations": [
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "policyNumber": "string",
+     "status": "string",
+     "effectiveDate": "string",
+     "expirationDate": "string",
+     "annualPremium": "number",
+     "monthlyPremium": "number",
+     "coverageSummary": "object",
+     "insuredName": "string",
+     "propertyAddress": "object",
+     "quoteId": "string",
+     "paymentMethod": "string",
+     "paymentFrequency": "string",
+     "additionalInterests": "array"
+    },
+    "evidence": [
+     "openapi/_original/state-farm-insurance-cos-renters-openapi.yml#GET /renters/policies/{policyNumber}",
+     "openapi/_original/state-farm-insurance-cos-renters-openapi.yml#POST /renters/policies"
+    ]
+   },
+   "steadily": {
+    "segments": [
+     "policy"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "policies": "array",
+     "limit": "integer",
+     "next_url": "string",
+     "policy_type": null,
+     "insurance_structure": "string",
+     "primary_insured": "object",
+     "additional_named_insured": "array",
+     "effective_date": "string",
+     "effective_date_timezone": "string",
+     "policy_details": "object",
+     "updated_at": "string",
+     "previous_policy_id": "string",
+     "renewal_policy_id": "string",
+     "renewal_quote_id": "string",
+     "renewal_status": "string",
+     "renewal_start_date": "string",
+     "renewal_end_date": "string",
+     "properties": "array",
+     "policy_coverages": "array",
+     "payment": "object",
+     "underwriting": "object",
+     "signing_requirements": "object",
+     "agent_ui_url": "string",
+     "errors": "array",
+     "carrier": "string",
+     "public_policy_id": "string",
+     "pricing": "object",
+     "status": "string",
+     "policy_id": "string",
+     "documents": "array",
+     "mandatory_policyholder_agreement_contract": "object"
+    },
+    "evidence": [
+     "openapi/_original/steadily-estimate-api-openapi-original.json#GET /v1/report/policy",
+     "openapi/_original/steadily-partner-openapi-original.json#GET /v1/agency/policy/{policy_id}",
+     "openapi/_original/steadily-partner-openapi-original.json#GET /v1/report/policy",
+     "openapi/_original/steadily-rater-quotes-openapi-original.json#GET /v1/agency/policy/{policy_id}"
+    ]
+   },
+   "tint": {
+    "segments": [
+     "policy"
+    ],
+    "operations": [
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/tint-openapi.yml#GET /policy/{id}",
+     "openapi/_original/tint-openapi.yml#POST /policy",
+     "openapi/_original/tint-openapi.yml#PUT /policy/{id}"
+    ]
+   },
+   "travelers": {
+    "segments": [
+     "policies"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "policy_number": "string",
+     "product_type": "string",
+     "status": "string",
+     "insured_name": "string",
+     "effective_date": "string",
+     "expiration_date": "string",
+     "premium": "number",
+     "coverages": "array"
+    },
+    "evidence": [
+     "openapi/_original/travelers-openapi.yml#GET /policies",
+     "openapi/_original/travelers-openapi.yml#GET /policies/{policy_number}"
+    ]
+   },
+   "trustlayer": {
+    "segments": [
+     "policies"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {
+     "number": "string",
+     "subjects": "array"
+    },
+    "evidence": [
+     "openapi/_original/trustlayer-platform-v2-openapi.yaml#GET /policies/{number}"
+    ]
+   },
+   "zego": {
+    "segments": [
+     "policy"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/zego-partner-openapi.yml#POST /v2/policy/"
+    ]
+   },
+   "zywave": {
+    "segments": [
+     "policies"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "accountId": "integer",
+     "policyCoverageTypeId": "integer",
+     "carrierCompanyId": "integer",
+     "beginningPolicyStatusId": "integer",
+     "effectiveDate": "string",
+     "expirationDate": "string",
+     "fundingType": null,
+     "productType": null,
+     "isVoluntary": "boolean",
+     "policyName": "string",
+     "firstWrittenDate": "string",
+     "cancellationDate": "string",
+     "reinstatementDate": "string",
+     "policyNumber": "string",
+     "rateType": null,
+     "endingPolicyStatusId": "integer",
+     "departmentId": "integer",
+     "carrierCommissionToAgencyPaymentScheduleId": "integer",
+     "needsReview": "boolean",
+     "policyGroupId": "integer",
+     "vendorSourceId": "string",
+     "vendorSourceType": "string",
+     "vendorSourceEntityName": "string",
+     "id": "integer",
+     "updatedUserProfileId": "string",
+     "updatedUserProfileTypeCode": "string",
+     "createdDateTimeOffset": "string",
+     "updatedDateTimeOffSet": "string",
+     "renewedByPolicyId": "integer",
+     "renewedFromPolicyId": "integer",
+     "vendorId": "integer",
+     "isEndingStatusRetained": "boolean",
+     "isActive": "boolean",
+     "isCancelled": "boolean",
+     "isExpired": "boolean",
+     "isFuture": "boolean",
+     "isPendingCancellation": "boolean",
+     "isPendingReinstatement": "boolean",
+     "isReinstated": "boolean",
+     "isRenewed": "boolean",
+     "hasMoreResults": "boolean",
+     "pageIndex": "integer",
+     "pageSize": "integer",
+     "skip": "integer",
+     "take": "integer",
+     "totalCount": "integer",
+     "items": "array"
+    },
+    "evidence": [
+     "openapi/_original/zywave-policies-v2-openapi.json#DELETE /policies/v2.0/policies/{id}",
+     "openapi/_original/zywave-policies-v2-openapi.json#GET /policies/v2.0/policies",
+     "openapi/_original/zywave-policies-v2-openapi.json#GET /policies/v2.0/policies/{id}",
+     "openapi/_original/zywave-policies-v2-openapi.json#POST /policies/v2.0/policies",
+     "openapi/_original/zywave-policies-v2-openapi.json#PUT /policies/v2.0/policies/{id}"
+    ]
+   }
+  },
+  "quote": {
+   "1fort": {
+    "segments": [
+     "quotes"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "business": "object",
+     "broker": "object",
+     "application": "object",
+     "carrier": "object",
+     "mga": "object",
+     "download_pdf": "string",
+     "files": "array",
+     "has_bind_request": "string",
+     "version": "string",
+     "created_at": "string",
+     "status": "string",
+     "quote_type": "string",
+     "quote_number": "string",
+     "policy_number": "string",
+     "limit": "integer",
+     "retention": "integer",
+     "premium": "integer",
+     "policy_term_months": "integer",
+     "issue_date": "string",
+     "minimum_days_to_cancel": "integer",
+     "additional_notes": "string",
+     "type": "string",
+     "insured": "string",
+     "market_status_reason": "string",
+     "primary_agent": "string",
+     "all_agents": "string",
+     "coverage_application": "string",
+     "coverage_type": "string",
+     "aggregate_limit": "integer",
+     "aggregate_retention": "integer",
+     "effective_date": "string",
+     "payment_status": "string",
+     "task_count": "integer",
+     "has_tasks": "string",
+     "payment_link": "string",
+     "total_amount_cents": "string",
+     "insurance_invoice_ids": "string",
+     "follow_up_notifications": "boolean",
+     "source": "string",
+     "source_display": "string",
+     "short_id": "string",
+     "product": "object",
+     "premium_before_taxes_and_fees": "string",
+     "premium_with_taxes_and_fees": "string",
+     "bind_status": "string",
+     "admitted": "boolean",
+     "am_best_rating": "string",
+     "status_details": "object",
+     "price_details": "array",
+     "fees": "string",
+     "waiting_period": "integer",
+     "expiration_date": "string",
+     "has_bind_requests": "string",
+     "method": "string",
+     "application_submitted_at": "string",
+     "is_wholesale": "boolean",
+     "is_1fort_wholesale": "boolean",
+     "wholesaler": "object",
+     "coverage_type_display_name": "string",
+     "coverage_type_image_slug": "string",
+     "payment_url": "string",
+     "payment": "string",
+     "broker_commission_rate": "string",
+     "insured_address": "string",
+     "excess_quotes": "string",
+     "is_excess": "string",
+     "type_display": "string",
+     "quote_validity_date": "string",
+     "issuance_date": "string",
+     "coverage_term_id": "string",
+     "coverages": "string",
+     "coverage_types": "string",
+     "open_tasks": "string",
+     "analysis": "string"
+    },
+    "evidence": [
+     "openapi/_original/1fort-openapi-original.yml#GET /broker/{broker_pk}/clients/{client_pk}/quotes",
+     "openapi/_original/1fort-openapi-original.yml#GET /broker/{broker_pk}/clients/{client_pk}/quotes/{id}",
+     "openapi/_original/1fort-openapi-original.yml#GET /quotes",
+     "openapi/_original/1fort-openapi-original.yml#GET /quotes/{id}",
+     "openapi/_original/1fort-openapi-original.yml#GET /v2/broker/agent/profiles/{profile_pk}/quotes",
+     "openapi/_original/1fort-openapi-original.yml#GET /v2/broker/agent/profiles/{profile_pk}/quotes/{id}",
+     "openapi/_original/1fort-openapi-original.yml#GET /v2/broker/agent/quotes/{quote_id}",
+     "openapi/_original/1fort-openapi-original.yml#GET /v2/broker/quotes",
+     "openapi/_original/1fort-openapi-original.yml#GET /v2/broker/quotes/{id}",
+     "openapi/_original/1fort-openapi-original.yml#GET /v2/broker/{business_pk}/coverages/{coverage_application_pk}/quotes",
+     "openapi/_original/1fort-openapi-original.yml#GET /v2/broker/{business_pk}/coverages/{coverage_application_pk}/quotes/{id}",
+     "openapi/_original/1fort-openapi-original.yml#GET /v2/broker/{business_pk}/quotes"
+    ]
+   },
+   "agencyzoom": {
+    "segments": [
+     "quotes"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "POST collection",
+     "PUT collection"
+    ],
+    "properties": {
+     "id": "integer",
+     "carrierId": "integer",
+     "standardCarrierCode": "string",
+     "productLineId": "integer",
+     "standardProductLineCode": "string",
+     "status": "integer",
+     "premium": "integer",
+     "items": "integer",
+     "customFields": "array",
+     "propertyAddress": "array",
+     "sold": "boolean",
+     "carrierName": "string",
+     "productName": "string",
+     "potentialRevenue": "integer",
+     "effectiveDate": "string",
+     "message": "string",
+     "result": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/agencyzoom-openapi.yml#DELETE /v1/api/leads/{leadId}/quotes/{quoteId}",
+     "openapi/_original/agencyzoom-openapi.yml#GET /v1/api/leads/{leadId}/quotes",
+     "openapi/_original/agencyzoom-openapi.yml#POST /v1/api/leads/{leadId}/quotes",
+     "openapi/_original/agencyzoom-openapi.yml#PUT /v1/api/leads/{leadId}/quotes"
+    ]
+   },
+   "american-financial-group": {
+    "segments": [
+     "quote",
+     "quotes"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/american-financial-group-letters-openapi.json#POST /api/quote",
+     "openapi/_original/american-financial-group-letters-openapi.yml#POST /api/quote",
+     "openapi/_original/american-financial-group-policy-openapi.json#POST /api/quote",
+     "openapi/_original/american-financial-group-policy-openapi.yml#POST /api/quote",
+     "openapi/_original/american-financial-group-rating-openapi.json#POST /api/quote",
+     "openapi/_original/american-financial-group-rating-openapi.json#POST /api/quotes",
+     "openapi/_original/american-financial-group-rating-openapi.yml#POST /api/quote",
+     "openapi/_original/american-financial-group-rating-openapi.yml#POST /api/quotes"
+    ]
+   },
+   "amtrust-financial-services": {
+    "segments": [
+     "quotes",
+     "quote"
+    ],
+    "operations": [
+     "GET item",
+     "PATCH item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "string",
+     "timestamp": "string",
+     "correlationID": "string",
+     "httpStatus": "integer",
+     "messages": "array",
+     "errors": "array",
+     "paging": "object",
+     "maxMsgIndex": "integer",
+     "maxErrIndex": "integer",
+     "isOk": "boolean",
+     "apiResponseVersion": "string",
+     "data": "object",
+     "skipUWQuestions": "boolean",
+     "expandedResponse": "boolean",
+     "skipRate": "boolean",
+     "skipEval": "boolean",
+     "dba": "string",
+     "masterAccountId": "integer",
+     "numberOfEmployees": "integer",
+     "businessName": "string",
+     "fein": "string",
+     "primaryContactInformation": "object",
+     "primaryAddress": "object",
+     "mailingAddress": "object",
+     "effectiveDate": "string",
+     "agentContactId": "integer",
+     "legalEntity": "string",
+     "companyWebsite": "string",
+     "lessorLiability": "boolean",
+     "propertyDeductible": "string",
+     "classCode": "object",
+     "annualSales": "integer",
+     "constructionCategoryCode": "integer",
+     "totalSquareFootage": "integer",
+     "totalSquareFootageOccupied": "integer",
+     "totalStories": "integer",
+     "yearBuilt": "object",
+     "hasCentralStationFireAlarm": "boolean",
+     "hasCentralStationBurglarAlarm": "boolean",
+     "isSprinkleredBuilding": "boolean",
+     "underwritingQuestions": "array",
+     "lossHistory": "object",
+     "roofType": "string",
+     "highestStoryOccupied": "integer",
+     "digitalClientWorkflow": "string",
+     "op": "string",
+     "value": "string",
+     "path": "string",
+     "from": "string",
+     "expectedGrossAnnualRevenue": "integer",
+     "policyLimits": "string",
+     "insuredContact": "object",
+     "newMasterAccountId": "boolean",
+     "naicsCode": "string",
+     "paymentPlanId": "integer",
+     "operationType": "integer",
+     "primaryInsured": "string",
+     "dbaName": "string",
+     "facilityCodes": "array",
+     "deductible": "integer",
+     "locations": "array",
+     "liabilityLimits": "object",
+     "businessType": "string",
+     "yearsInBusiness": "integer",
+     "yearsOfExperience": "integer",
+     "natureOfBusiness": "string",
+     "quoteCoverageSelection": "object",
+     "HttpStatusCode": "integer",
+     "StatusCode": "string",
+     "Service": "string",
+     "Message": "string",
+     "AdditionalMessages": "array",
+     "EffectiveDate": "string",
+     "Fein": "string",
+     "PrimaryAddress": "object",
+     "MailingAddress": "object",
+     "ClassCodes": "array",
+     "BusinessName": "string",
+     "DBA": "string",
+     "ContactInformation": "object",
+     "NatureOfBusiness": "string",
+     "LegalEntity": "integer",
+     "LiabilityLimits": "string",
+     "YearsInBusiness": "integer",
+     "ExpiredPremium": "integer",
+     "IsNonProfit": "boolean",
+     "IsIncumbantAgent": "boolean",
+     "CompanyWebsiteAddress": "string",
+     "EstimatedAnnualPremium": "integer",
+     "GoverningState": "string",
+     "MasterAccountId": "integer",
+     "RatingZip": "string",
+     "UnemploymentId": "string",
+     "Eligibility": "object",
+     "DigitalClientWorkflow": "string",
+     "RatingSummary": "array",
+     "ExpirationDate": "string",
+     "FirmId": "string",
+     "AdditionalCoverages": "array",
+     "PayrollCompanyId": "integer",
+     "StateModifiers": "array",
+     "PricingTiers": "array",
+     "BillType": "integer",
+     "ID": "string",
+     "Timestamp": "string",
+     "CorrelationID": "string",
+     "HttpStatus": "integer",
+     "Messages": "array",
+     "Errors": "array",
+     "Paging": "object",
+     "MaxMsgIndex": "integer",
+     "MaxErrIndex": "integer",
+     "IsOk": "boolean",
+     "ApiResponseVersion": "string",
+     "Data": "object",
+     "OperationType": "integer",
+     "Quote": "object",
+     "LoadQuestions": "boolean",
+     "Questions": "array",
+     "ExperienceModifier": "object",
+     "LoadRateSummary": "boolean",
+     "Modifiers": "array"
+    },
+    "evidence": [
+     "openapi/_original/amtrust-financial-services-digital-bop-api-openapi.json#GET /api/v1/quotes/{quoteId}",
+     "openapi/_original/amtrust-financial-services-digital-bop-api-openapi.json#GET /api/v2/quotes/{quoteId}",
+     "openapi/_original/amtrust-financial-services-digital-bop-api-openapi.json#GET /api/v3/quotes/{quoteId}",
+     "openapi/_original/amtrust-financial-services-digital-bop-api-openapi.json#PATCH /api/v1/quotes/{quoteId}",
+     "openapi/_original/amtrust-financial-services-digital-bop-api-openapi.json#PUT /api/v1/quotes/{quoteId}",
+     "openapi/_original/amtrust-financial-services-digital-cyber-api-openapi.json#GET /api/v1/quotes/{quoteId}",
+     "openapi/_original/amtrust-financial-services-digital-cyber-api-openapi.json#PATCH /api/v1/quotes/{quoteId}",
+     "openapi/_original/amtrust-financial-services-digital-cyber-api-openapi.json#POST /api/v1/quotes",
+     "openapi/_original/amtrust-financial-services-digital-cyber-api-openapi.json#PUT /api/v1/quotes/{quoteId}",
+     "openapi/_original/amtrust-financial-services-digital-es-api-openapi.json#GET /api/v1/quotes/{quoteId}",
+     "openapi/_original/amtrust-financial-services-digital-es-api-openapi.json#PATCH /api/v1/quotes/{quoteId}",
+     "openapi/_original/amtrust-financial-services-digital-es-api-openapi.json#POST /api/v1/quotes"
+    ]
+   },
+   "apollo-insurance": {
+    "segments": [
+     "quote"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "premiums": "object",
+     "policyExpiryDate": "string",
+     "subtotal": "object",
+     "stripeFees": "object",
+     "taxesAndFees": "object",
+     "total": "object",
+     "insuranceData": "object",
+     "businessAddressPostal": "string",
+     "businessAddressCity": "string",
+     "operations": "string",
+     "nonlistedOperation": "string",
+     "businessAddressStreet": "string",
+     "businessAddressUnit": "string",
+     "businessAddressProvince": "string",
+     "buildingAge": "string",
+     "birthdate": "string",
+     "firstName": "string",
+     "lastName": "string",
+     "email": "string",
+     "phoneNumber": "string",
+     "ageApplicant": "string",
+     "personalLiability": "number",
+     "deductible": "number",
+     "propertyLimitApplicant": "number",
+     "aleLimitApplicant": "number",
+     "offPremisesLimitApplicant": "number",
+     "policyPackage": "string",
+     "sewerDisclaimer": "string",
+     "specialLimitException": "string",
+     "jewelryLimit": "number",
+     "bicyclesLimit": "number",
+     "computersLimit": "number",
+     "portablesLimit": "number",
+     "fineArtLimit": "string",
+     "nearbyWaterbody": "string",
+     "priorFlood": "string",
+     "floodriskBelowGround": "string",
+     "sburiskBelowGround": "string",
+     "claims": "string",
+     "policyUTCOffset": "number",
+     "policyStartDate": "string",
+     "unrelatedRoommates": "string",
+     "totalRoommates": "number",
+     "nameRoommate1": "string",
+     "ageRoommate1": "string",
+     "propertyLimitRoommate1": "number",
+     "aleLimitRoommate1": "number",
+     "nameRoommate2": "string",
+     "ageRoommate2": "string",
+     "propertyLimitRoommate2": "number",
+     "aleLimitRoommate2": "number",
+     "nameRoommate3": "string",
+     "ageRoommate3": "string",
+     "propertyLimitRoommate3": "number",
+     "aleLimitRoommate3": "number",
+     "totalSemesters": "string"
+    },
+    "evidence": [
+     "openapi/_original/apollo-insurance-affiliates-legacy.yml#POST /api/affiliates/{affiliateId}/tenant/quote",
+     "openapi/_original/apollo-insurance-affiliates.yml#POST /api/affiliates/{affiliateId}/{insuranceType}/quote"
+    ]
+   },
+   "at-bay": {
+    "segments": [
+     "quotes"
+    ],
+    "operations": [
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "client": "object",
+     "policy": "object",
+     "broker": "object",
+     "quote_identifier": "string",
+     "company_id": "string",
+     "status": "string",
+     "insurance_product": "string",
+     "premium": "number",
+     "coverage_limit": "integer",
+     "retention": "integer",
+     "effective_date": "string",
+     "expiration_date": "string"
+    },
+    "evidence": [
+     "openapi/_original/at-bay-partner-api-openapi.yml#GET /quotes/{quote_identifier}",
+     "openapi/_original/at-bay-partner-api-openapi.yml#POST /quotes"
+    ]
+   },
+   "boost-insurance": {
+    "segments": [
+     "quotes"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/boost-insurance-openapi.yml#POST /quotes"
+    ]
+   },
+   "convelio": {
+    "segments": [
+     "quote"
+    ],
+    "operations": [
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "quote_reference_number": "string",
+     "shipping_speed": "string",
+     "direct_label_request": "string",
+     "delivery": "object",
+     "pickups": "array",
+     "share_link": "string",
+     "contract_insurance": "boolean",
+     "customer_email": "string",
+     "price": "object",
+     "status": "string",
+     "customer_reference_number": "string",
+     "additional_info": "string"
+    },
+    "evidence": [
+     "openapi/_original/convelio-shipping-openapi.yml#GET /shipping/quote/{quoteId}",
+     "openapi/_original/convelio-shipping-openapi.yml#POST /shipping/quote"
+    ]
+   },
+   "coterie": {
+    "segments": [
+     "quotes"
+    ],
+    "operations": [
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "quoteId": "string",
+     "applicationId": "string",
+     "status": "string",
+     "premium": "number",
+     "currency": "string",
+     "endorsementPackages": "array"
+    },
+    "evidence": [
+     "openapi/_original/coterie-openapi.yml#GET /commercial/quotes/{quoteId}",
+     "openapi/_original/coterie-openapi.yml#POST /commercial/quotes"
+    ]
+   },
+   "duck-creek": {
+    "segments": [
+     "quotes"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "quoteId": "string",
+     "status": "string",
+     "totalPremium": "number",
+     "premiumBreakdown": "array",
+     "underwritingMessages": "array",
+     "expiresAt": "string",
+     "productCode": "string",
+     "insured": "object",
+     "effectiveDate": "string",
+     "expirationDate": "string",
+     "coverages": "array",
+     "agentCode": "string"
+    },
+    "evidence": [
+     "openapi/_original/duck-creek-policy-openapi.yml#POST /quotes"
+    ]
+   },
+   "evari": {
+    "segments": [
+     "quotes"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "createdAt": "string",
+     "updatedAt": "string",
+     "customer": "object",
+     "product": "object",
+     "answers": "array",
+     "covers": "array",
+     "interestedParties": "array",
+     "startDate": "string",
+     "endDate": "string",
+     "timezoneOffset": "string",
+     "expiryDate": "string",
+     "customerConfirmed": "boolean",
+     "attestations": "object",
+     "agentId": "object",
+     "locked": "boolean",
+     "origin": "string",
+     "referred": "boolean",
+     "referredQuote": "object",
+     "status": "string",
+     "referredQuoteLocked": "boolean",
+     "customerProxy": "object",
+     "duplicateGroupId": "object",
+     "teamId": "string",
+     "triggeredUnderwritingRule": "object",
+     "priceComponents": "array",
+     "price": "object",
+     "errors": "array",
+     "actAsCustomerProxy": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/evari-quotes-api-swagger.json#GET /api/quotes/public/quotes/{id}",
+     "openapi/_original/evari-quotes-api-swagger.json#GET /api/quotes/quotes",
+     "openapi/_original/evari-quotes-api-swagger.json#GET /api/quotes/quotes/{id}",
+     "openapi/_original/evari-quotes-api-swagger.json#GET /api/quotes/search/quotes",
+     "openapi/_original/evari-quotes-api-swagger.json#PATCH /api/quotes/public/quotes/{id}",
+     "openapi/_original/evari-quotes-api-swagger.json#PATCH /api/quotes/quotes/{id}",
+     "openapi/_original/evari-quotes-api-swagger.json#POST /api/quotes/public/quotes",
+     "openapi/_original/evari-quotes-api-swagger.json#POST /api/quotes/quotes"
+    ]
+   },
+   "extend": {
+    "segments": [
+     "quotes"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "premium": "number",
+     "currency": "string",
+     "offerType": "string",
+     "excludedProducts": "array",
+     "note": "string",
+     "charityDonations": "object",
+     "referenceId": "string",
+     "quantity": "number",
+     "purchasePrice": "number",
+     "productName": "string",
+     "category": "string",
+     "shippable": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/extend-shipping-offers-openapi.yml#POST /shipping-offers/quotes"
+    ]
+   },
+   "guidewire": {
+    "segments": [
+     "quote"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "submissionId": "string",
+     "status": "string",
+     "totalPremium": "number",
+     "annualPremium": "number",
+     "taxes": "number",
+     "fees": "number",
+     "coverages": "array",
+     "validUntil": "string"
+    },
+    "evidence": [
+     "openapi/_original/guidewire-policycenter-openapi.yml#POST /submissions/{submissionId}/quote"
+    ]
+   },
+   "healthsherpa": {
+    "segments": [
+     "quotes"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "plan_id": "string",
+     "variant_id": "string",
+     "external_plan_id": "string",
+     "coverage_family": "string",
+     "coverage_type": "string",
+     "name": "string",
+     "display_name": "string",
+     "api_enrollable": "boolean",
+     "context": "object",
+     "issuer": "object",
+     "network": "object",
+     "pricing": "object",
+     "documents": "object",
+     "availability": "object",
+     "details": "object",
+     "release": "object",
+     "location": "object",
+     "household": "object",
+     "filters": "object",
+     "sort": "object",
+     "page": "object",
+     "include": null
+    },
+    "evidence": [
+     "openapi/_original/healthsherpa-openapi.json#POST /v1/quotes"
+    ]
+   },
+   "herald": {
+    "segments": [
+     "quotes"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "status": "string",
+     "product_id": "string",
+     "premium": "number",
+     "currency": "string",
+     "files": "array"
+    },
+    "evidence": [
+     "openapi/_original/herald-openapi.yml#GET /quotes/{quote_id}"
+    ]
+   },
+   "kota": {
+    "segments": [
+     "quotes",
+     "quote"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "object": "string",
+     "id": "string",
+     "employer_id": "string",
+     "quoted_at": "string",
+     "status": "string",
+     "required_action": "object",
+     "coverage_levels": "array",
+     "employee_count": "integer",
+     "cost_sharing": "object",
+     "total_monthly_premium": "number",
+     "currency": "string",
+     "pdf_url": [
+      "string",
+      "null"
+     ],
+     "pdf_expires_at": [
+      "string",
+      "null"
+     ],
+     "generated_at": "string",
+     "expires_at": "string"
+    },
+    "evidence": [
+     "openapi/_original/kota-api-reference-openapi.json#GET /employers/{employer_id}/health_insurance/quotes",
+     "openapi/_original/kota-api-reference-openapi.json#GET /employers/{employer_id}/health_insurance/quotes/{employer_quote_id}",
+     "openapi/_original/kota-api-reference-openapi.json#GET /group_quote_intents/{group_quote_intent_id}/quote",
+     "openapi/_original/kota-openapi-original.json#GET /employers/{employer_id}/health_insurance/quotes",
+     "openapi/_original/kota-openapi-original.json#GET /employers/{employer_id}/health_insurance/quotes/{employer_quote_id}",
+     "openapi/_original/kota-openapi-original.json#GET /group_quote_intents/{group_quote_intent_id}/quote"
+    ]
+   },
+   "laka": {
+    "segments": [
+     "quote"
+    ],
+    "operations": [
+     "GET item",
+     "PATCH item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "accessories": "array",
+     "additionalCostsTotal": "integer",
+     "address": "object",
+     "average": "integer",
+     "capPrice": "integer",
+     "cityOfBirth": "string",
+     "clothing": "array",
+     "coinsurance": "integer",
+     "countryOfBirth": "string",
+     "coverStart": "string",
+     "createdAt": "string",
+     "criminalConvictionsPendingReview": "boolean",
+     "cycleStorage": "integer",
+     "dateOfBirth": "string",
+     "declarations": "array",
+     "discountedCap": "integer",
+     "displayPrice": "integer",
+     "email": "string",
+     "emailVerified": "boolean",
+     "firstName": "string",
+     "handedOff": "boolean",
+     "hasSetMarketingConsent": "boolean",
+     "highestPrice": "integer",
+     "hydrated": "boolean",
+     "id": "string",
+     "lastName": "string",
+     "lastTheft": "integer",
+     "marketingConsent": "boolean",
+     "packageId": "string",
+     "partnerId": "string",
+     "phoneNumber": "string",
+     "preTaxCap": "integer",
+     "products": "array",
+     "provider": "string",
+     "providerId": "string",
+     "providerPersonId": "string",
+     "quoteAttributes": "array",
+     "quotePerks": "array",
+     "redirectUrl": "string",
+     "referralCode": "string",
+     "serviceFeeBip": "integer",
+     "skipInsuredValueValidation": "boolean",
+     "taxPct": "number",
+     "totalFees": "integer",
+     "totalValue": "integer",
+     "updatedAt": "string",
+     "userId": "string",
+     "coverModules": "integer",
+     "inputQuotePerks": "array",
+     "personId": "string",
+     "eventTrigger": "string",
+     "verificationType": "string"
+    },
+    "evidence": [
+     "openapi/_original/laka-quote-openapi.json#GET /quote/{id}",
+     "openapi/_original/laka-quote-openapi.json#PATCH /quote/{id}",
+     "openapi/_original/laka-quote-openapi.json#POST /quote",
+     "openapi/_original/laka-quote-openapi.json#PUT /quote/{id}"
+    ]
+   },
+   "liberty-mutual-insurance": {
+    "segments": [
+     "quotes"
+    ],
+    "operations": [
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "quoteId": "string",
+     "premium": "number",
+     "coverageAmount": "number",
+     "deductible": "number",
+     "term": "string",
+     "expiresAt": "string",
+     "address": "object"
+    },
+    "evidence": [
+     "openapi/_original/liberty-mutual-insurance-renters-insurance-api-openapi.yml#GET /quotes/{quoteId}",
+     "openapi/_original/liberty-mutual-insurance-renters-insurance-api-openapi.yml#POST /quotes"
+    ]
+   },
+   "majesco": {
+    "segments": [
+     "quotes"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "quoteId": "string",
+     "status": "string",
+     "totalPremium": "number",
+     "coverages": "array",
+     "expiresAt": "string",
+     "productType": "string",
+     "effectiveDate": "string",
+     "applicant": "object",
+     "riskData": "object",
+     "requestedCoverages": "array"
+    },
+    "evidence": [
+     "openapi/_original/majesco-policy-openapi.yml#POST /quotes"
+    ]
+   },
+   "nexus-mutual": {
+    "segments": [
+     "quote"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "totalCoverAmountInAsset": "string",
+     "annualPrice": "string",
+     "premiumInNXM": "string",
+     "premiumInAsset": "string",
+     "poolAllocationRequests": "array",
+     "asset": "object"
+    },
+    "evidence": [
+     "openapi/_original/openapi.json#GET /v2/quote"
+    ]
+   },
+   "outdoorsy": {
+    "segments": [
+     "quotes"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "addons": "array",
+     "block_discount_code": "boolean",
+     "bundle_id": "string",
+     "calculated_day_price": "integer",
+     "can_apply_credits": "boolean",
+     "can_generate_weather_quote": "boolean",
+     "dealer_minimum_days": "integer",
+     "deliverable_campgrounds": "array",
+     "delivery": "object",
+     "delivery_campground_id": "integer",
+     "delivery_item": "object",
+     "discount_code": "string",
+     "discount_code_amount": "integer",
+     "discount_code_applied_to": "string",
+     "discount_code_message": "string",
+     "discount_message": "object",
+     "duration": "integer",
+     "estimated_generator_cost": "integer",
+     "estimated_mileage_cost": "integer",
+     "fees_total": "integer",
+     "festival_friendly": "boolean",
+     "final_payment_amount": "integer",
+     "final_payment_due_date": "string",
+     "from": "string",
+     "from_time": "integer",
+     "generator_item": "object",
+     "generator_total_included": "number",
+     "id": "string",
+     "instant_book": "boolean",
+     "insurance_bundle": "object",
+     "is_request_less_than_minimum_days": "boolean",
+     "items": "array",
+     "locale_base_currency": "string",
+     "make": "string",
+     "mileage_item": "object",
+     "mileage_total_included": "number",
+     "model": "array",
+     "occupancy": "object",
+     "offer_affirm": "boolean",
+     "offer_paypal_pay_later": "boolean",
+     "original_day_override_price": "integer",
+     "original_day_price": "integer",
+     "original_month_price": "integer",
+     "original_service_fee": "integer",
+     "original_week_price": "integer",
+     "outdoorsy_fee": "integer",
+     "owner_fee": "integer",
+     "owner_fees": "array",
+     "owner_integrations_fee": "integer",
+     "pet_friendly": "boolean",
+     "pets": "integer",
+     "presentment_currency": "string",
+     "remainder_amount": "integer",
+     "remainder_due_date": "string",
+     "rental_amount": "integer",
+     "rental_amount_item": "object",
+     "rental_summary": "object",
+     "renter_credits_applied": "integer",
+     "renter_reserve_amount": "integer",
+     "requested_duration": "integer",
+     "reserve_amount": "integer",
+     "security_deposit": "integer",
+     "service_fee": "integer",
+     "services": "array",
+     "settlement_currency": "string",
+     "sibling_quote_group_id": "integer",
+     "sibling_quotes_totals": "object",
+     "siblings": "object",
+     "smoking_allowed": "boolean",
+     "subtotal": "integer",
+     "tailgate_friendly": "boolean",
+     "tax": "integer",
+     "tax_rates": "array",
+     "to": "string",
+     "to_time": "integer",
+     "total": "integer",
+     "total_after_credits": "integer",
+     "total_after_deductions": "integer",
+     "towing_capacity": "integer",
+     "towing_vehicle_make": "string",
+     "towing_vehicle_model": "string",
+     "towing_vehicle_year": "integer",
+     "travelers": "integer",
+     "use_day_price": "boolean",
+     "use_day_pricing": "boolean",
+     "use_system_tax_rates": "boolean",
+     "use_tax_inclusive_pricing": "boolean",
+     "user_notice_events": "array",
+     "waiver_summary": "object",
+     "warning": "object",
+     "year_max": "integer",
+     "year_min": "integer",
+     "booking_fees_variant": "object",
+     "estimated_generator_hours": "number",
+     "estimated_miles": "number",
+     "external_campsite_id": "string",
+     "imported": "boolean",
+     "include_coachnet": "boolean",
+     "include_linen_fee": "boolean",
+     "include_pet_fee": "boolean",
+     "insurance": "string",
+     "locale": "string",
+     "loyalty_rewards_eligible": "boolean",
+     "omit_taxes": "boolean",
+     "only_price_breakdown": "boolean",
+     "prefer_cheapest_bundle": "boolean",
+     "rental_id": "integer",
+     "renter_anon_id": "string",
+     "renter_id": "integer",
+     "reserve": "boolean",
+     "roamly_weather_quote": "object",
+     "rv_profile": "object",
+     "source": "string",
+     "trip_credits_disabled": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/outdoorsy-openapi-original.json#POST /quotes"
+    ]
+   },
+   "pie-insurance": {
+    "segments": [
+     "quotes"
+    ],
+    "operations": [
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "declineReasons": "array",
+     "bindStatus": "string",
+     "namedInsured": "string",
+     "effectiveDate": "string",
+     "partnerAgentFirstName": "string",
+     "partnerAgentLastName": "string",
+     "partnerAgentEmail": "string",
+     "expirationDate": "string",
+     "description": "string",
+     "workersCompensation": "object",
+     "mailingAddress": "object",
+     "contacts": "array",
+     "eligibilityAnswers": "array",
+     "referReasons": "array",
+     "insuredAddress": "object",
+     "agencyId": "string",
+     "employersLiabilityLimits": "object",
+     "quoteDate": "string",
+     "insuranceCompany": "string",
+     "classCodeQuotes": "array",
+     "stateQuotes": "array",
+     "primaryStateQuotes": "array",
+     "premiumDetails": "object",
+     "installments": "object",
+     "isDirty": "boolean",
+     "warningMessage": "string",
+     "instantBindStatus": "string"
+    },
+    "evidence": [
+     "openapi/_original/pie-insurance-partner-api-openapi.yml#GET /Quotes/{id}",
+     "openapi/_original/pie-insurance-partner-api-openapi.yml#POST /Quotes",
+     "openapi/_original/pie-insurance-partner-api-openapi.yml#PUT /Quotes/{id}"
+    ]
+   },
+   "progressive": {
+    "segments": [
+     "quotes"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "drivers": "array",
+     "vehicles": "array",
+     "coverageOptions": "object"
+    },
+    "evidence": [
+     "openapi/_original/progressive-auto-quote-api-openapi.yml#GET /quotes",
+     "openapi/_original/progressive-auto-quote-api-openapi.yml#POST /quotes"
+    ]
+   },
+   "qbe": {
+    "segments": [
+     "quotes"
+    ],
+    "operations": [
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "policyHeader": "object",
+     "customerParty": "object",
+     "risks": "array",
+     "questions": "array",
+     "referral": "object",
+     "policyPremium": "object"
+    },
+    "evidence": [
+     "openapi/_original/qbe-anzo-digital-brokers-openapi.yml#POST /auth/quotes",
+     "openapi/_original/qbe-anzo-digital-brokers-openapi.yml#PUT /auth/quotes/{quoteId}"
+    ]
+   },
+   "qoala": {
+    "segments": [
+     "quotes"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "partner_transaction_number": "string",
+     "transaction_number": "string",
+     "product_code": "string",
+     "policies": "array",
+     "product_category": "string",
+     "purchased_at": "string",
+     "premium": "number",
+     "policy_holder": "object",
+     "insureds": "array"
+    },
+    "evidence": [
+     "openapi/_original/qoala-bus-insurance-openapi.yml#POST /api/v2/quotation/quotes",
+     "openapi/_original/qoala-credit-insurance-openapi.yml#POST /api/v2/quotation/quotes",
+     "openapi/_original/qoala-credit-life-insurance-openapi.yml#POST /api/v2/quotation/quotes",
+     "openapi/_original/qoala-experience-event-insurance-openapi.yml#POST /api/v2/quotation/quotes",
+     "openapi/_original/qoala-flight-insurance-openapi.yml#POST /api/v2/quotation/quotes",
+     "openapi/_original/qoala-gadget-insurance-openapi.yml#POST /api/v2/quotation/quotes",
+     "openapi/_original/qoala-goods-insurance-openapi.yml#POST /api/v2/quotation/quotes",
+     "openapi/_original/qoala-hotel-insurance-openapi.yml#POST /api/v2/quotation/quotes",
+     "openapi/_original/qoala-logistic-insurance-openapi.yml#POST /api/v2/quotation/quotes",
+     "openapi/_original/qoala-micro-health-insurance-openapi.yml#POST /api/v2/quotation/quotes",
+     "openapi/_original/qoala-train-insurance-openapi.yml#POST /api/v2/quotation/quotes",
+     "openapi/_original/qoala-vehicle-insurance-openapi.yml#POST /api/v2/quotation/quotes"
+    ]
+   },
+   "root": {
+    "segments": [
+     "quotes"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "quote_package_id": "string",
+     "package_name": "string",
+     "sum_assured": "integer",
+     "base_premium": "integer",
+     "suggested_premium": "integer",
+     "module": "object",
+     "restricted_data": "object",
+     "input_data": "object",
+     "created_at": "string",
+     "currency": "string",
+     "billing_frequency": "string",
+     "product_module_definition_id": "string",
+     "type": "string"
+    },
+    "evidence": [
+     "openapi/_original/root-platform-api-openapi.json#POST /quotes"
+    ]
+   },
+   "socotra": {
+    "segments": [
+     "quotes",
+     "quote"
+    ],
+    "operations": [
+     "GET item",
+     "PATCH item",
+     "POST collection",
+     "POST item"
+    ],
+    "properties": {
+     "locator": "string",
+     "settingsLocator": "string",
+     "createdAt": "string",
+     "createdBy": "string",
+     "accountLocator": "string",
+     "termStartTime": "string",
+     "termEndTime": "string",
+     "termLocator": "string",
+     "quoteLocator": "string",
+     "policyLocator": "string",
+     "currency": "string",
+     "timezone": "string",
+     "basedOnLocator": "string",
+     "effectiveTime": "string",
+     "frames": "array",
+     "reversalLattice": "boolean",
+     "productName": "string",
+     "tenantLocator": "string",
+     "dataPointStartDate": "string",
+     "value": "number",
+     "groupByProduct": "boolean",
+     "groupByTenant": "boolean",
+     "tenantLocators": "array",
+     "products": "array",
+     "tenantType": "string",
+     "startTime": "string",
+     "endTime": "string",
+     "periodic": "string",
+     "currencies": "array",
+     "localStartDateAdjusted": "string",
+     "localEndDateAdjusted": "string",
+     "quoteState": "string",
+     "underwritingStatus": "string",
+     "expirationTime": "string",
+     "element": "object",
+     "preferences": "object",
+     "delinquencyPlanName": "string",
+     "durationBasis": "string",
+     "groupLocator": "string",
+     "autoRenewalPlanName": "string",
+     "billingLevel": "string",
+     "region": "string",
+     "quoteNumber": "string",
+     "duration": "number",
+     "acceptedTime": "string",
+     "issuedTime": "string",
+     "validationResult": "object",
+     "quickQuoteLocator": "string",
+     "contacts": "array",
+     "anonymizedAt": "string",
+     "invoiceFeeAmount": "number",
+     "jurisdiction": "string",
+     "producerCode": "string",
+     "reservedPolicyNumber": "string",
+     "static": "object",
+     "policyNumber": "string",
+     "coverageTerms": "object",
+     "data": "object",
+     "elements": "array",
+     "quoteGroupLocator": "string",
+     "termDuration": "integer",
+     "quickQuoteState": "string",
+     "quote": "object",
+     "setData": "object",
+     "removeData": "object",
+     "setCoverageTerms": "object",
+     "removeCoverageTerms": "object",
+     "resetEndTime": "boolean",
+     "setContacts": "array",
+     "removeContacts": "array"
+    },
+    "evidence": [
+     "openapi/_original/socotra-openapi-original.json#GET /billing/{tenantLocator}/installmentLattices/quotes/{quoteLocator}",
+     "openapi/_original/socotra-openapi-original.json#GET /policy/{tenantLocator}/quotes/{locator}",
+     "openapi/_original/socotra-openapi-original.json#PATCH /policy/{tenantLocator}/quotes/{locator}",
+     "openapi/_original/socotra-openapi-original.json#POST /business-stats/metrics/quotes",
+     "openapi/_original/socotra-openapi-original.json#POST /policy/{tenantLocator}/policies/{locator}/quote",
+     "openapi/_original/socotra-openapi-original.json#POST /policy/{tenantLocator}/quickquotes/{locator}/quote/{accountLocator}",
+     "openapi/_original/socotra-openapi-original.json#POST /policy/{tenantLocator}/quotes"
+    ]
+   },
+   "state-farm": {
+    "segments": [
+     "quotes"
+    ],
+    "operations": [
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "quoteId": "string",
+     "status": "string",
+     "annualPremium": "number",
+     "monthlyPremium": "number",
+     "coverageSummary": "object",
+     "propertyAddress": "object",
+     "validUntil": "string",
+     "quoteNumber": "string",
+     "tenantInfo": "object",
+     "coverageOptions": "object",
+     "effectiveDate": "string"
+    },
+    "evidence": [
+     "openapi/_original/state-farm-renters-insurance-openapi.yml#GET /renters/quotes/{quoteId}",
+     "openapi/_original/state-farm-renters-insurance-openapi.yml#POST /renters/quotes"
+    ]
+   },
+   "state-farm-insurance-cos": {
+    "segments": [
+     "quotes"
+    ],
+    "operations": [
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "quoteId": "string",
+     "status": "string",
+     "annualPremium": "number",
+     "monthlyPremium": "number",
+     "coverageSummary": "object",
+     "propertyAddress": "object",
+     "validUntil": "string",
+     "quoteNumber": "string",
+     "tenantInfo": "object",
+     "coverageOptions": "object",
+     "effectiveDate": "string"
+    },
+    "evidence": [
+     "openapi/_original/state-farm-insurance-cos-renters-openapi.yml#GET /renters/quotes/{quoteId}",
+     "openapi/_original/state-farm-insurance-cos-renters-openapi.yml#POST /renters/quotes"
+    ]
+   },
+   "super-seguros": {
+    "segments": [
+     "quotes"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "annual_premium": "number",
+     "coverages": "object",
+     "link": "string",
+     "monthly_premium": "number",
+     "plan_type": "string",
+     "term_years": "integer",
+     "address": "object",
+     "date_of_birth": "string",
+     "email": "string",
+     "first_last_name": "string",
+     "first_name": "string",
+     "height": "integer",
+     "marital_status": "string",
+     "mobile": "string",
+     "monthly_income": "integer",
+     "nationality": "string",
+     "profession": "string",
+     "rfc": "string",
+     "second_last_name": "string",
+     "sex_at_birth": "string",
+     "smoker": "boolean",
+     "weight": "integer"
+    },
+    "evidence": [
+     "openapi/_original/super-seguros-openapi.json#POST /api/v2/{product}/quotes"
+    ]
+   },
+   "tint": {
+    "segments": [
+     "quotes"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/tint-openapi.yml#GET /policy/{policyId}/endorsement/{id}/quotes",
+     "openapi/_original/tint-openapi.yml#GET /policy/{policyId}/quotes"
+    ]
+   },
+   "travelers": {
+    "segments": [
+     "quotes"
+    ],
+    "operations": [
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "quote_id": "string",
+     "product_type": "string",
+     "status": "string",
+     "premium": "number",
+     "effective_date": "string",
+     "expiration_date": "string",
+     "coverages": "array",
+     "created_at": "string",
+     "business_info": "object",
+     "coverage_options": "object"
+    },
+    "evidence": [
+     "openapi/_original/travelers-openapi.yml#GET /quotes/{quote_id}",
+     "openapi/_original/travelers-openapi.yml#POST /quotes"
+    ]
+   },
+   "zinnia": {
+    "segments": [
+     "quote"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "status": "string",
+     "error": "array",
+     "quoteResponse": "object",
+     "correlationId": "string",
+     "effectiveDate": "string",
+     "reverseInitiator": "boolean",
+     "arrangementId": "string",
+     "systematicProgram": "object",
+     "caseId": "string",
+     "externalTransactionId": "string"
+    },
+    "evidence": [
+     "openapi/_original/zinnia-policy-transactions-openapi.json#POST /policy/v1/transactions/{planCode}/{policyNumber}/systematicprograms/quote",
+     "openapi/_original/zinnia-policy-transactions-openapi.yml#POST /policy/v1/transactions/{planCode}/{policyNumber}/systematicprograms/quote"
+    ]
+   },
+   "zywave": {
+    "segments": [
+     "quote"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "agencyId": "integer",
+     "postalCode": "string",
+     "county": "string",
+     "state": "string",
+     "accountId": "integer",
+     "status": null,
+     "effectiveDate": "string",
+     "isArchived": "boolean",
+     "sicCode": "string",
+     "npn": "string",
+     "tin": "string",
+     "suppressedCarrierCompanyIds": "array",
+     "planIds": "array",
+     "planTypes": "array",
+     "employeeCensus": "array",
+     "id": "integer",
+     "updatedDateTime": "string"
+    },
+    "evidence": [
+     "openapi/_original/zywave-plans-v2-openapi.json#GET /plans/v2.0/quote",
+     "openapi/_original/zywave-plans-v2-openapi.json#GET /plans/v2.0/quote/{quoteId}",
+     "openapi/_original/zywave-plans-v2-openapi.json#POST /plans/v2.0/quote"
+    ]
+   }
+  },
+  "claim": {
+   "aclaimant": {
+    "segments": [
+     "claims"
+    ],
+    "operations": [
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "company-ident": "string",
+     "claim": "object",
+     "pipeline-run-identifier": "string",
+     "external-ident": "string"
+    },
+    "evidence": [
+     "openapi/_original/aclaimant-platform-api-swagger.json#PATCH /v1/claims/{claim-id}",
+     "openapi/_original/aclaimant-platform-api-swagger.json#POST /v1/claims"
+    ]
+   },
+   "american-financial-group": {
+    "segments": [
+     "claims"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/american-financial-group-producer-openapi.json#POST /api/claims",
+     "openapi/_original/american-financial-group-producer-openapi.yml#POST /api/claims"
+    ]
+   },
+   "amtrust-financial-services": {
+    "segments": [
+     "claims"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/amtrust-financial-services-experience-claims-medical-case-api-openapi.json#GET /api/v{version}/claims/{claimNumber}"
+    ]
+   },
+   "assurant": {
+    "segments": [
+     "claims"
+    ],
+    "operations": [
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "claimId": "string",
+     "policyId": "string",
+     "status": "string",
+     "description": "string",
+     "filedDate": "string",
+     "incidentDate": "string"
+    },
+    "evidence": [
+     "openapi/_original/assurant-apex-insurance-api-openapi.yml#GET /claims/{claimId}",
+     "openapi/_original/assurant-apex-insurance-api-openapi.yml#POST /claims"
+    ]
+   },
+   "boost-insurance": {
+    "segments": [
+     "claims"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/boost-insurance-openapi.yml#POST /claims"
+    ]
+   },
+   "duck-creek": {
+    "segments": [
+     "claims"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "total": "integer",
+     "claims": "array",
+     "claimId": "string",
+     "claimNumber": "string",
+     "policyId": "string",
+     "status": "string",
+     "lossDate": "string",
+     "reportedDate": "string",
+     "lossType": "string",
+     "totalIncurred": "number",
+     "description": "string",
+     "claimant": "object",
+     "adjuster": "object",
+     "reserves": "object"
+    },
+    "evidence": [
+     "openapi/_original/duck-creek-policy-openapi.yml#GET /claims",
+     "openapi/_original/duck-creek-policy-openapi.yml#GET /claims/{claimId}",
+     "openapi/_original/duck-creek-policy-openapi.yml#POST /claims"
+    ]
+   },
+   "guidewire": {
+    "segments": [
+     "claims",
+     "fnol"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "claimNumber": "string",
+     "status": "string",
+     "lossType": "string",
+     "lossDate": "string",
+     "lossDescription": "string",
+     "reportedDate": "string",
+     "policyNumber": "string",
+     "insured": "object",
+     "assignedAdjuster": "object",
+     "totalIncurred": "number",
+     "totalPaid": "number",
+     "exposures": "array",
+     "createdDate": "string",
+     "closedDate": "string",
+     "lossTime": "string",
+     "lossLocation": "object",
+     "reporter": "object"
+    },
+    "evidence": [
+     "openapi/_original/guidewire-claimcenter-openapi.yml#GET /claims",
+     "openapi/_original/guidewire-claimcenter-openapi.yml#GET /claims/{claimId}",
+     "openapi/_original/guidewire-claimcenter-openapi.yml#POST /fnol"
+    ]
+   },
+   "laka": {
+    "segments": [
+     "claims",
+     "claim"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "rows": "array",
+     "count": "number",
+     "id": "string",
+     "personId": "string",
+     "userId": "string",
+     "createdAt": "string",
+     "updatedAt": "string",
+     "address": null,
+     "incidentDate": "string",
+     "policyId": "string",
+     "claimType": "string",
+     "claimStatus": "string",
+     "incidentDetails": "array",
+     "claimReference": "string",
+     "claimsDeeplink": "string",
+     "person": "object",
+     "private": "boolean",
+     "crimeReferenceNumber": "string",
+     "productIds": "array",
+     "createClaimDeeplink": "boolean",
+     "completeClaim": "string",
+     "message": "string",
+     "claim": "string",
+     "reference": "string"
+    },
+    "evidence": [
+     "openapi/_original/laka-platform-openapi.json#GET /v3/claims",
+     "openapi/_original/laka-platform-openapi.json#GET /v3/claims/{id}",
+     "openapi/_original/laka-platform-openapi.json#GET /v3/reporting/claims",
+     "openapi/_original/laka-platform-openapi.json#PATCH /v3/claims/{id}",
+     "openapi/_original/laka-platform-openapi.json#POST /v3/claims",
+     "openapi/_original/laka-platform-openapi.json#POST /v3/fleets/claim"
+    ]
+   },
+   "majesco": {
+    "segments": [
+     "claims"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "claims": "array",
+     "totalCount": "integer",
+     "nextPageToken": "string",
+     "claimNumber": "string",
+     "policyNumber": "string",
+     "status": "string",
+     "lossDate": "string",
+     "reportedDate": "string",
+     "lossType": "string",
+     "lossDescription": "string",
+     "claimant": "object",
+     "coveragesInvolved": "array",
+     "totalReserved": "number",
+     "totalPaid": "number",
+     "adjusterName": "string",
+     "createdAt": "string",
+     "claimantId": "string",
+     "contactPhone": "string"
+    },
+    "evidence": [
+     "openapi/_original/majesco-policy-openapi.yml#GET /claims",
+     "openapi/_original/majesco-policy-openapi.yml#GET /claims/{claimNumber}",
+     "openapi/_original/majesco-policy-openapi.yml#POST /claims"
+    ]
+   },
+   "medigo": {
+    "segments": [
+     "claims"
+    ],
+    "operations": [
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "birthdate": "string",
+     "membership_number": "string",
+     "policy_number": "string",
+     "policy_valid_until": "string",
+     "email": "string",
+     "phone": "string",
+     "custom_fields": "object",
+     "files": "array",
+     "status": "string",
+     "notes": "string"
+    },
+    "evidence": [
+     "openapi/_original/medigo-openapi-original.yml#GET /tpa/claims/{id}",
+     "openapi/_original/medigo-openapi-original.yml#POST /tpa/claims"
+    ]
+   },
+   "nexhealth": {
+    "segments": [
+     "claims"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "integer",
+     "location_id": "integer",
+     "patient_id": "integer",
+     "provider_id": "integer",
+     "guarantor_id": "integer",
+     "status": "string",
+     "received_at": "string",
+     "sent_at": "string",
+     "note": "string",
+     "primary_insurance_plan_id": "integer",
+     "secondary_insurance_plan_id": "integer",
+     "date_of_service": "string",
+     "totals": "object",
+     "updated_at": "string",
+     "deleted_at": "string",
+     "patient": "object",
+     "provider": "object",
+     "guarantor": "object",
+     "charge_payouts": "array",
+     "charges": "array"
+    },
+    "evidence": [
+     "openapi/_original/nexhealth-openapi-original.json#GET /claims",
+     "openapi/_original/nexhealth-openapi-original.json#GET /claims/{id}"
+    ]
+   },
+   "outdoorsy": {
+    "segments": [
+     "claim"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/outdoorsy-openapi-original.json#GET /gift_cards/claim"
+    ]
+   },
+   "root": {
+    "segments": [
+     "claims"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "claim_id": "string",
+     "claim_number": "string",
+     "created_at": "string",
+     "updated_at": "string",
+     "policy_id": [
+      "string",
+      "null"
+     ],
+     "policyholder_id": [
+      "string",
+      "null"
+     ],
+     "member_id": [
+      "string",
+      "null"
+     ],
+     "covered_item_id": [
+      "string",
+      "null"
+     ],
+     "claim_status": "string",
+     "approval_status": "string",
+     "claimant": [
+      "object",
+      "null"
+     ],
+     "incident_type": [
+      "string",
+      "null"
+     ],
+     "incident_cause": [
+      "string",
+      "null"
+     ],
+     "incident_date": [
+      "string",
+      "null"
+     ],
+     "assigned_to": [
+      "string",
+      "null"
+     ],
+     "app_data": [
+      "object",
+      "null"
+     ],
+     "module_data": [
+      "object",
+      "null"
+     ],
+     "requested_amount": [
+      "integer",
+      "null"
+     ],
+     "granted_amount": [
+      "integer",
+      "null"
+     ],
+     "rejection_reason": [
+      "string",
+      "null"
+     ],
+     "currency": "string",
+     "created_by": [
+      "object",
+      "null"
+     ],
+     "policyholder": [
+      "object",
+      "null"
+     ],
+     "policy": [
+      "object",
+      "null"
+     ],
+     "member": [
+      "object",
+      "null"
+     ],
+     "user_group": [
+      "object",
+      "null"
+     ],
+     "block_states": [
+      "object",
+      "null"
+     ],
+     "assigned_to_user_id": [
+      "string",
+      "null"
+     ]
+    },
+    "evidence": [
+     "openapi/_original/root-platform-api-openapi.json#GET /claims",
+     "openapi/_original/root-platform-api-openapi.json#GET /claims/{claim_id}",
+     "openapi/_original/root-platform-api-openapi.json#GET /policies/{policy_id}/claims",
+     "openapi/_original/root-platform-api-openapi.json#PATCH /claims/{claim_id}",
+     "openapi/_original/root-platform-api-openapi.json#POST /claims"
+    ]
+   },
+   "tint": {
+    "segments": [
+     "claim",
+     "claims"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/tint-openapi.yml#GET /claim/{id}",
+     "openapi/_original/tint-openapi.yml#GET /claims",
+     "openapi/_original/tint-openapi.yml#GET /policy/{policyId}/claims",
+     "openapi/_original/tint-openapi.yml#POST /policy/{policyId}/claim",
+     "openapi/_original/tint-openapi.yml#PUT /claim/{id}",
+     "openapi/_original/tint-openapi.yml#PUT /policy/{policyId}/claim/{claimId}"
+    ]
+   },
+   "travelers": {
+    "segments": [
+     "claims"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "claim_number": "string",
+     "policy_number": "string",
+     "policy_type": "string",
+     "status": "string",
+     "loss_date": "string",
+     "reported_date": "string",
+     "description": "string",
+     "claimant": "object",
+     "adjuster": "object",
+     "total_incurred": "number",
+     "loss_location": "object"
+    },
+    "evidence": [
+     "openapi/_original/travelers-openapi.yml#GET /claims",
+     "openapi/_original/travelers-openapi.yml#GET /claims/{claim_number}",
+     "openapi/_original/travelers-openapi.yml#POST /claims"
+    ]
+   },
+   "truepill": {
+    "segments": [
+     "claims"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "patient_copay_amount": "number",
+     "transaction_code": "string",
+     "claim_type": "string",
+     "transmission_date": "string",
+     "insurance": "object",
+     "payor": "string",
+     "payor_adjudication_amount": "number"
+    },
+    "evidence": [
+     "openapi/_original/truepill-fuzerx-swagger.json#GET /api/v1/prescription/{prescription_token}/fill/{fill_number}/claims",
+     "openapi/_original/truepill-fuzerx-swagger.json#GET /v1/prescription/{prescription_token}/fill/{fill_number}/claims"
+    ]
+   }
+  },
+  "policyholder": {
+   "amtrust-financial-services": {
+    "segments": [
+     "insureds"
+    ],
+    "operations": [
+     "DELETE item"
+    ],
+    "properties": {
+     "StatusCode": "integer",
+     "Message": "string",
+     "AdditionalMessages": "array",
+     "Errors": "object"
+    },
+    "evidence": [
+     "openapi/_original/amtrust-financial-services-digital-wc-api-openapi.json#DELETE /api/v1/quotes/{quoteId}/additionalInformation/insureds/{insuerdId}",
+     "openapi/_original/amtrust-financial-services-digital-wc-api-openapi.json#DELETE /api/v1/specialty-program/quotes/{quoteId}/additionalInformation/insureds/{insuerdId}"
+    ]
+   },
+   "ascend": {
+    "segments": [
+     "insureds"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "email": "string",
+     "first_name": "string",
+     "last_name": "string",
+     "business_name": "string",
+     "is_business": "boolean",
+     "formatted_address": "string",
+     "phone": "string",
+     "mailing_address_street_one": "string",
+     "mailing_address_street_two": "string",
+     "mailing_address_city": "string",
+     "mailing_address_state": "string",
+     "mailing_address_zip_code": "string",
+     "insured_contacts": "array"
+    },
+    "evidence": [
+     "openapi/_original/ascend-openapi-original.yml#GET /v1/insureds",
+     "openapi/_original/ascend-openapi-original.yml#GET /v1/insureds/{id}",
+     "openapi/_original/ascend-openapi-original.yml#PATCH /v1/insureds/{id}",
+     "openapi/_original/ascend-openapi-original.yml#POST /v1/insureds"
+    ]
+   },
+   "root": {
+    "segments": [
+     "policyholders"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection",
+     "PUT collection"
+    ],
+    "properties": {
+     "policyholder_id": "string",
+     "type": "string",
+     "id": "object",
+     "title": "string",
+     "date_of_birth": "string",
+     "gender": "string",
+     "initials": [
+      "string",
+      "null"
+     ],
+     "first_name": "string",
+     "middle_name": [
+      "string",
+      "null"
+     ],
+     "last_name": "string",
+     "company_name": "string",
+     "registration_number": "string",
+     "date_of_establishment": "string",
+     "company_website_url": "string",
+     "contact_position": "string",
+     "subsidiary_companies": "array",
+     "email": [
+      "string",
+      "null"
+     ],
+     "cellphone": [
+      "string",
+      "null"
+     ],
+     "phone_other": [
+      "string",
+      "null"
+     ],
+     "policy_ids": "array",
+     "policies": "array",
+     "created_at": "string",
+     "app_data": [
+      "object",
+      "null"
+     ],
+     "created_by": [
+      "object",
+      "null"
+     ],
+     "updated_at": "string",
+     "address": [
+      "object",
+      "null"
+     ],
+     "expiration_date": "string"
+    },
+    "evidence": [
+     "openapi/_original/root-platform-api-openapi.json#GET /policyholders",
+     "openapi/_original/root-platform-api-openapi.json#GET /policyholders/{policyholder_id}",
+     "openapi/_original/root-platform-api-openapi.json#PATCH /policyholders/{policyholder_id}",
+     "openapi/_original/root-platform-api-openapi.json#POST /policyholders",
+     "openapi/_original/root-platform-api-openapi.json#PUT /policyholders"
+    ]
+   }
+  },
+  "insurance_product": {
+   "american-financial-group": {
+    "segments": [
+     "products"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/american-financial-group-product-openapi.json#POST /api/products",
+     "openapi/_original/american-financial-group-product-openapi.yml#POST /api/products",
+     "openapi/_original/american-financial-group-rating-openapi.json#POST /api/products",
+     "openapi/_original/american-financial-group-rating-openapi.yml#POST /api/products",
+     "openapi/_original/american-financial-group-submission-openapi.json#GET /api/products",
+     "openapi/_original/american-financial-group-submission-openapi.yml#GET /api/products"
+    ]
+   },
+   "assurant": {
+    "segments": [
+     "products"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "productId": "string",
+     "name": "string",
+     "category": "string",
+     "description": "string",
+     "pricing": "object"
+    },
+    "evidence": [
+     "openapi/_original/assurant-apex-insurance-api-openapi.yml#GET /products"
+    ]
+   },
+   "beazley": {
+    "segments": [
+     "products"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/beazley-fast-reader.yml#GET /products/{term}"
+    ]
+   },
+   "centene": {
+    "segments": [
+     "product"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "ACAEligibility": "array",
+     "AHFCFosterCareOnly": "string",
+     "CAPrisonSubSpecialties": "object",
+     "CBAS": "object",
+     "CDS": "object",
+     "CHDIndicator": "string",
+     "DEAInformation": "array",
+     "ECFMG": "array",
+     "EHR": "object",
+     "EINNumbers": "array",
+     "HCBS": "object",
+     "HIVAIDS": "object",
+     "MMAPhysicianIncentive": "array",
+     "OBGYN": "object",
+     "PPGID": "string",
+     "VFCProgram": "object",
+     "alternateName": "object",
+     "amisysInfo": "array",
+     "audit": "object",
+     "badgeCert": "string",
+     "badgesCertifications": "array",
+     "caqh": "object",
+     "childrensSpecialHealthCareServices": "string",
+     "commonPracId": "array",
+     "compPerinatalServiceProgram": "array",
+     "contracts": "array",
+     "credentialing": "array",
+     "credentialingLegacyId": "string",
+     "culturalCompetenceTraining": "object",
+     "degree": "string",
+     "disclosureOfOwnership": "object",
+     "disorders": "array",
+     "dob": "string",
+     "education": "array",
+     "email": "string",
+     "ethnicMinorityRaceStatus": "object",
+     "ethnicity": "string",
+     "firstName": "string",
+     "gender": "string",
+     "hatCode": "string",
+     "hatCodeDescription": "string",
+     "healthNetLegacyPhyId": "string",
+     "hospitalPrivileges": "array",
+     "hospitals": "array",
+     "insurance": "array",
+     "isEPSDTEligible": "boolean",
+     "isEPrescribe": "string",
+     "isTeleHealth": "boolean",
+     "isTelemonitor": "boolean",
+     "languages": "array",
+     "lastName": "string",
+     "legacyIds": "array",
+     "locations": "array",
+     "malpractice": "array",
+     "medicaidInfo": "array",
+     "medicalLicenses": "array",
+     "medicareNumbers": "array",
+     "middleName": "string",
+     "minority": "string",
+     "modalities": "array",
+     "nationalId": "object",
+     "npi": "array",
+     "personalProfile": "object",
+     "pracId": "string",
+     "pracVirtualExclusion": "string",
+     "prescriber": "string",
+     "professionalProfile": "object",
+     "providerType": "object",
+     "qualityRating": "object",
+     "resilienceIntegratedSystemsExcellence": "array",
+     "salutation": "string",
+     "secondaryEmail": "string",
+     "socialSecurityNumber": "string",
+     "specialties": "array",
+     "suffix": "string",
+     "taxonomies": "array",
+     "telepsychiatryParticipant": "string",
+     "tier": "string",
+     "vendorInformation": "object",
+     "OASASNumber": "array",
+     "PPECCsk": "object",
+     "PRPRId": "string",
+     "accreditations": "object",
+     "additionalAddresses": "array",
+     "additionalName": "string",
+     "address": "object",
+     "amisysGroupRecord": "array",
+     "amisysProviderRecord": "array",
+     "appointmentAvailability": "string",
+     "assessments": "array",
+     "attributes": "object",
+     "businessEntityAffiliations": "array",
+     "businessIdentifiers": "array",
+     "caveatMessages": "array",
+     "clinicallyIntegratedNetworks": "array",
+     "essentialCommunityProviderTypes": "array",
+     "essentialProviderIndicator": "array",
+     "facilityTypes": "array",
+     "hatCodes": "array",
+     "hatCodesDescriptions": "array",
+     "healthHomeIds": "array",
+     "hospitalServices": "array",
+     "isCHD": "boolean",
+     "isEFTForm": "boolean",
+     "isHomeDelivery": "boolean",
+     "isMailOrder": "boolean",
+     "isOIGValidated": "boolean",
+     "isTeacherFacilityInd": "boolean",
+     "isTelemedicinePar": "boolean",
+     "licenses": "array",
+     "masterProviderKeys": "array",
+     "medicallyDependentChildrensPlan": "string",
+     "medicareClaimsOptOuts": "array",
+     "messageHeader4": "array",
+     "opioidTreatmentCenter": "string",
+     "otherLicenseCertification": "object",
+     "participatingPhysicianGroup": "object",
+     "practiceEmail": "string",
+     "provId": "string",
+     "provName": "string",
+     "provVirtualExclusion": "string",
+     "providerRelationships": "array",
+     "providerSpecialties": "array",
+     "specialty": "object",
+     "staffedBedCount": "string",
+     "termination": "object",
+     "tin": "string",
+     "website": "string"
+    },
+    "evidence": [
+     "openapi/_original/centene-provider-rtr-demographics-openapi.json#GET /provRTR/v2/practitioner/network/product",
+     "openapi/_original/centene-provider-rtr-demographics-openapi.json#GET /provRTR/v2/provider/network/product",
+     "openapi/_original/centene-provider-rtr-demographics-openapi.json#GET /provRTR/v2/provider/network/{PROV_ID}/product",
+     "openapi/_original/centene-provider-rtr-demographics-openapi.json#GET /v2/practitioner/network/{PRAC_ID}/product"
+    ]
+   },
+   "duck-creek": {
+    "segments": [
+     "products"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "productCode": "string",
+     "productName": "string",
+     "lineOfBusiness": "string",
+     "availableStates": "array",
+     "effectiveDate": "string"
+    },
+    "evidence": [
+     "openapi/_original/duck-creek-policy-openapi.yml#GET /products"
+    ]
+   },
+   "herald": {
+    "segments": [
+     "products"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "institution_id": "string",
+     "line_of_business": "string"
+    },
+    "evidence": [
+     "openapi/_original/herald-openapi.yml#GET /products",
+     "openapi/_original/herald-openapi.yml#GET /products/{product_id}"
+    ]
+   },
+   "ivans": {
+    "segments": [
+     "product"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/ivans-exchange-v1-openapi.json#GET /api/WarpNAICProduct/Product/{id}"
+    ]
+   },
+   "laka": {
+    "segments": [
+     "products"
+    ],
+    "operations": [
+     "DELETE collection",
+     "DELETE item",
+     "PATCH collection",
+     "POST collection"
+    ],
+    "properties": {
+     "products": "object",
+     "clothing": "object",
+     "accessories": "object",
+     "refutationId": "string",
+     "personId": "string",
+     "startDate": "string",
+     "endDate": "string"
+    },
+    "evidence": [
+     "openapi/_original/laka-platform-openapi.json#DELETE /v3/policies/{policyId}/products/{productId}",
+     "openapi/_original/laka-platform-openapi.json#PATCH /v3/policies/{policyId}/products",
+     "openapi/_original/laka-platform-openapi.json#POST /v3/policies/{policyId}/products",
+     "openapi/_original/laka-quote-openapi.json#DELETE /{quoteId}/products"
+    ]
+   },
+   "nexus-mutual": {
+    "segments": [
+     "products"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {
+     "availableCapacity": "array",
+     "allocatedNxm": "string",
+     "minAnnualPrice": "string",
+     "maxAnnualPrice": "string",
+     "productId": "integer",
+     "pricePerPool": "array",
+     "weightedAveragePrice": "integer"
+    },
+    "evidence": [
+     "openapi/_original/openapi.json#GET /v2/capacity/pools/{poolId}/products/{productId}",
+     "openapi/_original/openapi.json#GET /v2/pricing/products/{productId}"
+    ]
+   },
+   "oper": {
+    "segments": [
+     "products"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection",
+     "POST item"
+    ],
+    "properties": {
+     "dscr": "object",
+     "dsti": null,
+     "dsti_with_bullet_loan": null,
+     "items": "array",
+     "ltv": null,
+     "ltv_value": "number",
+     "recalculate_costs": "boolean",
+     "short_term_dsti": null,
+     "short_term_ltv": null,
+     "short_term_surplus": null,
+     "surplus": null,
+     "products": "string",
+     "architect_fees": "number",
+     "borrowers_info": "array",
+     "building_costs": "number",
+     "buy_out_amount": "number",
+     "collaterals": "array",
+     "epc_after_renovations": "integer",
+     "epc_before_renovations": "integer",
+     "fair_market_value": "number",
+     "financial_plan": null,
+     "financial_plan_loan_amount_items": "array",
+     "financial_plan_overridden_fields": null,
+     "financial_plan_own_fund_items": "array",
+     "is_main_first_residence": "boolean",
+     "is_realtor_excluded": "boolean",
+     "land_purchase_type": null,
+     "land_value": "number",
+     "loan_purposes": "array",
+     "price_of_land": "number",
+     "pro_fisco_value": "number",
+     "purchase_sale_type": null,
+     "realty_price": "number",
+     "realty_usage_type": null,
+     "refinances": "array",
+     "region": null,
+     "renovation_costs": "array",
+     "selected_discounts": null,
+     "venal_value_after": "number",
+     "venal_value_before": "number"
+    },
+    "evidence": [
+     "openapi/_original/oper-api.json#GET /api/products/",
+     "openapi/_original/oper-api.json#POST /api/loan-requests/{loan_request_id}/search/products/",
+     "openapi/_original/oper-api.json#POST /api/loan-requests/{loan_request_id}/search/products/{product_version_id}/",
+     "openapi/_original/oper-api.json#POST /api/loan-requests/{loan_request_id}/tweak/products/",
+     "openapi/_original/oper-api.json#POST /api/simulators/mortgage/advisor/products/"
+    ]
+   },
+   "oper-credits": {
+    "segments": [
+     "products"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection",
+     "POST item"
+    ],
+    "properties": {
+     "dscr": "object",
+     "dsti": null,
+     "dsti_with_bullet_loan": null,
+     "items": "array",
+     "ltv": null,
+     "ltv_value": "number",
+     "recalculate_costs": "boolean",
+     "short_term_dsti": null,
+     "short_term_ltv": null,
+     "short_term_surplus": null,
+     "surplus": null,
+     "products": "string",
+     "architect_fees": "number",
+     "borrowers_info": "array",
+     "building_costs": "number",
+     "buy_out_amount": "number",
+     "collaterals": "array",
+     "epc_after_renovations": "integer",
+     "epc_before_renovations": "integer",
+     "fair_market_value": "number",
+     "financial_plan": null,
+     "financial_plan_loan_amount_items": "array",
+     "financial_plan_overridden_fields": null,
+     "financial_plan_own_fund_items": "array",
+     "is_main_first_residence": "boolean",
+     "is_realtor_excluded": "boolean",
+     "land_purchase_type": null,
+     "land_value": "number",
+     "loan_purposes": "array",
+     "price_of_land": "number",
+     "pro_fisco_value": "number",
+     "purchase_sale_type": null,
+     "realty_price": "number",
+     "realty_usage_type": null,
+     "refinances": "array",
+     "region": null,
+     "renovation_costs": "array",
+     "selected_discounts": null,
+     "venal_value_after": "number",
+     "venal_value_before": "number"
+    },
+    "evidence": [
+     "openapi/_original/oper-credits-api-openapi.json#GET /api/products/",
+     "openapi/_original/oper-credits-api-openapi.json#POST /api/loan-requests/{loan_request_id}/search/products/",
+     "openapi/_original/oper-credits-api-openapi.json#POST /api/loan-requests/{loan_request_id}/search/products/{product_version_id}/",
+     "openapi/_original/oper-credits-api-openapi.json#POST /api/loan-requests/{loan_request_id}/tweak/products/",
+     "openapi/_original/oper-credits-api-openapi.json#POST /api/simulators/mortgage/advisor/products/"
+    ]
+   },
+   "slope-software": {
+    "segments": [
+     "products"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "integer",
+     "name": "string",
+     "description": "string",
+     "type": "string",
+     "productId": "integer",
+     "modelPointFile": "object",
+     "filters": "array",
+     "productOutputGroupings": "array"
+    },
+    "evidence": [
+     "openapi/_original/slope-software-openapi-original.json#DELETE /api/v1/Projections/Portfolios/Products/{productId}",
+     "openapi/_original/slope-software-openapi-original.json#GET /api/v1/Models/{ModelId}/Products",
+     "openapi/_original/slope-software-openapi-original.json#POST /api/v1/Projections/Portfolios/{portfolioId}/Products"
+    ]
+   },
+   "tint": {
+    "segments": [
+     "insurance-products"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/tint-openapi.yml#GET /insurance-products"
+    ]
+   },
+   "zinnia": {
+    "segments": [
+     "products"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "productId": "string",
+     "carrierProductId": "string",
+     "productMarketingName": "string",
+     "carrier": "string",
+     "productLine": "string",
+     "productType": "string",
+     "planCode": "string",
+     "termLength": "array",
+     "availableToSell": "boolean",
+     "id": "string",
+     "carrierCode": "string",
+     "carrierName": "string",
+     "cusip": "string",
+     "productName": "string",
+     "marketingName": "string",
+     "legalName": "string",
+     "version": "string",
+     "versionStartDate": "string",
+     "versionEndDate": "string",
+     "line": "string",
+     "type": "string",
+     "distributors": "array",
+     "stateAvailability": "array"
+    },
+    "evidence": [
+     "openapi/_original/zinnia-product-service-openapi.json#GET /product/v1/products",
+     "openapi/_original/zinnia-product-service-openapi.json#GET /product/v2/products/{productId}",
+     "openapi/_original/zinnia-product-service-openapi.json#POST /product/v1/products",
+     "openapi/_original/zinnia-product-service-openapi.yml#GET /product/v1/products",
+     "openapi/_original/zinnia-product-service-openapi.yml#GET /product/v2/products/{productId}",
+     "openapi/_original/zinnia-product-service-openapi.yml#POST /product/v1/products"
+    ]
+   }
+  }
+ },
+ "naming": {
+  "path_segment": {
+   "lower": [
+    "1fort",
+    "acko",
+    "aclaimant",
+    "affinda",
+    "agencyzoom",
+    "american-financial-group",
+    "amtrust-financial-services",
+    "apollo-insurance",
+    "arthur-j-gallagher",
+    "ascend",
+    "assurant",
+    "at-bay",
+    "attomdata",
+    "audatex",
+    "availity",
+    "baloise",
+    "beazley",
+    "boost-insurance",
+    "cachet",
+    "candid-health",
+    "canopy",
+    "capchase",
+    "centene",
+    "clearspeed",
+    "cms-gov",
+    "coalition-inc",
+    "convelio",
+    "coterie",
+    "cover-genius",
+    "duck-creek",
+    "eagleview",
+    "easypost",
+    "evari",
+    "extend",
+    "fdx",
+    "feathery",
+    "federal-deposit-insurance-corporation",
+    "fincura",
+    "findigs",
+    "fintary",
+    "first-street",
+    "flume-health",
+    "goodlord",
+    "groupe-bpce",
+    "guidewire",
+    "healthsherpa",
+    "herald",
+    "heron",
+    "hiveagentiq-com",
+    "hover",
+    "human-api",
+    "humanapi",
+    "instabase",
+    "ivans",
+    "kita",
+    "kota",
+    "laka",
+    "ledger-investing",
+    "lendapi",
+    "leo",
+    "levitate",
+    "liberty-mutual-insurance",
+    "lincoln-national",
+    "luthersystems-com",
+    "majesco",
+    "medigo",
+    "mireye",
+    "moodys",
+    "moodys-rms",
+    "moxe-health",
+    "nayya",
+    "near-space-labs",
+    "nexhealth",
+    "nexus-mutual",
+    "nirvana",
+    "noyo",
+    "ntropy",
+    "ocrolus",
+    "one-concern",
+    "onsi",
+    "open-insurance",
+    "oper",
+    "oper-credits",
+    "optum",
+    "orbii",
+    "orbii-tech-ltd",
+    "origami-risk",
+    "outdoorsy",
+    "pie-insurance",
+    "plansource",
+    "ppl-london-market",
+    "progressive",
+    "prudential-financial",
+    "qbe",
+    "qoala",
+    "quantemplate",
+    "re",
+    "rhino",
+    "ribbon-health",
+    "ripe-insurance",
+    "root",
+    "santevet",
+    "silna",
+    "socotra",
+    "solera",
+    "state-farm",
+    "state-farm-insurance-cos",
+    "steadily",
+    "stedi",
+    "sun-life",
+    "super-seguros",
+    "superdial",
+    "thatch",
+    "thatch-health",
+    "tiaa",
+    "tint",
+    "travelers",
+    "truebiz",
+    "truepill",
+    "trustlayer",
+    "tuva-health",
+    "unitedhealthcare",
+    "unqork",
+    "unum",
+    "valgo",
+    "verisk",
+    "vynedental",
+    "wefitter",
+    "whitespace-london",
+    "yuzu-health",
+    "zego",
+    "zinnia",
+    "zocdoc",
+    "zywave"
+   ],
+   "kebab-case": [
+    "1fort",
+    "aclaimant",
+    "agencyzoom",
+    "american-financial-group",
+    "amtrust-financial-services",
+    "at-bay",
+    "availity",
+    "cachet",
+    "candid-health",
+    "capchase",
+    "centene",
+    "cms-gov",
+    "coterie",
+    "develop-health",
+    "eagleview",
+    "evari",
+    "extend",
+    "fdx",
+    "feathery",
+    "fincura",
+    "fintary",
+    "flume-health",
+    "groupe-bpce",
+    "healthsherpa",
+    "hiveagentiq-com",
+    "human-api",
+    "humanapi",
+    "instabase",
+    "ivans",
+    "kita",
+    "kota",
+    "laka",
+    "ledger-investing",
+    "lendapi",
+    "lincoln-national",
+    "luthersystems-com",
+    "medigo",
+    "mireye",
+    "moodys",
+    "moodys-rms",
+    "moxe-health",
+    "nayya",
+    "ntropy",
+    "ocrolus",
+    "one-concern",
+    "oper",
+    "oper-credits",
+    "optum",
+    "orbii",
+    "orbii-tech-ltd",
+    "origami-risk",
+    "outdoorsy",
+    "qbe",
+    "root",
+    "santevet",
+    "silna",
+    "socotra",
+    "state-farm",
+    "state-farm-insurance-cos",
+    "steadily",
+    "stedi",
+    "sun-life",
+    "superdial",
+    "tiaa",
+    "tint",
+    "truebiz",
+    "truepill",
+    "trustlayer",
+    "tuva-health",
+    "unitedhealthcare",
+    "unqork",
+    "valgo",
+    "verisk",
+    "vynedental",
+    "yuzu-health",
+    "zego",
+    "zinnia",
+    "zocdoc"
+   ],
+   "snake_case": [
+    "1fort",
+    "affinda",
+    "amtrust-financial-services",
+    "arthur-j-gallagher",
+    "ascend",
+    "candid-health",
+    "cms-gov",
+    "cover-genius",
+    "feathery",
+    "fincura",
+    "goodlord",
+    "healthsherpa",
+    "heron",
+    "hover",
+    "kota",
+    "laka",
+    "lendapi",
+    "moodys-rms",
+    "nayya",
+    "near-space-labs",
+    "nexhealth",
+    "noyo",
+    "ntropy",
+    "ocrolus",
+    "oper",
+    "oper-credits",
+    "optum",
+    "orbii",
+    "orbii-tech-ltd",
+    "outdoorsy",
+    "plansource",
+    "re",
+    "rhino",
+    "ribbon-health",
+    "santevet",
+    "silna",
+    "steadily",
+    "thatch",
+    "thatch-health",
+    "truebiz",
+    "truepill",
+    "wefitter",
+    "zocdoc"
+   ],
+   "camelCase": [
+    "agencyzoom",
+    "american-financial-group",
+    "amtrust-financial-services",
+    "attomdata",
+    "audatex",
+    "availity",
+    "canopy",
+    "centene",
+    "evari",
+    "flume-health",
+    "groupe-bpce",
+    "ivans",
+    "laka",
+    "moodys",
+    "moodys-rms",
+    "optum",
+    "ppl-london-market",
+    "socotra",
+    "solera",
+    "unqork",
+    "whitespace-london",
+    "yuzu-health",
+    "zinnia",
+    "zywave"
+   ],
+   "other": [
+    "american-financial-group",
+    "amtrust-financial-services",
+    "centene",
+    "cms-gov",
+    "first-street",
+    "flume-health",
+    "hover",
+    "luthersystems-com",
+    "mireye",
+    "moodys-rms",
+    "oper",
+    "oper-credits",
+    "optum",
+    "orbii",
+    "orbii-tech-ltd",
+    "origami-risk",
+    "outdoorsy",
+    "qbe",
+    "solera",
+    "stedi",
+    "sun-life",
+    "truepill",
+    "vynedental"
+   ],
+   "PascalCase": [
+    "american-financial-group",
+    "amtrust-financial-services",
+    "audatex",
+    "beazley",
+    "centene",
+    "cms-gov",
+    "eagleview",
+    "ivans",
+    "levitate",
+    "moodys",
+    "moodys-rms",
+    "optum",
+    "orbii-tech-ltd",
+    "origami-risk",
+    "pie-insurance",
+    "slope-software",
+    "solera",
+    "sun-life",
+    "unitedhealth",
+    "unitedhealthcare",
+    "zinnia"
+   ]
+  },
+  "query_param": {
+   "lower": [
+    "1fort",
+    "affinda",
+    "agencyzoom",
+    "amtrust-financial-services",
+    "arthur-j-gallagher",
+    "ascend",
+    "assurant",
+    "attomdata",
+    "audatex",
+    "availity",
+    "baloise",
+    "beazley",
+    "candid-health",
+    "canopy",
+    "capchase",
+    "centene",
+    "cms-gov",
+    "coalition-inc",
+    "convelio",
+    "coterie",
+    "develop-health",
+    "duck-creek",
+    "eagleview",
+    "evari",
+    "extend",
+    "fdx",
+    "feathery",
+    "federal-deposit-insurance-corporation",
+    "fincura",
+    "findigs",
+    "fintary",
+    "flume-health",
+    "goodlord",
+    "groupe-bpce",
+    "guidewire",
+    "healthsherpa",
+    "herald",
+    "heron",
+    "hover",
+    "human-api",
+    "humanapi",
+    "instabase",
+    "ivans",
+    "kita",
+    "kota",
+    "laka",
+    "ledger-investing",
+    "lendapi",
+    "levitate",
+    "liberty-mutual-insurance",
+    "luthersystems-com",
+    "majesco",
+    "medigo",
+    "moodys",
+    "moodys-rms",
+    "nayya",
+    "near-space-labs",
+    "nexhealth",
+    "nexus-mutual",
+    "noyo",
+    "ntropy",
+    "ocrolus",
+    "onsi",
+    "oper",
+    "oper-credits",
+    "optum",
+    "orbii",
+    "orbii-tech-ltd",
+    "outdoorsy",
+    "pie-insurance",
+    "plansource",
+    "ppl-london-market",
+    "qbe",
+    "quantemplate",
+    "re",
+    "rhino",
+    "ribbon-health",
+    "ripe-insurance",
+    "root",
+    "santevet",
+    "silna",
+    "socotra",
+    "solera",
+    "state-farm",
+    "state-farm-insurance-cos",
+    "steadily",
+    "stedi",
+    "sun-life",
+    "thatch",
+    "thatch-health",
+    "tiaa",
+    "travelers",
+    "truebiz",
+    "truepill",
+    "trustlayer",
+    "unitedhealth",
+    "unitedhealthcare",
+    "unqork",
+    "unum",
+    "verisk",
+    "wefitter",
+    "whitespace-london",
+    "zinnia",
+    "zocdoc",
+    "zywave"
+   ],
+   "snake_case": [
+    "1fort",
+    "affinda",
+    "ascend",
+    "candid-health",
+    "canopy",
+    "capchase",
+    "cms-gov",
+    "coalition-inc",
+    "cover-genius",
+    "easypost",
+    "feathery",
+    "federal-deposit-insurance-corporation",
+    "fincura",
+    "findigs",
+    "fintary",
+    "flume-health",
+    "groupe-bpce",
+    "healthsherpa",
+    "herald",
+    "heron",
+    "hover",
+    "instabase",
+    "ivans",
+    "kita",
+    "kota",
+    "luthersystems-com",
+    "near-space-labs",
+    "nexhealth",
+    "noyo",
+    "ntropy",
+    "ocrolus",
+    "oper",
+    "oper-credits",
+    "orbii",
+    "orbii-tech-ltd",
+    "outdoorsy",
+    "plansource",
+    "qoala",
+    "rhino",
+    "ribbon-health",
+    "root",
+    "santevet",
+    "silna",
+    "steadily",
+    "thatch",
+    "thatch-health",
+    "travelers",
+    "truebiz",
+    "truepill",
+    "wefitter",
+    "zocdoc"
+   ],
+   "camelCase": [
+    "amtrust-financial-services",
+    "attomdata",
+    "audatex",
+    "availity",
+    "beazley",
+    "candid-health",
+    "canopy",
+    "centene",
+    "cms-gov",
+    "coterie",
+    "duck-creek",
+    "eagleview",
+    "extend",
+    "fdx",
+    "fintary",
+    "flume-health",
+    "goodlord",
+    "groupe-bpce",
+    "guidewire",
+    "human-api",
+    "humanapi",
+    "ivans",
+    "laka",
+    "levitate",
+    "lincoln-national",
+    "majesco",
+    "moodys",
+    "moodys-rms",
+    "nayya",
+    "nexus-mutual",
+    "onsi",
+    "oper",
+    "oper-credits",
+    "optum",
+    "pie-insurance",
+    "ppl-london-market",
+    "socotra",
+    "solera",
+    "stedi",
+    "superdial",
+    "tiaa",
+    "truepill",
+    "trustlayer",
+    "unqork",
+    "unum",
+    "verisk",
+    "whitespace-london",
+    "yuzu-health",
+    "zinnia",
+    "zywave"
+   ],
+   "other": [
+    "1fort",
+    "availity",
+    "beazley",
+    "centene",
+    "cms-gov",
+    "findigs",
+    "fintary",
+    "goodlord",
+    "healthsherpa",
+    "hover",
+    "moodys",
+    "nexhealth",
+    "oper",
+    "oper-credits",
+    "optum",
+    "outdoorsy",
+    "ribbon-health",
+    "santevet",
+    "sun-life",
+    "thatch",
+    "thatch-health",
+    "trustlayer",
+    "unitedhealth",
+    "unitedhealthcare",
+    "zywave"
+   ],
+   "kebab-case": [
+    "amtrust-financial-services",
+    "audatex",
+    "centene",
+    "cms-gov",
+    "instabase",
+    "ivans",
+    "oper",
+    "oper-credits",
+    "optum",
+    "outdoorsy",
+    "solera",
+    "sun-life",
+    "unitedhealth",
+    "unitedhealthcare",
+    "zinnia"
+   ],
+   "PascalCase": [
+    "amtrust-financial-services",
+    "attomdata",
+    "beazley",
+    "centene",
+    "eagleview",
+    "optum",
+    "outdoorsy",
+    "slope-software",
+    "whitespace-london",
+    "zywave"
+   ]
+  },
+  "pagination_param": {
+   "limit": [
+    "1fort",
+    "affinda",
+    "availity",
+    "baloise",
+    "candid-health",
+    "canopy",
+    "capchase",
+    "cms-gov",
+    "duck-creek",
+    "evari",
+    "fdx",
+    "federal-deposit-insurance-corporation",
+    "fincura",
+    "fintary",
+    "flume-health",
+    "healthsherpa",
+    "heron",
+    "human-api",
+    "humanapi",
+    "instabase",
+    "ivans",
+    "kita",
+    "ledger-investing",
+    "levitate",
+    "moodys",
+    "moodys-rms",
+    "ntropy",
+    "ocrolus",
+    "optum",
+    "outdoorsy",
+    "re",
+    "silna",
+    "slope-software",
+    "steadily",
+    "tiaa",
+    "travelers",
+    "truebiz",
+    "truepill",
+    "trustlayer",
+    "unqork",
+    "unum",
+    "wefitter",
+    "zinnia",
+    "zocdoc"
+   ],
+   "page_size": [
+    "attomdata",
+    "audatex",
+    "candid-health",
+    "coalition-inc",
+    "easypost",
+    "feathery",
+    "fintary",
+    "flume-health",
+    "groupe-bpce",
+    "guidewire",
+    "healthsherpa",
+    "instabase",
+    "ivans",
+    "kota",
+    "laka",
+    "luthersystems-com",
+    "majesco",
+    "near-space-labs",
+    "noyo",
+    "oper",
+    "oper-credits",
+    "optum",
+    "orbii",
+    "orbii-tech-ltd",
+    "ppl-london-market",
+    "ribbon-health",
+    "root",
+    "socotra",
+    "stedi",
+    "thatch",
+    "thatch-health",
+    "tiaa",
+    "trustlayer",
+    "wefitter",
+    "zinnia",
+    "zocdoc",
+    "zywave"
+   ],
+   "page": [
+    "amtrust-financial-services",
+    "ascend",
+    "attomdata",
+    "audatex",
+    "centene",
+    "coalition-inc",
+    "eagleview",
+    "feathery",
+    "findigs",
+    "fintary",
+    "goodlord",
+    "heron",
+    "hover",
+    "ivans",
+    "kota",
+    "laka",
+    "luthersystems-com",
+    "moodys",
+    "nayya",
+    "near-space-labs",
+    "nexhealth",
+    "noyo",
+    "ntropy",
+    "oper",
+    "oper-credits",
+    "optum",
+    "orbii",
+    "orbii-tech-ltd",
+    "plansource",
+    "rhino",
+    "ribbon-health",
+    "root",
+    "tiaa",
+    "unum",
+    "zinnia",
+    "zocdoc"
+   ],
+   "offset": [
+    "1fort",
+    "affinda",
+    "availity",
+    "canopy",
+    "capchase",
+    "cms-gov",
+    "duck-creek",
+    "evari",
+    "fdx",
+    "federal-deposit-insurance-corporation",
+    "fincura",
+    "healthsherpa",
+    "heron",
+    "human-api",
+    "humanapi",
+    "instabase",
+    "kita",
+    "moodys",
+    "moodys-rms",
+    "noyo",
+    "ocrolus",
+    "optum",
+    "outdoorsy",
+    "re",
+    "slope-software",
+    "socotra",
+    "tiaa",
+    "truebiz",
+    "unitedhealth",
+    "unqork",
+    "wefitter",
+    "zinnia"
+   ],
+   "count": [
+    "affinda",
+    "centene",
+    "cms-gov",
+    "eagleview",
+    "socotra",
+    "sun-life",
+    "unitedhealth",
+    "unitedhealthcare"
+   ],
+   "start": [
+    "affinda",
+    "candid-health",
+    "lendapi",
+    "moodys",
+    "nexhealth",
+    "optum",
+    "outdoorsy",
+    "truepill"
+   ],
+   "per_page": [
+    "heron",
+    "hover",
+    "nayya",
+    "nexhealth",
+    "ntropy",
+    "plansource",
+    "rhino"
+   ],
+   "page_token": [
+    "candid-health",
+    "flume-health",
+    "levitate",
+    "majesco",
+    "stedi",
+    "truepill"
+   ],
+   "size": [
+    "cms-gov",
+    "findigs",
+    "lendapi",
+    "moodys",
+    "optum",
+    "socotra"
+   ],
+   "skip": [
+    "moodys",
+    "onsi",
+    "ripe-insurance",
+    "truepill",
+    "trustlayer",
+    "zywave"
+   ],
+   "after": [
+    "arthur-j-gallagher",
+    "groupe-bpce",
+    "kita"
+   ],
+   "top": [
+    "arthur-j-gallagher",
+    "zywave"
+   ],
+   "next": [
+    "centene",
+    "truepill"
+   ],
+   "cursor": [
+    "ntropy",
+    "wefitter"
+   ],
+   "max_results": [
+    "candid-health"
+   ],
+   "before": [
+    "canopy"
+   ],
+   "starting_after": [
+    "silna"
+   ]
+  },
+  "path_param": {
+   "lower": [
+    "1fort",
+    "aclaimant",
+    "affinda",
+    "agencyzoom",
+    "american-financial-group",
+    "amtrust-financial-services",
+    "ascend",
+    "attomdata",
+    "audatex",
+    "availity",
+    "baloise",
+    "beazley",
+    "candid-health",
+    "capchase",
+    "centene",
+    "clearspeed",
+    "cms-gov",
+    "easypost",
+    "evari",
+    "fincura",
+    "fintary",
+    "first-street",
+    "flume-health",
+    "goodlord",
+    "heron",
+    "hiveagentiq-com",
+    "hover",
+    "instabase",
+    "ivans",
+    "kita",
+    "kota",
+    "laka",
+    "ledger-investing",
+    "lendapi",
+    "levitate",
+    "luthersystems-com",
+    "medigo",
+    "moodys",
+    "moodys-rms",
+    "near-space-labs",
+    "nexhealth",
+    "noyo",
+    "ntropy",
+    "ocrolus",
+    "onsi",
+    "oper",
+    "oper-credits",
+    "optum",
+    "orbii",
+    "orbii-tech-ltd",
+    "outdoorsy",
+    "pie-insurance",
+    "plansource",
+    "re",
+    "rhino",
+    "ribbon-health",
+    "ripe-insurance",
+    "root",
+    "santevet",
+    "socotra",
+    "solera",
+    "sun-life",
+    "super-seguros",
+    "thatch",
+    "thatch-health",
+    "tint",
+    "truebiz",
+    "truepill",
+    "trustlayer",
+    "tuva-health",
+    "unitedhealth",
+    "unitedhealthcare",
+    "unqork",
+    "whitespace-london",
+    "yuzu-health",
+    "zego",
+    "zinnia",
+    "zywave"
+   ],
+   "camelCase": [
+    "agencyzoom",
+    "amtrust-financial-services",
+    "apollo-insurance",
+    "assurant",
+    "audatex",
+    "canopy",
+    "capchase",
+    "centene",
+    "cms-gov",
+    "convelio",
+    "coterie",
+    "duck-creek",
+    "eagleview",
+    "evari",
+    "fdx",
+    "fintary",
+    "flume-health",
+    "goodlord",
+    "groupe-bpce",
+    "guidewire",
+    "human-api",
+    "humanapi",
+    "ivans",
+    "kita",
+    "laka",
+    "leo",
+    "levitate",
+    "liberty-mutual-insurance",
+    "majesco",
+    "moodys",
+    "moodys-rms",
+    "moxe-health",
+    "nayya",
+    "nexus-mutual",
+    "onsi",
+    "optum",
+    "origami-risk",
+    "pie-insurance",
+    "ppl-london-market",
+    "prudential-financial",
+    "qbe",
+    "quantemplate",
+    "santevet",
+    "slope-software",
+    "socotra",
+    "solera",
+    "state-farm",
+    "state-farm-insurance-cos",
+    "stedi",
+    "superdial",
+    "tiaa",
+    "tint",
+    "trustlayer",
+    "unqork",
+    "unum",
+    "verisk",
+    "vynedental",
+    "whitespace-london",
+    "yuzu-health",
+    "zego",
+    "zinnia",
+    "zywave"
+   ],
+   "snake_case": [
+    "1fort",
+    "affinda",
+    "ascend",
+    "at-bay",
+    "candid-health",
+    "centene",
+    "clearspeed",
+    "cms-gov",
+    "coalition-inc",
+    "cover-genius",
+    "feathery",
+    "fincura",
+    "findigs",
+    "flume-health",
+    "healthsherpa",
+    "herald",
+    "heron",
+    "hover",
+    "instabase",
+    "ivans",
+    "kota",
+    "ledger-investing",
+    "lendapi",
+    "medigo",
+    "mireye",
+    "near-space-labs",
+    "nexhealth",
+    "noyo",
+    "ntropy",
+    "ocrolus",
+    "oper",
+    "oper-credits",
+    "optum",
+    "orbii",
+    "orbii-tech-ltd",
+    "outdoorsy",
+    "plansource",
+    "qoala",
+    "rhino",
+    "ribbon-health",
+    "root",
+    "silna",
+    "steadily",
+    "thatch",
+    "thatch-health",
+    "travelers",
+    "truebiz",
+    "truepill",
+    "wefitter",
+    "whitespace-london",
+    "zocdoc"
+   ],
+   "other": [
+    "centene",
+    "near-space-labs",
+    "oper",
+    "oper-credits",
+    "optum",
+    "orbii-tech-ltd",
+    "whitespace-london"
+   ],
+   "PascalCase": [
+    "optum",
+    "slope-software",
+    "solera",
+    "whitespace-london"
+   ],
+   "kebab-case": [
+    "aclaimant",
+    "instabase",
+    "optum"
+   ]
+  },
+  "property": {
+   "lower": [
+    "1fort",
+    "aclaimant",
+    "agencyzoom",
+    "amtrust-financial-services",
+    "apollo-insurance",
+    "ascend",
+    "assurant",
+    "at-bay",
+    "centene",
+    "convelio",
+    "coterie",
+    "duck-creek",
+    "evari",
+    "extend",
+    "fintary",
+    "guidewire",
+    "healthsherpa",
+    "herald",
+    "heron",
+    "kota",
+    "laka",
+    "liberty-mutual-insurance",
+    "majesco",
+    "medigo",
+    "moodys-rms",
+    "nexhealth",
+    "nexus-mutual",
+    "oper",
+    "oper-credits",
+    "optum",
+    "outdoorsy",
+    "pie-insurance",
+    "progressive",
+    "qbe",
+    "qoala",
+    "root",
+    "slope-software",
+    "socotra",
+    "state-farm",
+    "state-farm-insurance-cos",
+    "steadily",
+    "super-seguros",
+    "travelers",
+    "truepill",
+    "trustlayer",
+    "zinnia",
+    "zywave"
+   ],
+   "camelCase": [
+    "agencyzoom",
+    "amtrust-financial-services",
+    "apollo-insurance",
+    "assurant",
+    "centene",
+    "coterie",
+    "duck-creek",
+    "evari",
+    "extend",
+    "fintary",
+    "guidewire",
+    "laka",
+    "liberty-mutual-insurance",
+    "majesco",
+    "moodys-rms",
+    "nexus-mutual",
+    "optum",
+    "pie-insurance",
+    "progressive",
+    "qbe",
+    "slope-software",
+    "socotra",
+    "state-farm",
+    "state-farm-insurance-cos",
+    "zinnia",
+    "zywave"
+   ],
+   "snake_case": [
+    "1fort",
+    "ascend",
+    "at-bay",
+    "convelio",
+    "healthsherpa",
+    "herald",
+    "heron",
+    "kota",
+    "medigo",
+    "nexhealth",
+    "oper",
+    "oper-credits",
+    "outdoorsy",
+    "qoala",
+    "root",
+    "steadily",
+    "super-seguros",
+    "travelers",
+    "truepill"
+   ],
+   "PascalCase": [
+    "amtrust-financial-services",
+    "centene",
+    "moodys-rms"
+   ],
+   "kebab-case": [
+    "aclaimant"
+   ]
+  }
+ }
+}

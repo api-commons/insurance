@@ -1,0 +1,14 @@
+provider: truepill
+apis_io: https://apis.io/providers/truepill/
+context: insurance
+generated: '2026-11-10'
+concepts:
+  claim:
+    path_segment:
+    - claims
+    properties:
+      type: claim_type
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/truepill-fuzerx-swagger.json#GET /api/v1/prescription/{prescription_token}/fill/{fill_number}/claims
+    - openapi/_original/truepill-fuzerx-swagger.json#GET /v1/prescription/{prescription_token}/fill/{fill_number}/claims

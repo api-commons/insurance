@@ -1,0 +1,20 @@
+provider: outdoorsy
+apis_io: https://apis.io/providers/outdoorsy/
+context: insurance
+generated: '2026-11-10'
+concepts:
+  quote:
+    path_segment:
+    - quotes
+    properties:
+      id: id
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/outdoorsy-openapi-original.json#POST /quotes
+  claim:
+    path_segment:
+    - claim
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/outdoorsy-openapi-original.json#GET /gift_cards/claim

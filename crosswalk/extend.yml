@@ -1,0 +1,15 @@
+provider: extend
+apis_io: https://apis.io/providers/extend/
+context: insurance
+generated: '2026-11-10'
+concepts:
+  quote:
+    path_segment:
+    - quotes
+    properties:
+      id: id
+      premium: premium
+      product_id: productName
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/extend-shipping-offers-openapi.yml#POST /shipping-offers/quotes

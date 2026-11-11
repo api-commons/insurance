@@ -1,0 +1,31 @@
+provider: fintary
+apis_io: https://apis.io/providers/fintary/
+context: insurance
+generated: '2026-11-10'
+concepts:
+  policy:
+    path_segment:
+    - policies
+    properties:
+      effective_date:
+      - effectiveDate
+      - startDate
+      status: policyStatus
+      expiration_date:
+      - expirationDate
+      - endDate
+      id: policyId
+      premium: premiumAmount
+      policyholder_id:
+      - customer
+      - customerId
+      updated_at: updatedAt
+      created_at: createdAt
+      product_id: productName
+    core_coverage: 0.8
+    evidence:
+    - openapi/_original/fintary-ams-api-openapi.json#DELETE /api/ams/policies/{strId}
+    - openapi/_original/fintary-ams-api-openapi.json#GET /api/ams/customers/{strId}/policies
+    - openapi/_original/fintary-ams-api-openapi.json#GET /api/ams/policies/{strId}
+    - openapi/_original/fintary-ams-api-openapi.json#PATCH /api/ams/policies/{strId}
+    - openapi/_original/fintary-ams-api-openapi.json#POST /api/ams/policies

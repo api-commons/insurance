@@ -1,0 +1,58 @@
+provider: laka
+apis_io: https://apis.io/providers/laka/
+context: insurance
+generated: '2026-11-10'
+concepts:
+  policy:
+    path_segment:
+    - policies
+    properties:
+      id: policyId
+    core_coverage: 0.2
+    evidence:
+    - openapi/_original/laka-platform-openapi.json#DELETE /v3/policies/{policyId}
+    - openapi/_original/laka-platform-openapi.json#GET /v3/policies
+    - openapi/_original/laka-platform-openapi.json#GET /v3/policies/{policyId}
+    - openapi/_original/laka-platform-openapi.json#GET /v3/reporting/policies
+  quote:
+    path_segment:
+    - quote
+    properties:
+      id: id
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/laka-quote-openapi.json#GET /quote/{id}
+    - openapi/_original/laka-quote-openapi.json#PATCH /quote/{id}
+    - openapi/_original/laka-quote-openapi.json#POST /quote
+    - openapi/_original/laka-quote-openapi.json#PUT /quote/{id}
+  claim:
+    path_segment:
+    - claims
+    - claim
+    properties:
+      status: claimStatus
+      policy_id: policyId
+      id: id
+      loss_date: incidentDate
+      number: reference
+      type: claimType
+      created_at: createdAt
+      policyholder_id: personId
+      updated_at: updatedAt
+    core_coverage: 0.833
+    evidence:
+    - openapi/_original/laka-platform-openapi.json#GET /v3/claims
+    - openapi/_original/laka-platform-openapi.json#GET /v3/claims/{id}
+    - openapi/_original/laka-platform-openapi.json#GET /v3/reporting/claims
+    - openapi/_original/laka-platform-openapi.json#PATCH /v3/claims/{id}
+    - openapi/_original/laka-platform-openapi.json#POST /v3/claims
+  insurance_product:
+    path_segment:
+    - products
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/laka-platform-openapi.json#DELETE /v3/policies/{policyId}/products/{productId}
+    - openapi/_original/laka-platform-openapi.json#PATCH /v3/policies/{policyId}/products
+    - openapi/_original/laka-platform-openapi.json#POST /v3/policies/{policyId}/products
+    - openapi/_original/laka-quote-openapi.json#DELETE /{quoteId}/products

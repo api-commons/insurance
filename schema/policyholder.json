@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/insurance/main/schema/policyholder.json",
+  "title": "Policyholder",
+  "description": "The common policyholder in Insurance, distilled from 2 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {},
+  "required": [],
+  "x-commons": {
+    "context": "insurance",
+    "concept": "policyholder",
+    "providers": 2,
+    "generated": "2026-11-10",
+    "version": "0.1.0-draft.20261110",
+    "status": "draft"
+  }
+}

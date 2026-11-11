@@ -1,0 +1,57 @@
+aid: common-insurance
+name: Insurance
+type: Common
+description: 'The common Insurance vocabulary, distilled from the harvested OpenAPI of 143 providers in APIs.io:
+  shared operations, JSON Schema per concept with measured adoption, and a crosswalk from the common names to each
+  provider''s own.'
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+- Application Programming Interface
+- API
+- Insurance
+- Insurtech
+- Property and Casualty
+- Life Insurance
+- Common Schema
+created: '2026-11-10'
+modified: '2026-11-10'
+url: https://raw.githubusercontent.com/api-commons/insurance/main/apis.yml
+specificationVersion: '0.20'
+apis:
+- aid: common-insurance:insurance
+  name: Common Insurance Interface
+  description: The Insurance interface the market already shares, measured.
+  humanURL: https://github.com/api-commons/insurance
+  tags:
+  - Insurance
+  - Insurtech
+  properties:
+  - type: OpenAPI
+    url: https://raw.githubusercontent.com/api-commons/insurance/main/openapi.yml
+  - type: Profile
+    url: https://raw.githubusercontent.com/api-commons/insurance/main/profile.yml
+  - type: Adopters
+    url: https://raw.githubusercontent.com/api-commons/insurance/main/adopters.yml
+  - type: Rules
+    url: https://raw.githubusercontent.com/api-commons/schema-commons/main/ruleset/schema-commons-naming.yaml
+  - type: JSONSchema
+    name: policy
+    url: https://raw.githubusercontent.com/api-commons/insurance/main/schema/policy.json
+  - type: JSONSchema
+    name: quote
+    url: https://raw.githubusercontent.com/api-commons/insurance/main/schema/quote.json
+  - type: JSONSchema
+    name: claim
+    url: https://raw.githubusercontent.com/api-commons/insurance/main/schema/claim.json
+  - type: JSONSchema
+    name: policyholder
+    url: https://raw.githubusercontent.com/api-commons/insurance/main/schema/policyholder.json
+  - type: JSONSchema
+    name: insurance_product
+    url: https://raw.githubusercontent.com/api-commons/insurance/main/schema/insurance_product.json
+common:
+- type: License
+  url: https://raw.githubusercontent.com/api-commons/insurance/main/LICENSE
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

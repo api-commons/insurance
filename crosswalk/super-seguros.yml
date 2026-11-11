@@ -1,0 +1,16 @@
+provider: super-seguros
+apis_io: https://apis.io/providers/super-seguros/
+context: insurance
+generated: '2026-11-10'
+concepts:
+  quote:
+    path_segment:
+    - quotes
+    properties:
+      premium:
+      - annual_premium
+      - monthly_premium
+      coverages: coverages
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/super-seguros-openapi.json#POST /api/v2/{product}/quotes

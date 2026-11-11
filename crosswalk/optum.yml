@@ -1,0 +1,19 @@
+provider: optum
+apis_io: https://apis.io/providers/optum/
+context: insurance
+generated: '2026-11-10'
+concepts:
+  policy:
+    path_segment:
+    - policies
+    - policy
+    properties:
+      effective_date: effectiveDate
+      status: status
+      expiration_date: endDate
+    core_coverage: 0.6
+    evidence:
+    - openapi/_original/optum-optum-real-time-econtent-web-services-openapi.yml#GET /contractors/{contractorNum}/policies
+    - openapi/_original/optum-optum-real-time-econtent-web-services-openapi.yml#GET /contractors/{contractorNum}/policy/{cmspolicyid}
+    - openapi/_original/optum-optum-real-time-econtent-web-services.json#GET /contractors/{contractorNum}/policies
+    - openapi/_original/optum-optum-real-time-econtent-web-services.json#GET /contractors/{contractorNum}/policy/{cmspolicyid}

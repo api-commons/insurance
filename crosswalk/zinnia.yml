@@ -1,0 +1,15 @@
+provider: zinnia
+apis_io: https://apis.io/providers/zinnia/
+context: insurance
+generated: '2026-11-10'
+concepts:
+  quote:
+    path_segment:
+    - quote
+    properties:
+      status: status
+      effective_date: effectiveDate
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/zinnia-policy-transactions-openapi.json#POST /policy/v1/transactions/{planCode}/{policyNumber}/systematicprograms/quote
+    - openapi/_original/zinnia-policy-transactions-openapi.yml#POST /policy/v1/transactions/{planCode}/{policyNumber}/systematicprograms/quote

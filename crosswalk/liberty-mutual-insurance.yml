@@ -1,0 +1,29 @@
+provider: liberty-mutual-insurance
+apis_io: https://apis.io/providers/liberty-mutual-insurance/
+context: insurance
+generated: '2026-11-10'
+concepts:
+  policy:
+    path_segment:
+    - policies
+    properties:
+      effective_date: effectiveDate
+      status: status
+      id:
+      - policyId
+      - quoteId
+      premium: premium
+    core_coverage: 0.6
+    evidence:
+    - openapi/_original/liberty-mutual-insurance-renters-insurance-api-openapi.yml#POST /policies
+  quote:
+    path_segment:
+    - quotes
+    properties:
+      id: quoteId
+      premium: premium
+      expires_at: expiresAt
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/liberty-mutual-insurance-renters-insurance-api-openapi.yml#GET /quotes/{quoteId}
+    - openapi/_original/liberty-mutual-insurance-renters-insurance-api-openapi.yml#POST /quotes

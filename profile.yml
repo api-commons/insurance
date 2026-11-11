@@ -1,0 +1,667 @@
+context: insurance
+name: Insurance
+generated: '2026-11-10'
+version: 0.1.0-draft.20261110
+status: draft
+cohort:
+  tags:
+  - Insurance
+  - Insurtech
+  - Property and Casualty
+  - Life Insurance
+  - Embedded Insurance
+  - Claims
+  - Underwriting
+  - Auto Insurance
+  providers_with_harvested_openapi: 143
+thresholds:
+  core: 0.5
+  extended: 0.2
+  min_providers: 3
+excluded: {}
+duplicates:
+  solera:
+  - audatex
+  oper:
+  - oper-credits
+  orbii:
+  - orbii-tech-ltd
+  thatch:
+  - thatch-health
+shared_specs: {}
+concepts:
+  policy:
+    segments_seen:
+      policies: 24
+      policy: 9
+    providers_exposing: 30
+    providers_with_readable_schema: 23
+    operations:
+    - operation: GET item
+      providers: 20
+      share: 0.667
+      tier: core
+    - operation: GET collection
+      providers: 18
+      share: 0.6
+      tier: core
+    - operation: POST collection
+      providers: 17
+      share: 0.567
+      tier: core
+    - operation: UPDATE item
+      providers: 9
+      share: 0.3
+      tier: extended
+    - operation: DELETE item
+      providers: 5
+      share: 0.167
+      tier: long-tail
+    - operation: UPDATE collection
+      providers: 1
+      share: 0.033
+      tier: long-tail
+    properties:
+    - name: effective_date
+      tier: core
+      providers: 17
+      share: 0.739
+      type: string
+      spellings:
+      - effectiveDate
+      - start_date
+      - effective_date
+      - startDate
+      - inceptionDate
+    - name: status
+      tier: core
+      providers: 16
+      share: 0.696
+      type: string
+      spellings:
+      - status
+      - policyStatus
+      - claim_status
+    - name: expiration_date
+      tier: core
+      providers: 15
+      share: 0.652
+      type: string
+      spellings:
+      - expirationDate
+      - endDate
+      - end_date
+      - expiryDate
+      - expiration_date
+    - name: id
+      tier: core
+      providers: 15
+      share: 0.652
+      type: string
+      spellings:
+      - policyId
+      - id
+      - quoteId
+      - policy_id
+      - claim_id
+    - name: number
+      tier: core
+      providers: 13
+      share: 0.565
+      type: string
+      spellings:
+      - policyNumber
+      - policy_number
+      - number
+    - name: premium
+      tier: extended
+      providers: 11
+      share: 0.478
+      type: number
+      spellings:
+      - premium
+      - totalPremium
+      - annualPremium
+      - monthlyPremium
+      - premiumAmount
+      - monthly_premium
+    - name: policyholder_id
+      tier: extended
+      providers: 8
+      share: 0.348
+      type: object
+      spellings:
+      - customerId
+      - insured
+      - policyholder
+      - accountId
+      - customer
+      - policyholder_id
+    - name: updated_at
+      tier: extended
+      providers: 6
+      share: 0.261
+      type: string
+      spellings:
+      - updatedAt
+      - updated_at
+      - updatedDate
+    - name: coverages
+      tier: extended
+      providers: 5
+      share: 0.217
+      type: array
+      spellings:
+      - coverages
+    - name: created_at
+      tier: extended
+      providers: 5
+      share: 0.217
+      type: string
+      spellings:
+      - createdAt
+      - createdDate
+      - created_at
+    - name: insured_name
+      tier: extended
+      providers: 5
+      share: 0.217
+      type: string
+      spellings:
+      - insuredName
+      - insured_name
+    - name: product_id
+      tier: extended
+      providers: 5
+      share: 0.217
+      type: string
+      spellings:
+      - productId
+      - productCode
+      - lineOfBusiness
+      - productName
+      - product
+      - plan
+    long_tail_count: 277
+    long_tail_sample:
+    - cancelled_at
+    - product_type
+    - currency
+    - payment_method
+    - additional_interests
+    - agent_code
+    - agent_name
+    - coverage_summary
+    - documents
+    - endorsements
+    - group_id
+    - items
+    - payment_frequency
+    - policy_type
+    - property_address
+    - reinstatement_date
+    - rows
+    - type
+    - account
+    - account_type
+    - additional_messages
+    - additional_named_insured
+    - agency_id
+    - agency_number
+    - agent_id
+    - agent_ui_url
+    - aggregate_limit
+    - aggregate_min_deductible
+    - aggregation_id
+    - aggregation_primary
+    - app_data
+    - application_date
+    - application_id
+    - approval_status
+    - assigned_to
+    - attachment_point
+    - balance
+    - base_premium
+    - beginning_policy_status_id
+    - beneficiaries
+  quote:
+    segments_seen:
+      quotes: 27
+      quote: 11
+    providers_exposing: 34
+    providers_with_readable_schema: 31
+    operations:
+    - operation: POST collection
+      providers: 30
+      share: 0.882
+      tier: core
+    - operation: GET item
+      providers: 16
+      share: 0.471
+      tier: extended
+    - operation: GET collection
+      providers: 8
+      share: 0.235
+      tier: extended
+    - operation: UPDATE item
+      providers: 7
+      share: 0.206
+      tier: extended
+    - operation: DELETE item
+      providers: 1
+      share: 0.029
+      tier: long-tail
+    - operation: POST item
+      providers: 1
+      share: 0.029
+      tier: long-tail
+    - operation: UPDATE collection
+      providers: 1
+      share: 0.029
+      tier: long-tail
+    properties:
+    - name: id
+      tier: core
+      providers: 18
+      share: 0.581
+      type: string
+      spellings:
+      - id
+      - quoteId
+      - ID
+      - quote_id
+    - name: premium
+      tier: core
+      providers: 17
+      share: 0.548
+      type: number
+      spellings:
+      - premium
+      - totalPremium
+      - annualPremium
+      - price
+      - monthlyPremium
+      - annual_premium
+      - monthly_premium
+    - name: status
+      tier: core
+      providers: 16
+      share: 0.516
+      type: string
+      spellings:
+      - status
+      - state
+    - name: effective_date
+      tier: extended
+      providers: 13
+      share: 0.419
+      type: string
+      spellings:
+      - effectiveDate
+      - effective_date
+      - EffectiveDate
+      - startDate
+    - name: expires_at
+      tier: extended
+      providers: 12
+      share: 0.387
+      type: string
+      spellings:
+      - expiration_date
+      - expiresAt
+      - validUntil
+      - expirationDate
+      - ExpirationDate
+      - expires_at
+    - name: coverages
+      tier: extended
+      providers: 10
+      share: 0.323
+      type: object
+      spellings:
+      - coverages
+      - coverageOptions
+      - coverageSummary
+      - covers
+      - coverage_options
+    - name: product_id
+      tier: extended
+      providers: 9
+      share: 0.29
+      type: string
+      spellings:
+      - productName
+      - product
+      - productCode
+      - plan_id
+      - product_id
+      - product_code
+    long_tail_count: 605
+    long_tail_sample:
+    - created_at
+    - currency
+    - policyholder_id
+    - number
+    - address
+    - deductible
+    - email
+    - first_name
+    - property_address
+    - agency_id
+    - bind_status
+    - broker
+    - contacts
+    - correlation_id
+    - coverage_type
+    - date_of_birth
+    - delivery
+    - duration
+    - fees
+    - files
+    - from
+    - insured_address
+    - items
+    - last_name
+    - mailing_address
+    - phone_number
+    - policy_number
+    - product_type
+    - products
+    - questions
+    - retention
+    - source
+    - subtotal
+    - tenant_info
+    - type
+    - updated_at
+    - accepted_time
+    - accessories
+    - account_locator
+    - act_as_customer_proxy
+  claim:
+    segments_seen:
+      claims: 15
+      claim: 3
+      fnol: 1
+    providers_exposing: 16
+    providers_with_readable_schema: 11
+    operations:
+    - operation: POST collection
+      providers: 12
+      share: 0.75
+      tier: core
+    - operation: GET item
+      providers: 11
+      share: 0.688
+      tier: core
+    - operation: GET collection
+      providers: 10
+      share: 0.625
+      tier: core
+    - operation: UPDATE item
+      providers: 4
+      share: 0.25
+      tier: extended
+    properties:
+    - name: status
+      tier: core
+      providers: 9
+      share: 0.818
+      type: string
+      spellings:
+      - status
+      - claimStatus
+      - claim_status
+    - name: policy_id
+      tier: core
+      providers: 8
+      share: 0.727
+      type: string
+      spellings:
+      - policyId
+      - policyNumber
+      - policy_number
+      - policy_id
+      - policy
+    - name: id
+      tier: core
+      providers: 7
+      share: 0.636
+      type: string
+      spellings:
+      - id
+      - claimId
+      - claim_id
+    - name: loss_date
+      tier: core
+      providers: 7
+      share: 0.636
+      type: string
+      spellings:
+      - lossDate
+      - incidentDate
+      - incident_date
+      - loss_date
+    - name: description
+      tier: core
+      providers: 6
+      share: 0.545
+      type: string
+      spellings:
+      - description
+      - lossDescription
+      - notes
+    - name: number
+      tier: core
+      providers: 6
+      share: 0.545
+      type: string
+      spellings:
+      - claimNumber
+      - claim_number
+      - reference
+    - name: type
+      tier: extended
+      providers: 5
+      share: 0.455
+      type: string
+      spellings:
+      - lossType
+      - claimType
+      - claim_type
+    - name: claimant
+      tier: extended
+      providers: 4
+      share: 0.364
+      type: object
+      spellings:
+      - claimant
+    - name: created_at
+      tier: extended
+      providers: 4
+      share: 0.364
+      type: string
+      spellings:
+      - createdAt
+      - createdDate
+      - created_at
+    - name: reported_at
+      tier: extended
+      providers: 4
+      share: 0.364
+      type: string
+      spellings:
+      - reportedDate
+      - reported_date
+    - name: policyholder_id
+      tier: extended
+      providers: 3
+      share: 0.273
+      type: object
+      spellings:
+      - insured
+      - personId
+      - policyholder_id
+      - policyholder
+    - name: total_incurred
+      tier: extended
+      providers: 3
+      share: 0.273
+      type: number
+      spellings:
+      - totalIncurred
+      - total_incurred
+    - name: updated_at
+      tier: extended
+      providers: 3
+      share: 0.273
+      type: string
+      spellings:
+      - updated_at
+      - updatedAt
+    long_tail_count: 80
+    long_tail_sample:
+    - adjuster
+    - loss_location
+    - total_paid
+    - address
+    - adjuster_name
+    - app_data
+    - approval_status
+    - assigned_adjuster
+    - assigned_to
+    - assigned_to_user_id
+    - birthdate
+    - block_states
+    - charge_payouts
+    - charges
+    - claim_reference
+    - claimant_id
+    - claims_deeplink
+    - closed_date
+    - company_ident
+    - complete_claim
+    - contact_phone
+    - coverages_involved
+    - covered_item_id
+    - create_claim_deeplink
+    - created_by
+    - crime_reference_number
+    - currency
+    - date_of_service
+    - deleted_at
+    - email
+    - exposures
+    - external_ident
+    - filed_date
+    - files
+    - granted_amount
+    - guarantor
+    - guarantor_id
+    - incident_cause
+    - incident_details
+    - incident_type
+  policyholder:
+    segments_seen:
+      insureds: 1
+      policyholders: 1
+    providers_exposing: 2
+    providers_with_readable_schema: 2
+    operations:
+    - operation: DELETE item
+      providers: 1
+      share: 0.5
+      tier: long-tail
+    - operation: GET collection
+      providers: 1
+      share: 0.5
+      tier: long-tail
+    - operation: GET item
+      providers: 1
+      share: 0.5
+      tier: long-tail
+    - operation: POST collection
+      providers: 1
+      share: 0.5
+      tier: long-tail
+    - operation: UPDATE collection
+      providers: 1
+      share: 0.5
+      tier: long-tail
+    - operation: UPDATE item
+      providers: 1
+      share: 0.5
+      tier: long-tail
+    properties: []
+    long_tail_count: 28
+    long_tail_sample:
+    - additional_messages
+    - address
+    - app_data
+    - cellphone
+    - company_name
+    - company_website_url
+    - contact_position
+    - created_at
+    - created_by
+    - date_of_birth
+    - date_of_establishment
+    - email
+    - expiration_date
+    - first_name
+    - gender
+    - id
+    - initials
+    - last_name
+    - middle_name
+    - phone_other
+    - policies
+    - policy_ids
+    - policyholder_id
+    - registration_number
+    - subsidiary_companies
+    - title
+    - type
+    - updated_at
+  insurance_product:
+    segments_seen:
+      products: 4
+      insurance-products: 1
+    providers_exposing: 5
+    providers_with_readable_schema: 3
+    operations:
+    - operation: GET collection
+      providers: 4
+      share: 0.8
+      tier: core
+    - operation: POST collection
+      providers: 2
+      share: 0.4
+      tier: long-tail
+    - operation: DELETE collection
+      providers: 1
+      share: 0.2
+      tier: long-tail
+    - operation: DELETE item
+      providers: 1
+      share: 0.2
+      tier: long-tail
+    - operation: UPDATE collection
+      providers: 1
+      share: 0.2
+      tier: long-tail
+    properties: []
+    long_tail_count: 12
+    long_tail_sample:
+    - effective_date
+    - name
+    - product_id
+    - type
+    - accessories
+    - available_states
+    - clothing
+    - description
+    - expiration_date
+    - policyholder_id
+    - pricing
+    - refutation_id

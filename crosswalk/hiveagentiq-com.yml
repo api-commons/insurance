@@ -1,0 +1,12 @@
+provider: hiveagentiq-com
+apis_io: https://apis.io/providers/hiveagentiq-com/
+context: insurance
+generated: '2026-11-10'
+concepts:
+  policy:
+    path_segment:
+    - policy
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/hiveagentiq-com-hivebank-openapi.json#POST /v1/bank/custody/policy

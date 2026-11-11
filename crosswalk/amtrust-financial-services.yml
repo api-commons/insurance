@@ -1,0 +1,49 @@
+provider: amtrust-financial-services
+apis_io: https://apis.io/providers/amtrust-financial-services/
+context: insurance
+generated: '2026-11-10'
+concepts:
+  policy:
+    path_segment:
+    - policies
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/amtrust-financial-services-digital-wc-api-openapi.json#GET /api/v1/policies
+    - openapi/_original/amtrust-financial-services-digital-wc-api-openapi.json#GET /api/v1/policies/{policy}
+    - openapi/_original/amtrust-financial-services-digital-wc-api-openapi.json#GET /api/v1/specialty-program/policies
+    - openapi/_original/amtrust-financial-services-digital-wc-api-openapi.json#GET /api/v1/specialty-program/policies/{policy}
+  quote:
+    path_segment:
+    - quotes
+    - quote
+    properties:
+      id:
+      - id
+      - ID
+      effective_date:
+      - effectiveDate
+      - EffectiveDate
+      expires_at: ExpirationDate
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/amtrust-financial-services-digital-bop-api-openapi.json#GET /api/v1/quotes/{quoteId}
+    - openapi/_original/amtrust-financial-services-digital-bop-api-openapi.json#GET /api/v2/quotes/{quoteId}
+    - openapi/_original/amtrust-financial-services-digital-bop-api-openapi.json#GET /api/v3/quotes/{quoteId}
+    - openapi/_original/amtrust-financial-services-digital-bop-api-openapi.json#PATCH /api/v1/quotes/{quoteId}
+    - openapi/_original/amtrust-financial-services-digital-bop-api-openapi.json#PUT /api/v1/quotes/{quoteId}
+  claim:
+    path_segment:
+    - claims
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/amtrust-financial-services-experience-claims-medical-case-api-openapi.json#GET /api/v{version}/claims/{claimNumber}
+  policyholder:
+    path_segment:
+    - insureds
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/amtrust-financial-services-digital-wc-api-openapi.json#DELETE /api/v1/quotes/{quoteId}/additionalInformation/insureds/{insuerdId}
+    - openapi/_original/amtrust-financial-services-digital-wc-api-openapi.json#DELETE /api/v1/specialty-program/quotes/{quoteId}/additionalInformation/insureds/{insuerdId}
