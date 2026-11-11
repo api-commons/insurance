@@ -6,8 +6,11 @@ concepts:
   policy:
     path_segment:
     - policies
-    properties: {}
-    core_coverage: 0.0
+    properties:
+      effective_date: EffectiveDate
+      status: PolicyStatus
+      number: PolicyNumber
+    core_coverage: 0.6
     evidence:
     - openapi/_original/amtrust-financial-services-digital-wc-api-openapi.json#GET /api/v1/policies
     - openapi/_original/amtrust-financial-services-digital-wc-api-openapi.json#GET /api/v1/policies/{policy}
@@ -25,7 +28,7 @@ concepts:
       - effectiveDate
       - EffectiveDate
       expires_at: ExpirationDate
-    core_coverage: 0.333
+    core_coverage: 0.5
     evidence:
     - openapi/_original/amtrust-financial-services-digital-bop-api-openapi.json#GET /api/v1/quotes/{quoteId}
     - openapi/_original/amtrust-financial-services-digital-bop-api-openapi.json#GET /api/v2/quotes/{quoteId}

@@ -7,9 +7,8 @@ concepts:
     path_segment:
     - quote
     properties:
-      status: status
       effective_date: effectiveDate
-    core_coverage: 0.333
+    core_coverage: 0.0
     evidence:
     - openapi/_original/zinnia-policy-transactions-openapi.json#POST /policy/v1/transactions/{planCode}/{policyNumber}/systematicprograms/quote
     - openapi/_original/zinnia-policy-transactions-openapi.yml#POST /policy/v1/transactions/{planCode}/{policyNumber}/systematicprograms/quote

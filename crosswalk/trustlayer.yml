@@ -7,7 +7,8 @@ concepts:
     path_segment:
     - policies
     properties:
-      number: number
-    core_coverage: 0.2
+      effective_date: effectiveDate
+      expiration_date: expirationDate
+    core_coverage: 0.4
     evidence:
     - openapi/_original/trustlayer-platform-v2-openapi.yaml#GET /policies/{number}

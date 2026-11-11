@@ -9,7 +9,7 @@ concepts:
     properties:
       premium: premium
       product_id: product_code
-    core_coverage: 0.333
+    core_coverage: 0.5
     evidence:
     - openapi/_original/qoala-bus-insurance-openapi.yml#POST /api/v2/quotation/quotes
     - openapi/_original/qoala-credit-insurance-openapi.yml#POST /api/v2/quotation/quotes

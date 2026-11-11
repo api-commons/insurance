@@ -10,6 +10,7 @@ concepts:
       effective_date: effective_date
       status: status
       id: policy_id
+      policyholder_id: account_id
       updated_at: updated_at
     core_coverage: 0.6
     evidence:

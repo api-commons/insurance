@@ -10,10 +10,10 @@ concepts:
       effective_date: effectiveDate
       status: status
       expiration_date: expirationDate
+      number: policyNumber
       id:
       - policyId
       - quoteId
-      number: policyNumber
       premium: totalPremium
       policyholder_id: insured
       updated_at: updatedAt
@@ -36,12 +36,7 @@ concepts:
       id: quoteId
       premium: totalPremium
       status: status
-      effective_date: effectiveDate
-      expires_at:
-      - expiresAt
-      - expirationDate
-      coverages: coverages
-      product_id: productCode
+      expires_at: expiresAt
     core_coverage: 1.0
     evidence:
     - openapi/_original/duck-creek-policy-openapi.yml#POST /quotes

@@ -8,12 +8,13 @@
     "effective_date": {
       "type": "string",
       "x-commons-tier": "core",
-      "x-commons-share": 0.739,
-      "x-commons-providers": 17,
+      "x-commons-share": 0.826,
+      "x-commons-providers": 19,
       "x-commons-spellings": [
         "effectiveDate",
         "start_date",
         "effective_date",
+        "EffectiveDate",
         "startDate",
         "inceptionDate"
       ]
@@ -21,10 +22,11 @@
     "status": {
       "type": "string",
       "x-commons-tier": "core",
-      "x-commons-share": 0.696,
-      "x-commons-providers": 16,
+      "x-commons-share": 0.783,
+      "x-commons-providers": 18,
       "x-commons-spellings": [
         "status",
+        "PolicyStatus",
         "policyStatus",
         "claim_status"
       ]
@@ -32,8 +34,8 @@
     "expiration_date": {
       "type": "string",
       "x-commons-tier": "core",
-      "x-commons-share": 0.652,
-      "x-commons-providers": 15,
+      "x-commons-share": 0.696,
+      "x-commons-providers": 16,
       "x-commons-spellings": [
         "expirationDate",
         "endDate",
@@ -42,28 +44,30 @@
         "expiration_date"
       ]
     },
-    "id": {
+    "number": {
       "type": "string",
       "x-commons-tier": "core",
-      "x-commons-share": 0.652,
-      "x-commons-providers": 15,
+      "x-commons-share": 0.609,
+      "x-commons-providers": 14,
       "x-commons-spellings": [
-        "policyId",
-        "id",
-        "quoteId",
-        "policy_id",
-        "claim_id"
+        "policyNumber",
+        "policy_number",
+        "PolicyNumber",
+        "policyReference",
+        "number"
       ]
     },
-    "number": {
+    "id": {
       "type": "string",
       "x-commons-tier": "core",
       "x-commons-share": 0.565,
       "x-commons-providers": 13,
       "x-commons-spellings": [
-        "policyNumber",
-        "policy_number",
-        "number"
+        "id",
+        "policyId",
+        "quoteId",
+        "policy_id",
+        "claim_id"
       ]
     },
     "premium": {
@@ -83,15 +87,17 @@
     "policyholder_id": {
       "type": "object",
       "x-commons-tier": "extended",
-      "x-commons-share": 0.348,
-      "x-commons-providers": 8,
+      "x-commons-share": 0.435,
+      "x-commons-providers": 10,
       "x-commons-spellings": [
         "customerId",
         "insured",
         "policyholder",
         "accountId",
         "customer",
-        "policyholder_id"
+        "personId",
+        "policyholder_id",
+        "account_id"
       ]
     },
     "updated_at": {
@@ -149,6 +155,15 @@
         "productName",
         "product",
         "plan"
+      ]
+    },
+    "type": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.217,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "type"
       ]
     }
   },

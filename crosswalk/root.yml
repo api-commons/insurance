@@ -13,10 +13,10 @@ concepts:
       - claim_status
       - status
       expiration_date: end_date
+      number: policy_number
       id:
       - claim_id
       - policy_id
-      number: policy_number
       premium: monthly_premium
       policyholder_id:
       - policyholder_id

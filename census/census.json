@@ -118,7 +118,11 @@
      "Message": "string",
      "AdditionalMessages": "array",
      "Errors": "object",
-     "Data": "object"
+     "Data": "object",
+     "PolicyNumber": "string",
+     "BusinessName": "string",
+     "EffectiveDate": "string",
+     "PolicyStatus": "string"
     },
     "evidence": [
      "openapi/_original/amtrust-financial-services-digital-wc-api-openapi.json#GET /api/v1/policies",
@@ -193,9 +197,6 @@
      "PUT item"
     ],
     "properties": {
-     "total": "integer",
-     "offset": "integer",
-     "policies": "array",
      "policyId": "string",
      "policyNumber": "string",
      "status": "string",
@@ -214,8 +215,9 @@
      "createdAt": "string",
      "updatedAt": "string",
      "quoteId": "string",
-     "endorsementEffectiveDate": "string",
-     "reason": "string"
+     "coverageCode": "string",
+     "limit": "number",
+     "deductible": "number"
     },
     "evidence": [
      "openapi/_original/duck-creek-policy-openapi.yml#GET /policies",
@@ -358,11 +360,17 @@
      "GET collection"
     ],
     "properties": {
-     "checks": "array",
-     "display_order": "integer",
-     "heron_id": "string",
+     "attribute_label": "string",
+     "boolean_check": null,
+     "composite_check": null,
+     "date_check": null,
+     "date_delta_to_now_check": null,
+     "enhanced_sql_check": null,
+     "group": "string",
      "name": "string",
-     "use_case": null
+     "numeric_check": null,
+     "sql_check": null,
+     "string_check": null
     },
     "evidence": [
      "openapi/_original/heron-openapi.json#GET /api/policies"
@@ -454,12 +462,49 @@
      "GET item"
     ],
     "properties": {
-     "rows": "array",
-     "count": "number",
+     "id": "string",
+     "status": "string",
+     "policyReference": "string",
+     "coverInception": "string",
+     "coverStart": "string",
+     "coverEnd": "string",
+     "cancelled": "boolean",
+     "paused": "boolean",
+     "inALockIn": "boolean",
+     "autoRenew": "boolean",
+     "insuredValue": "number",
+     "capIncTax": "number",
+     "packageName": "string",
+     "lastPausedOrCancelledAt": "string",
+     "products": "array",
+     "productCount": "number",
+     "parsedCoverModules": "array",
      "policyId": "string",
      "success": "boolean",
      "cancelledReason": "string",
-     "cancelledOn": "string"
+     "cancelledOn": "string",
+     "currencyCode": "string",
+     "personId": "string",
+     "type": "string",
+     "region": "string",
+     "active": "boolean",
+     "preTaxCap": "string",
+     "taxes": "array",
+     "risks": "array",
+     "cap": "string",
+     "tax": "string",
+     "taxPct": "string",
+     "lakaServiceFee": "string",
+     "daysOnCover": "number",
+     "claimsCost": "string",
+     "totalShare": "string",
+     "totalClaimsCost": "string",
+     "claimsLiability": "number",
+     "uniqueReference": "string",
+     "invoiceTotal": "string",
+     "commercial": "boolean",
+     "commission": "string",
+     "netPremium": "string"
     },
     "evidence": [
      "openapi/_original/laka-platform-openapi.json#DELETE /v3/policies/{policyId}",
@@ -498,9 +543,6 @@
      "POST collection"
     ],
     "properties": {
-     "policies": "array",
-     "totalCount": "integer",
-     "nextPageToken": "string",
      "policyNumber": "string",
      "status": "string",
      "productType": "string",
@@ -537,8 +579,6 @@
      "PUT item"
     ],
     "properties": {
-     "matchCount": "integer",
-     "policies": "array",
      "id": "integer",
      "number": "string",
      "accountId": "integer",
@@ -856,10 +896,9 @@
      "coverageSummary": "object",
      "insuredName": "string",
      "propertyAddress": "object",
-     "quoteId": "string",
-     "paymentMethod": "string",
-     "paymentFrequency": "string",
-     "additionalInterests": "array"
+     "type": "string",
+     "name": "string",
+     "address": "object"
     },
     "evidence": [
      "openapi/_original/state-farm-renters-insurance-openapi.yml#GET /renters/policies/{policyNumber}",
@@ -884,10 +923,9 @@
      "coverageSummary": "object",
      "insuredName": "string",
      "propertyAddress": "object",
-     "quoteId": "string",
-     "paymentMethod": "string",
-     "paymentFrequency": "string",
-     "additionalInterests": "array"
+     "type": "string",
+     "name": "string",
+     "address": "object"
     },
     "evidence": [
      "openapi/_original/state-farm-insurance-cos-renters-openapi.yml#GET /renters/policies/{policyNumber}",
@@ -903,14 +941,23 @@
      "GET item"
     ],
     "properties": {
-     "policies": "array",
-     "limit": "integer",
-     "next_url": "string",
-     "policy_type": null,
+     "account_id": "string",
+     "created_at_timestamp": "string",
+     "updated_at_timestamp": "string",
+     "policy_id": "string",
+     "policy_type": "string",
+     "effective_date": "string",
+     "carrier": "string",
+     "public_policy_id": "string",
+     "premium_dollars": "string",
+     "status": "string",
+     "properties": "array",
+     "policy_coverages": "array",
+     "policy_documents": "array",
+     "payment_schedule": "string",
      "insurance_structure": "string",
      "primary_insured": "object",
      "additional_named_insured": "array",
-     "effective_date": "string",
      "effective_date_timezone": "string",
      "policy_details": "object",
      "updated_at": "string",
@@ -920,18 +967,12 @@
      "renewal_status": "string",
      "renewal_start_date": "string",
      "renewal_end_date": "string",
-     "properties": "array",
-     "policy_coverages": "array",
      "payment": "object",
      "underwriting": "object",
      "signing_requirements": "object",
      "agent_ui_url": "string",
      "errors": "array",
-     "carrier": "string",
-     "public_policy_id": "string",
      "pricing": "object",
-     "status": "string",
-     "policy_id": "string",
      "documents": "array",
      "mandatory_policyholder_agreement_contract": "object"
     },
@@ -989,8 +1030,14 @@
      "GET item"
     ],
     "properties": {
-     "number": "string",
-     "subjects": "array"
+     "code": "string",
+     "label": "string",
+     "validityStatus": "string",
+     "effectiveDate": "string",
+     "expirationDate": "string",
+     "cancellation": "object",
+     "reinstatement": "object",
+     "documents": "array"
     },
     "evidence": [
      "openapi/_original/trustlayer-platform-v2-openapi.yaml#GET /policies/{number}"
@@ -1558,12 +1605,9 @@
      "premiumBreakdown": "array",
      "underwritingMessages": "array",
      "expiresAt": "string",
-     "productCode": "string",
-     "insured": "object",
-     "effectiveDate": "string",
-     "expirationDate": "string",
-     "coverages": "array",
-     "agentCode": "string"
+     "coverageCode": "string",
+     "limit": "number",
+     "deductible": "number"
     },
     "evidence": [
      "openapi/_original/duck-creek-policy-openapi.yml#POST /quotes"
@@ -1713,10 +1757,9 @@
     "properties": {
      "id": "string",
      "status": "string",
-     "product_id": "string",
-     "premium": "number",
-     "currency": "string",
-     "files": "array"
+     "file_name": "string",
+     "content_type": "string",
+     "download_url": "string"
     },
     "evidence": [
      "openapi/_original/herald-openapi.yml#GET /quotes/{quote_id}"
@@ -1864,16 +1907,12 @@
      "POST collection"
     ],
     "properties": {
-     "quoteId": "string",
-     "status": "string",
-     "totalPremium": "number",
-     "coverages": "array",
-     "expiresAt": "string",
-     "productType": "string",
-     "effectiveDate": "string",
-     "applicant": "object",
-     "riskData": "object",
-     "requestedCoverages": "array"
+     "coverageCode": "string",
+     "coverageDescription": "string",
+     "limit": "number",
+     "deductible": "number",
+     "premium": "number",
+     "status": "string"
     },
     "evidence": [
      "openapi/_original/majesco-policy-openapi.yml#POST /quotes"
@@ -1887,12 +1926,9 @@
      "GET collection"
     ],
     "properties": {
-     "totalCoverAmountInAsset": "string",
-     "annualPrice": "string",
-     "premiumInNXM": "string",
-     "premiumInAsset": "string",
-     "poolAllocationRequests": "array",
-     "asset": "object"
+     "poolId": "string",
+     "coverAmountInAsset": "string",
+     "skip": "boolean"
     },
     "evidence": [
      "openapi/_original/openapi.json#GET /v2/quote"
@@ -2124,7 +2160,12 @@
      "purchased_at": "string",
      "premium": "number",
      "policy_holder": "object",
-     "insureds": "array"
+     "insureds": "array",
+     "filename": "string",
+     "type": "string",
+     "url": "string",
+     "alias": "string",
+     "file_name": "string"
     },
     "evidence": [
      "openapi/_original/qoala-bus-insurance-openapi.yml#POST /api/v2/quotation/quotes",
@@ -2393,9 +2434,10 @@
      "POST collection"
     ],
     "properties": {
-     "status": "string",
-     "error": "array",
-     "quoteResponse": "object",
+     "errorCode": "string",
+     "attribute": "string",
+     "error": "string",
+     "resolution": "string",
      "correlationId": "string",
      "effectiveDate": "string",
      "reverseInitiator": "boolean",
@@ -2532,8 +2574,6 @@
      "POST collection"
     ],
     "properties": {
-     "total": "integer",
-     "claims": "array",
      "claimId": "string",
      "claimNumber": "string",
      "policyId": "string",
@@ -2601,8 +2641,6 @@
      "POST collection"
     ],
     "properties": {
-     "rows": "array",
-     "count": "number",
      "id": "string",
      "personId": "string",
      "userId": "string",
@@ -2624,7 +2662,29 @@
      "completeClaim": "string",
      "message": "string",
      "claim": "string",
-     "reference": "string"
+     "reference": "string",
+     "claimIdentifier": "string",
+     "policyIdentifier": "string",
+     "primaryCoverModule": "string",
+     "creationDate": "string",
+     "declarationDate": "string",
+     "updateDate": "string",
+     "mainCircumstances": "string",
+     "claimCountry": "string",
+     "consequencesClaimant": "string",
+     "risks": "array",
+     "totalCurrentExpenseValueIncTax": "string",
+     "totalCurrentExpenseValueExcTax": "string",
+     "totalCurrentTravelExpenseValueIncTax": "string",
+     "totalCurrentTravelExpenseValueExcTax": "string",
+     "totalCurrentNonTravelExpenseValueIncTax": "string",
+     "totalCurrentNonTravelExpenseValueExcTax": "string",
+     "expenses": "array",
+     "uniqueReference": "string",
+     "partnerCountry": "string",
+     "policyVersionIdentifier": "string",
+     "commercialClaim": "boolean",
+     "policyCustomerType": "string"
     },
     "evidence": [
      "openapi/_original/laka-platform-openapi.json#GET /v3/claims",
@@ -2645,9 +2705,6 @@
      "POST collection"
     ],
     "properties": {
-     "claims": "array",
-     "totalCount": "integer",
-     "nextPageToken": "string",
      "claimNumber": "string",
      "policyNumber": "string",
      "status": "string",
@@ -3183,9 +3240,18 @@
      "clothing": "object",
      "accessories": "object",
      "refutationId": "string",
-     "personId": "string",
-     "startDate": "string",
-     "endDate": "string"
+     "externalId": "string",
+     "initialValue": "number",
+     "serialNumber": "string",
+     "typeName": "string",
+     "sku": "string",
+     "modelName": "string",
+     "brand": "string",
+     "currencyCode": "string",
+     "eBikeType": "string",
+     "address": "object",
+     "licencePlateNumber": "string",
+     "year": "number"
     },
     "evidence": [
      "openapi/_original/laka-platform-openapi.json#DELETE /v3/policies/{policyId}/products/{productId}",
@@ -3202,10 +3268,9 @@
      "GET item"
     ],
     "properties": {
-     "availableCapacity": "array",
-     "allocatedNxm": "string",
-     "minAnnualPrice": "string",
-     "maxAnnualPrice": "string",
+     "assetId": "integer",
+     "amount": "string",
+     "asset": "object",
      "productId": "integer",
      "pricePerPool": "array",
      "weightedAveragePrice": "integer"
@@ -4554,6 +4619,7 @@
     "socotra",
     "state-farm",
     "state-farm-insurance-cos",
+    "trustlayer",
     "zinnia",
     "zywave"
    ],

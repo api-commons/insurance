@@ -71,8 +71,8 @@ findings:
     the loss date and a description are all core."
   - "A policy agrees on its number, status and effective and expiration dates; what it covers
     is modelled too differently to share."
-  - "A quote agrees only on id, premium and status -- embedded-insurance APIs quote by product
-    and carriers quote by risk, and the request shapes diverge."
+  - "A quote agrees only on id and premium, with status just under (48%): embedded-insurance
+    APIs quote by product and carriers quote by risk, and the request shapes diverge."
   - "Coverages live on the policy and the quote, not as resources (2 providers)."
 decisions:
   - "Health insurance is the healthcare context's: payers, benefits plans and medical claims

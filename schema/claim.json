@@ -102,6 +102,7 @@
       "x-commons-spellings": [
         "createdAt",
         "createdDate",
+        "creationDate",
         "created_at"
       ],
       "format": "date-time"

@@ -11,6 +11,6 @@ concepts:
       - annual_premium
       - monthly_premium
       coverages: coverages
-    core_coverage: 0.333
+    core_coverage: 0.5
     evidence:
     - openapi/_original/super-seguros-openapi.json#POST /api/v2/{product}/quotes

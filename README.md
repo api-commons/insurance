@@ -12,8 +12,8 @@ generated. Every number below is a count of providers.
 <!-- commons:summary -->
 | Concept | Expose it | Readable schema | Core properties (share) | Collection named |
 | --- | ---: | ---: | --- | --- |
-| policy | 30 | 23 | effective_date 74%, status 70%, expiration_date 65%, id 65%, number 56% | policies 24, policy 9 |
-| quote | 34 | 31 | id 58%, premium 55%, status 52% | quotes 27, quote 11 |
+| policy | 30 | 23 | effective_date 83%, status 78%, expiration_date 70%, number 61%, id 56% | policies 24, policy 9 |
+| quote | 34 | 31 | id 55%, premium 52% | quotes 27, quote 11 |
 | claim | 16 | 11 | status 82%, policy_id 73%, id 64%, loss_date 64%, description 55%, number 55% | claims 15, claim 3, fnol 1 |
 | insurance_product | 5 | 3 |  | products 4, insurance-products 1 |
 
@@ -27,7 +27,7 @@ extended tier and the long tail of every concept are in [profile.yml](profile.ym
 
 - A claim agrees on more than any other insurance resource: number, status, the policy, the loss date and a description are all core.
 - A policy agrees on its number, status and effective and expiration dates; what it covers is modelled too differently to share.
-- A quote agrees only on id, premium and status -- embedded-insurance APIs quote by product and carriers quote by risk, and the request shapes diverge.
+- A quote agrees only on id and premium, with status just under (48%): embedded-insurance APIs quote by product and carriers quote by risk, and the request shapes diverge.
 - Coverages live on the policy and the quote, not as resources (2 providers).
 
 ## Artifacts

@@ -23,7 +23,7 @@ concepts:
       id: quoteId
       premium: premium
       expires_at: expiresAt
-    core_coverage: 0.667
+    core_coverage: 1.0
     evidence:
     - openapi/_original/liberty-mutual-insurance-renters-insurance-api-openapi.yml#GET /quotes/{quoteId}
     - openapi/_original/liberty-mutual-insurance-renters-insurance-api-openapi.yml#POST /quotes

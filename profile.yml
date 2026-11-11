@@ -64,28 +64,30 @@ concepts:
     properties:
     - name: effective_date
       tier: core
-      providers: 17
-      share: 0.739
+      providers: 19
+      share: 0.826
       type: string
       spellings:
       - effectiveDate
       - start_date
       - effective_date
+      - EffectiveDate
       - startDate
       - inceptionDate
     - name: status
       tier: core
-      providers: 16
-      share: 0.696
+      providers: 18
+      share: 0.783
       type: string
       spellings:
       - status
+      - PolicyStatus
       - policyStatus
       - claim_status
     - name: expiration_date
       tier: core
-      providers: 15
-      share: 0.652
+      providers: 16
+      share: 0.696
       type: string
       spellings:
       - expirationDate
@@ -93,26 +95,28 @@ concepts:
       - end_date
       - expiryDate
       - expiration_date
-    - name: id
+    - name: number
       tier: core
-      providers: 15
-      share: 0.652
+      providers: 14
+      share: 0.609
       type: string
       spellings:
-      - policyId
-      - id
-      - quoteId
-      - policy_id
-      - claim_id
-    - name: number
+      - policyNumber
+      - policy_number
+      - PolicyNumber
+      - policyReference
+      - number
+    - name: id
       tier: core
       providers: 13
       share: 0.565
       type: string
       spellings:
-      - policyNumber
-      - policy_number
-      - number
+      - id
+      - policyId
+      - quoteId
+      - policy_id
+      - claim_id
     - name: premium
       tier: extended
       providers: 11
@@ -127,8 +131,8 @@ concepts:
       - monthly_premium
     - name: policyholder_id
       tier: extended
-      providers: 8
-      share: 0.348
+      providers: 10
+      share: 0.435
       type: object
       spellings:
       - customerId
@@ -136,7 +140,9 @@ concepts:
       - policyholder
       - accountId
       - customer
+      - personId
       - policyholder_id
+      - account_id
     - name: updated_at
       tier: extended
       providers: 6
@@ -182,28 +188,36 @@ concepts:
       - productName
       - product
       - plan
-    long_tail_count: 277
+    - name: type
+      tier: extended
+      providers: 5
+      share: 0.217
+      type: string
+      spellings:
+      - type
+    long_tail_count: 317
     long_tail_sample:
     - cancelled_at
-    - product_type
     - currency
-    - payment_method
-    - additional_interests
+    - product_type
+    - documents
+    - name
+    - address
     - agent_code
     - agent_name
+    - code
     - coverage_summary
-    - documents
     - endorsements
     - group_id
+    - insured_items
     - items
-    - payment_frequency
+    - package_name
     - policy_type
     - property_address
     - reinstatement_date
-    - rows
-    - type
     - account
     - account_type
+    - active
     - additional_messages
     - additional_named_insured
     - agency_id
@@ -220,10 +234,9 @@ concepts:
     - approval_status
     - assigned_to
     - attachment_point
+    - attribute_label
+    - auto_renew
     - balance
-    - base_premium
-    - beginning_policy_status_id
-    - beneficiaries
   quote:
     segments_seen:
       quotes: 27
@@ -262,8 +275,8 @@ concepts:
     properties:
     - name: id
       tier: core
-      providers: 18
-      share: 0.581
+      providers: 17
+      share: 0.548
       type: string
       spellings:
       - id
@@ -272,29 +285,29 @@ concepts:
       - quote_id
     - name: premium
       tier: core
-      providers: 17
-      share: 0.548
+      providers: 16
+      share: 0.516
       type: number
       spellings:
       - premium
-      - totalPremium
       - annualPremium
       - price
+      - totalPremium
       - monthlyPremium
       - annual_premium
       - monthly_premium
     - name: status
-      tier: core
-      providers: 16
-      share: 0.516
+      tier: extended
+      providers: 15
+      share: 0.484
       type: string
       spellings:
       - status
       - state
     - name: effective_date
       tier: extended
-      providers: 13
-      share: 0.419
+      providers: 11
+      share: 0.355
       type: string
       spellings:
       - effectiveDate
@@ -303,20 +316,20 @@ concepts:
       - startDate
     - name: expires_at
       tier: extended
-      providers: 12
-      share: 0.387
+      providers: 11
+      share: 0.355
       type: string
       spellings:
       - expiration_date
-      - expiresAt
       - validUntil
-      - expirationDate
+      - expiresAt
       - ExpirationDate
       - expires_at
+      - expirationDate
     - name: coverages
       tier: extended
-      providers: 10
-      share: 0.323
+      providers: 8
+      share: 0.258
       type: object
       spellings:
       - coverages
@@ -326,38 +339,39 @@ concepts:
       - coverage_options
     - name: product_id
       tier: extended
-      providers: 9
-      share: 0.29
+      providers: 7
+      share: 0.226
       type: string
       spellings:
       - productName
       - product
-      - productCode
       - plan_id
-      - product_id
       - product_code
-    long_tail_count: 605
+    long_tail_count: 607
     long_tail_sample:
     - created_at
     - currency
-    - policyholder_id
-    - number
-    - address
     - deductible
+    - number
+    - policyholder_id
+    - address
     - email
     - first_name
+    - limit
     - property_address
+    - type
     - agency_id
     - bind_status
     - broker
     - contacts
     - correlation_id
+    - coverage_code
     - coverage_type
     - date_of_birth
     - delivery
     - duration
     - fees
-    - files
+    - file_name
     - from
     - insured_address
     - items
@@ -365,19 +379,16 @@ concepts:
     - mailing_address
     - phone_number
     - policy_number
-    - product_type
     - products
     - questions
     - retention
     - source
     - subtotal
     - tenant_info
-    - type
     - updated_at
     - accepted_time
     - accessories
     - account_locator
-    - act_as_customer_proxy
   claim:
     segments_seen:
       claims: 15
@@ -484,6 +495,7 @@ concepts:
       spellings:
       - createdAt
       - createdDate
+      - creationDate
       - created_at
     - name: reported_at
       tier: extended
@@ -519,7 +531,7 @@ concepts:
       spellings:
       - updated_at
       - updatedAt
-    long_tail_count: 80
+    long_tail_count: 99
     long_tail_sample:
     - adjuster
     - loss_location
@@ -535,12 +547,16 @@ concepts:
     - block_states
     - charge_payouts
     - charges
+    - claim_country
+    - claim_identifier
     - claim_reference
     - claimant_id
     - claims_deeplink
     - closed_date
+    - commercial_claim
     - company_ident
     - complete_claim
+    - consequences_claimant
     - contact_phone
     - coverages_involved
     - covered_item_id
@@ -549,18 +565,14 @@ concepts:
     - crime_reference_number
     - currency
     - date_of_service
+    - declaration_date
     - deleted_at
     - email
+    - expenses
     - exposures
     - external_ident
     - filed_date
     - files
-    - granted_amount
-    - guarantor
-    - guarantor_id
-    - incident_cause
-    - incident_details
-    - incident_type
   insurance_product:
     segments_seen:
       products: 4
@@ -589,17 +601,27 @@ concepts:
       share: 0.2
       tier: long-tail
     properties: []
-    long_tail_count: 12
+    long_tail_count: 22
     long_tail_sample:
-    - effective_date
     - name
     - product_id
     - type
     - accessories
+    - address
     - available_states
+    - brand
     - clothing
+    - currency
     - description
-    - expiration_date
-    - policyholder_id
+    - e_bike_type
+    - effective_date
+    - external_id
+    - initial_value
+    - licence_plate_number
+    - model_name
     - pricing
     - refutation_id
+    - serial_number
+    - sku
+    - type_name
+    - year

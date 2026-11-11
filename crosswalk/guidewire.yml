@@ -10,8 +10,8 @@ concepts:
       effective_date: effectiveDate
       status: status
       expiration_date: expirationDate
-      id: id
       number: policyNumber
+      id: id
       premium: totalPremium
       policyholder_id: insured
       updated_at: updatedDate
@@ -32,7 +32,7 @@ concepts:
       status: status
       expires_at: validUntil
       coverages: coverages
-    core_coverage: 0.667
+    core_coverage: 0.5
     evidence:
     - openapi/_original/guidewire-policycenter-openapi.yml#POST /submissions/{submissionId}/quote
   claim:
