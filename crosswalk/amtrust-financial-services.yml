@@ -1,7 +1,7 @@
 provider: amtrust-financial-services
 apis_io: https://apis.io/providers/amtrust-financial-services/
 context: insurance
-generated: '2026-11-10'
+generated: '2026-11-11'
 concepts:
   policy:
     path_segment:

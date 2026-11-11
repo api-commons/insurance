@@ -84,3 +84,11 @@ decisions:
     plans."
   - "A claim needs no policy in the same API: claims and FNOL platforms expose claims alone."
   - "Duplicates merged: Audatex into Solera, Oper, Orbii, Thatch."
+
+workflows:
+  - id: quote-bind-claim
+    summary: Quote cover, bind it as a policy, and file a claim against the policy
+    steps:
+      - {op: createQuote, id: quote}
+      - {op: createPolicy, id: policy, link: {quote_id: "$steps.quote.outputs.id"}}
+      - {op: createClaim, id: claim, link: {policy_id: "$steps.policy.outputs.id"}}

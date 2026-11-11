@@ -1,7 +1,7 @@
 provider: pie-insurance
 apis_io: https://apis.io/providers/pie-insurance/
 context: insurance
-generated: '2026-11-10'
+generated: '2026-11-11'
 concepts:
   quote:
     path_segment:

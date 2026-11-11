@@ -17,7 +17,7 @@ generated. Every number below is a count of providers.
 | claim | 16 | 11 | status 82%, policy_id 73%, id 64%, loss_date 64%, description 55%, number 55% | claims 15, claim 3, fnol 1 |
 | insurance_product | 5 | 3 |  | products 4, insurance-products 1 |
 
-Cohort: 143 providers with harvested OpenAPI, 47 crosswalks. Of the providers exposing a policy: 57% create, 60% list, 67% fetch, 30% update, 17% delete. Generated 2026-11-10 by build.py.
+Cohort: 143 providers with harvested OpenAPI, 47 crosswalks. Of the providers exposing a policy: 57% create, 60% list, 67% fetch, 30% update, 17% delete. Generated 2026-11-11 by build.py.
 <!-- /commons:summary -->
 
 Shares are of the providers with a readable resource schema for that concept. The
@@ -35,6 +35,7 @@ extended tier and the long tail of every concept are in [profile.yml](profile.ym
 - [openapi.yml](openapi.yml) -- OpenAPI 3.1 of the shared operations. No one serves it; it
   is the shape to map to. Lints clean against the
   [naming ruleset](https://github.com/api-commons/schema-commons/blob/main/ruleset/schema-commons-naming.yaml).
+- [arazzo.yml](arazzo.yml) -- reference workflows composed only of the shared operations (compositions, not measurements).
 - [schema/](schema) -- JSON Schema 2020-12 per concept; each property carries
   `x-commons-tier`, `x-commons-share`, `x-commons-providers` and the spellings seen.
 - [crosswalk/](crosswalk) -- one per provider, common name -> their name, with the harvested

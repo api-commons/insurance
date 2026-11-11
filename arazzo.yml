@@ -1,0 +1,48 @@
+arazzo: 1.0.1
+info:
+  title: Insurance workflows (API Commons)
+  version: 0.1.0-draft.20261111
+  summary: Reference workflows over the common Insurance operations.
+  description: 'Reference compositions of the operations this context''s providers share. Not measured: every step
+    is a core- or extended-tier operation of the common OpenAPI, so the workflow runs against any provider that
+    implements those operations (see crosswalk/).'
+sourceDescriptions:
+- name: insurance
+  url: ./openapi.yml
+  type: openapi
+workflows:
+- workflowId: quote-bind-claim
+  summary: Quote cover, bind it as a policy, and file a claim against the policy
+  description: Quote cover, bind it as a policy, and file a claim against the policy.
+  steps:
+  - stepId: quote
+    operationId: createQuote
+    description: Create a quote -- a core-tier operation (88% of providers).
+    successCriteria:
+    - condition: $statusCode == 200
+    outputs:
+      id: $response.body#/id
+  - stepId: policy
+    operationId: createPolicy
+    description: Create a policy -- a core-tier operation (57% of providers).
+    successCriteria:
+    - condition: $statusCode == 200
+    outputs:
+      id: $response.body#/id
+    requestBody:
+      contentType: application/json
+      payload:
+        quote_id: $steps.quote.outputs.id
+  - stepId: claim
+    operationId: createClaim
+    description: Create a claim -- a core-tier operation (75% of providers).
+    successCriteria:
+    - condition: $statusCode == 200
+    outputs:
+      id: $response.body#/id
+    requestBody:
+      contentType: application/json
+      payload:
+        policy_id: $steps.policy.outputs.id
+  x-commons-tiers:
+  - core
